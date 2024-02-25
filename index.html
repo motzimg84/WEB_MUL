@@ -23,15 +23,29 @@
                 <div class="conteinterImag" id="conteinterImag">
                     <img src="img/MUL_Logo_bar.png" class="navbar-img" />
                 </div>
-                <button class="navbar-item" onclick="scrollToSection('mostrar_tabla')">Simulador</button>
-                <button class="navbar-item" onclick="scrollToSection('descrip')">Descripción</button>
-                <button class="navbar-item" onclick="scrollToSection('example')">Ejemplos</button>
-                <button class="navbar-item" >Historia</button>
+                <button class="navbar-item" onclick="scrollToSection('mostrar_tabla')" data-section="navbartext" data-value="navbar-butt1">Simulador</button>
+                <button class="navbar-item" onclick="scrollToSection('descrip')" data-section="navbartext" data-value="navbar-butt2">Descripción</button>
+                <button class="navbar-item" onclick="scrollToSection('example')" data-section="navbartext" data-value="navbar-butt3">Ejemplos</button>
+                <button class="navbar-item" data-section="navbartext" data-value="navbar-butt4">Historia</button>
             </div>
         </div>
     </div>
     <button class="navbar-button" id="navbarButton">&#9776;</button>
-    
+
+    <div id="languagButton">
+    <button style=" margin-top: 50px; background-color: blue;" class="navbar-button" data-languages="es">ES</button>
+    <button style=" margin-top: 90px; background-color: blue;" class="navbar-button" data-languages="en">EN</button>
+    <h1 style=" margin-top: 120px; background-color: rgb(232, 126, 65);" class="navbar-button" id="selectLang">es</h1>
+    </div>
+
+    <div style="float: right; margin-top: 250px;">
+        <select style=" color: azure; background-color: gray;" class="selectLanguage" id="languageSelect">
+            <option style="display: none;" value="DE">DE</option>
+            <option value="EN"><img src="icon/Information-indicator-black.png" ></option>
+            <option value="ES" selected>ES</option>
+        </select>
+    </div>
+
     <div class="contMenu" id="contMenu">
     </div>
 
@@ -46,7 +60,7 @@
 <div class="containerMUL" id="mostrar_tabla">
         <div style="margin-top: 10px;"></div>
         <div style="text-align: center;">
-            <h1>Simulador de MUL?</h1>
+            <h1 data-section="simultext" data-value="simul-titel" >Simulador de MUL?</h1>
             <button class="help-btn" id="help-btn">?</button>
         </div>
         <div>
@@ -140,20 +154,20 @@
                         <div style= "top: -25px; left: 12%; float: left; " id="popup" class="popup">
                             <div class="popup-arrow"></div>
                             <span class="close-btn" onclick="closePopup()">X</span>
-                            <p>1. Ingresa el aqui el numero.</p> 
+                            <p data-section="pupuptext" data-value="pupup1">1. Ingresa el aqui el numero.</p> 
                         </div>
                     </div>
                     <div id="popupWrapper2" class="popupWrapper">
                         <div style= "top: -25px; left: 22%; float: left; " id="popup" class="popup">
                             <div class="popup-arrow"></div>
                             <span class="close-btn" onclick="closePopup()">X</span>
-                            <p>2. Selecciona la unidad inicial.</p> 
+                            <p data-section="pupuptext" data-value="pupup2">2. Selecciona la unidad inicial.</p> 
                         </div>
                     </div>
                 </div>
    
                 <div class="contForm">
-                    <p class="textForm manTexPos">Convertir el número: </p>
+                    <p class="textForm manTexPos" data-section="simultext" data-value="simul-num">Convertir el número: </p>
 
                     <input class="textForm imputValue" type="text" id="input" value="0,5" onkeydown="return event.key !== 'Enter';" placeholder="Ingrese un numero" oninput="permitirPuntoComa(event)" />
 
@@ -211,14 +225,14 @@
                 <div style= "top: -3px; left: 5%; float: left; " id="popup" class="popup-up">
                     <div class="popup-arrow-up1"></div>
                     <span class="close-btn" onclick="closePopup()">X</span>
-                    <p>Puedes cambiar la unidad de conversion SI. entre Longitud, Area o Volumen. </p> 
+                    <p data-section="pupuptext" data-value="pupup3">Puedes cambiar la unidad de conversion SI. entre Longitud, Area o Volumen. </p> 
                 </div>
             </div>
             <div id="popupWrapper3" class="popupWrapper">
                 <div style= "top: -110px; left: 40%; float: left; " id="popup" class="popup-up">
                     <div class="popup-arrow-up2"></div>
                     <span class="close-btn" onclick="closePopup()">X</span>
-                    <p>3. Selecciona la unidad final.</p> 
+                    <p data-section="pupuptext" data-value="pupup4">3. Selecciona la unidad final.</p> 
                 </div>
             </div>
 
@@ -380,6 +394,7 @@
             <p style="text-align: center;"><strong> &copy; Maßeinheitenumwandlung und Lineal</strong> <br> by Ing. Mauricio Mora MSc.</p>
             
         </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>

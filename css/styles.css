@@ -26,3 +26,33 @@ html, body {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
+
+/* Eliminar la flecha del select */
+.selectLanguage {
+    -webkit-appearance: none; /* Safari y Chrome */
+    -moz-appearance: none; /* Firefox */
+    appearance: none; /* Otros navegadores */
+    text-align: center;
+    border: 1px solid #ccc; /* Añadir borde */
+    border-radius: 5px; /* Añadir bordes redondeados */
+    font-size: 16px; /* Ajustar el tamaño de fuente */
+    height: 50px;
+    width: 50px;
+}
+
+/* Estilo para las opciones del select */
+#languageSelect option {
+    background-color: rgb(117, 17, 17); /* Color de fondo de las opciones */    
+    width: 150px;
+    color: rgb(10, 10, 225); /* Color del texto de las opciones */
+    font-size: 35px; /* Tamaño de la fuente de las opciones */
+    padding: 50px 10px; /* Espaciado interno de las opciones */
+
+}
+
+/* Estilo para la opción seleccionada */
+#languageSelect option:checked {
+    background-color: lightblue; /* Color de fondo de la opción seleccionada */
+    color: white; /* Color del texto de la opción seleccionada */
+}
+

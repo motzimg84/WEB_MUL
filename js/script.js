@@ -355,22 +355,47 @@ function splitNumber() {
 		j++;
 	}
 	
-	if (exponente1 > exponente2){
-		//Texto de explicaion de la accion
-		let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] se multiplico " + inputMult + " veces por 10, lo que desplaza la coma a " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], como muestra la flecha.";
-		document.getElementById("textoRes1").innerHTML = textoRes1;
-		let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] * 10^" + inputMult + " = " + result + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
-		document.getElementById("textoRes2").innerHTML = textoRes2;
-	}else if (exponente1 < exponente2){		
-		//Texto de explicaion de la accion
-		let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] se divide " + absInputMult + " veces por 10, lo que desplaza la coma a " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], como muestra la flecha.";
-		document.getElementById("textoRes1").innerHTML = textoRes1;
-		let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] / 10^" + absInputMult + " = " + result + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
-		document.getElementById("textoRes2").innerHTML = textoRes2;
+	let lenguage = document.getElementById("selectLang").innerHTML;
+	
+	if (lenguage === "es") { 
+		if (exponente1 > exponente2){
+			//Texto de explicaion de la accion
+			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] se multiplico " + inputMult + " veces por 10, lo que desplaza la coma a " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], como muestra la flecha.";
+			document.getElementById("textoRes1").innerHTML = textoRes1;
+			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] * 10^" + inputMult + " = " + result + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
+			document.getElementById("textoRes2").innerHTML = textoRes2;
+		}else if (exponente1 < exponente2){		
+			//Texto de explicaion de la accion
+			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] se divide " + absInputMult + " veces por 10, lo que desplaza la coma a " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], como muestra la flecha.";
+			document.getElementById("textoRes1").innerHTML = textoRes1;
+			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] / 10^" + absInputMult + " = " + result + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
+			document.getElementById("textoRes2").innerHTML = textoRes2;
+		} else {
+			document.getElementById("textoRes1").innerHTML = "";
+			document.getElementById("textoRes2").innerHTML = "";
+		}
+	} else if (lenguage === "en") { 
+		if (exponente1 > exponente2){
+			//Texto de explicaion de la accion
+			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] is multiplied " + inputMult + " times by 10, which moves the decimal point to " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], as shown by the arrow.";
+			document.getElementById("textoRes1").innerHTML = textoRes1;
+			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] * 10^" + inputMult + " = " + result + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
+			document.getElementById("textoRes2").innerHTML = textoRes2;
+		}else if (exponente1 < exponente2){		
+			//Texto de explicaion de la accion
+			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] is divided " + absInputMult + " times by 10, which moves the decimal point to " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], as shown by the arrow.";
+			document.getElementById("textoRes1").innerHTML = textoRes1;
+			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] / 10^" + absInputMult + " = " + result + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
+			document.getElementById("textoRes2").innerHTML = textoRes2;
+		} else {
+			document.getElementById("textoRes1").innerHTML = "";
+			document.getElementById("textoRes2").innerHTML = "";
+		}
 	} else {
 		document.getElementById("textoRes1").innerHTML = "";
 		document.getElementById("textoRes2").innerHTML = "";
 	}
+
 
 	arrowDarw ();
 }
@@ -468,7 +493,7 @@ function presCell(numCell){
 	var cellNumber = numCell;
 	changeColor(cellNumber);
 	createOptions(cellNumber);
-	}
+}
 
 function changeColor(cellNumber) {
 	for (var i = 1; i <= 3; i++) {
@@ -701,3 +726,38 @@ helpBtn.addEventListener('click', () => {
 	popupWrapper4.style.display = "block";
 	helpBtn.style.background = "#60B5EA";
 });
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// languages functions
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+const flagElement = document.getElementById('languagButton');
+const textsToChange =document.querySelectorAll("[data-section]");
+
+
+const changeLanguage = async (languages) => {
+	const requestJson = await fetch("./languages/" + languages + ".json");
+	const textLang = await requestJson.json();
+
+	for (const textToChange of textsToChange) {
+		const section = textToChange.dataset.section;
+		const value = textToChange.dataset.value;
+		textToChange.innerHTML = textLang[section][value];
+	}
+}	
+
+flagElement.addEventListener("click", (e) => {
+	document.getElementById("selectLang").innerHTML = e.target.dataset.languages;
+	changeLanguage(e.target.dataset.languages);
+	splitNumber();
+});
+
+
+
+languageSelect.addEventListener('change', function(event) {
+    const selectedValue = event.target.value;
+	changeLanguage(selectedValue);
+	splitNumber();
+
+});
+
+

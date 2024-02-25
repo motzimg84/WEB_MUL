@@ -1,0 +1,20 @@
+{
+    "navbartext": {
+        "navbar-butt1": "Simulador",
+        "navbar-butt2": "Que es MUL",
+        "navbar-butt3": "Ejemplos",
+        "navbar-butt4": "Historia"
+    },
+    
+    "simultext":{
+        "simul-titel": "Simulador de MUL",
+        "simul-num" : "Convertir el número: "
+    },
+
+    "pupuptext": {
+        "pupup1": "1. Ingresa el aqui el numero.",
+        "pupup2": "2. Selecciona la unidad inicial.",
+        "pupup3": "Puedes cambiar la unidad de conversion SI. entre Longitud, Area o Volumen.",
+        "pupup4": "3. Selecciona la unidad final."
+    }
+}   

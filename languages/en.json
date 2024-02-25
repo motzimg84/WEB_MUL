@@ -1,0 +1,20 @@
+{
+    "navbartext": {
+        "navbar-butt1": "Simulator",
+        "navbar-butt2": "What is MUL",
+        "navbar-butt3": "Example",
+        "navbar-butt4": "History"
+    },
+
+    "simultext":{
+        "simul-titel": "MUL Simulator",
+        "simul-num" : "Convert the number: "
+    },
+
+    "pupuptext": {
+        "pupup1": "1. Enter the number here.",
+        "pupup2": "2. Selects the initial unit.",
+        "pupup3": "You can change the SI conversion unit between length, area, or volume.",
+        "pupup4": "3. Select the final unit."
+    }
+}   
