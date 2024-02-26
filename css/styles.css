@@ -1,13 +1,13 @@
-@import "navbar.css";
-@import "logo.css";
-@import "gridMul.css";
 @import "arrow.css";
-@import "footer.css";
-@import "example.css";
 @import "color.css";
-@import "popupsimul.css";
 @import "dinamicTex.css";
-@import"languag.css";
+@import "example.css";
+@import "footer.css";
+@import "gridMul.css";
+@import "languag.css";
+@import "logo.css";
+@import "navbar.css";
+@import "popupsimul.css";
 
 *{
     box-sizing: border-box;

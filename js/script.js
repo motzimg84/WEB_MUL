@@ -134,6 +134,7 @@ escala.addEventListener('mouseleave', function() {
 	escala.style.backgroundColor = "gainsboro";
 });
 
+
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //Functo to hidde the exaple information
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -514,6 +515,71 @@ function changeColor(cellNumber) {
 	arrowDarw ();
 }
 
+cell1.addEventListener('mouseenter', function() {
+	let indice = document.getElementById("indice").innerHTML;
+	console.log(indice);
+	if (indice !== "1"){
+		cell1.style.backgroundColor = "gray";
+		cell1.style.textDecoration = "underline";
+		cell1.style.border = " 4px solid black";
+		cell1.style.fontSize = "20px";
+	} 
+});
+
+cell2.addEventListener('mouseenter', function() {
+	let indice = document.getElementById("indice").innerHTML;
+	console.log(indice);
+	if (indice !== "2"){
+		cell2.style.backgroundColor = "gray";
+		cell2.style.textDecoration = "underline";
+		cell2.style.border = " 4px solid black";
+		cell2.style.fontSize = "20px";
+	} 
+});
+
+cell3.addEventListener('mouseenter', function() {
+	let indice = document.getElementById("indice").innerHTML;
+	console.log(indice);
+	if (indice !== "3"){
+		cell3.style.backgroundColor = "gray";
+		cell3.style.textDecoration = "underline";
+		cell3.style.border = " 4px solid black";
+		cell3.style.fontSize = "20px";
+	}  
+});
+
+cell1.addEventListener('mouseleave', function() {
+	let indice = document.getElementById("indice").innerHTML;
+	console.log(indice);
+	if (indice !== "1"){
+		cell1.style.backgroundColor = "darkgray";
+		cell1.style.textDecoration = "none";
+		cell1.style.border = " 1px solid black";
+		cell1.style.fontSize = "18px";
+	} 
+});
+
+cell2.addEventListener('mouseleave', function() {
+	let indice = document.getElementById("indice").innerHTML;
+	console.log(indice);
+	if (indice !== "2"){
+		cell2.style.backgroundColor = "darkgray";
+		cell2.style.textDecoration = "none";
+		cell2.style.border = " 1px solid black";
+		cell2.style.fontSize = "18px";
+	} 
+});
+
+cell3.addEventListener('mouseleave', function() {
+	let indice = document.getElementById("indice").innerHTML;
+	console.log(indice);
+	if (indice !== "3"){
+		cell3.style.backgroundColor = "darkgray";
+		cell3.style.textDecoration = "none";
+		cell3.style.border = " 1px solid black";
+		cell3.style.fontSize = "18px";
+	} 
+});
 
 // Función que crea las opciones del selector según el valor de índice
 function createOptions(indice) {
@@ -743,9 +809,9 @@ helpBtn.addEventListener('click', () => {
 const flagElementOption = document.getElementById('languageOptions');
 const textsToChange =document.querySelectorAll("[data-section]");
 
-const changeLanguage = (languages) => {
-	const requestJson = fetch("./languages/" + languages + ".json");
-	const textLang = requestJson.json();
+const changeLanguage = async (languages) => {
+	const requestJson = await fetch("./languages/" + languages + ".json");
+	const textLang = await requestJson.json();
 
 	for (const textToChange of textsToChange) {
 		const section = textToChange.dataset.section;
