@@ -32,18 +32,16 @@
     </div>
     <button class="navbar-button" id="navbarButton">&#9776;</button>
 
-    <div id="languagButton">
-    <button style=" margin-top: 50px; background-color: blue;" class="navbar-button" data-languages="es">ES</button>
-    <button style=" margin-top: 90px; background-color: blue;" class="navbar-button" data-languages="en">EN</button>
-    <h1 style=" margin-top: 120px; background-color: rgb(232, 126, 65);" class="navbar-button" id="selectLang">es</h1>
-    </div>
-
-    <div style="float: right; margin-top: 250px;">
-        <select style=" color: azure; background-color: gray;" class="selectLanguage" id="languageSelect">
-            <option style="display: none;" value="DE">DE</option>
-            <option value="EN"><img src="icon/Information-indicator-black.png" ></option>
-            <option value="ES" selected>ES</option>
-        </select>
+    <div  id="languageSelector">
+        <button style="cursor: pointer;" class="buttLangOpt">
+            <img src="./flags/es.svg" alt="ES" class="imgLangOpt" onclick="selectLanguage('es')">
+            <p style="display: none;" id="selectLang">es</p>
+        </button>
+        <div id="languageOptions">
+            <button class="buttLangOpt" data-languages="es"><img src="./flags/es.svg" alt="ES" class="imgLangOpt" onclick="selectLanguage('es')" ></button>
+            <button class="buttLangOpt" data-languages="en"><img src="./flags/gb.svg" alt="EN" class="imgLangOpt" onclick="selectLanguage('en')" ></button>
+            <button class="buttLangOpt" data-languages="de"><img src="./flags/at.svg" alt="DE" class="imgLangOpt" onclick="selectLanguage('de')" ></button>
+        </div>
     </div>
 
     <div class="contMenu" id="contMenu">
@@ -153,14 +151,18 @@
                     <div  id="popupWrapper1" class="popupWrapper">
                         <div style= "top: -25px; left: 12%; float: left; " id="popup" class="popup">
                             <div class="popup-arrow"></div>
-                            <span class="close-btn" onclick="closePopup()">X</span>
+                            <button class="buttCloPopup"  onclick="popupsClose()">
+                                <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
+                            </button>
                             <p data-section="pupuptext" data-value="pupup1">1. Ingresa el aqui el numero.</p> 
                         </div>
                     </div>
                     <div id="popupWrapper2" class="popupWrapper">
-                        <div style= "top: -25px; left: 22%; float: left; " id="popup" class="popup">
+                        <div style= "top: -25px; left: 24%; float: left; " id="popup" class="popup">
                             <div class="popup-arrow"></div>
-                            <span class="close-btn" onclick="closePopup()">X</span>
+                            <button class="buttCloPopup"  onclick="popupsClose()">
+                                <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
+                            </button>
                             <p data-section="pupuptext" data-value="pupup2">2. Selecciona la unidad inicial.</p> 
                         </div>
                     </div>
@@ -213,9 +215,9 @@
 
         <div class="row">
             <table class="table2" id="table2" >
-                <td class= "tdBut"><button class="buttonArt" style = "background-color: white;" id="cell1" onclick="presCell('1')" selected>Längen</button></td>
-                <td class= "tdBut"><button class="buttonArt" id="cell2" onclick="presCell('2')">Flächen</button></td>
-                <td class= "tdBut"><button class="buttonArt" id="cell3" onclick="presCell('3')">Volumen</button></td>
+                <td class= "tdBut"><button class="buttonArt" style = "background-color: white;" id="cell1" onclick="presCell('1')" data-section="simultext" data-value="simul-butL" selected>Längen</button></td>
+                <td class= "tdBut"><button class="buttonArt" id="cell2" onclick="presCell('2')" data-section="simultext" data-value="simul-butA">Flächen</button></td>
+                <td class= "tdBut"><button class="buttonArt" id="cell3" onclick="presCell('3')" data-section="simultext" data-value="simul-butV">Volumen</button></td>
                 <td style= "display: none" id = "indice">1</td>
             </table>
         </div>
@@ -224,14 +226,14 @@
             <div id="popupWrapper4" class="popupWrapper">
                 <div style= "top: -3px; left: 5%; float: left; " id="popup" class="popup-up">
                     <div class="popup-arrow-up1"></div>
-                    <span class="close-btn" onclick="closePopup()">X</span>
+                    <span class="close-btn" onclick="popupsClose()">X</span>
                     <p data-section="pupuptext" data-value="pupup3">Puedes cambiar la unidad de conversion SI. entre Longitud, Area o Volumen. </p> 
                 </div>
             </div>
             <div id="popupWrapper3" class="popupWrapper">
                 <div style= "top: -110px; left: 40%; float: left; " id="popup" class="popup-up">
                     <div class="popup-arrow-up2"></div>
-                    <span class="close-btn" onclick="closePopup()">X</span>
+                    <span class="close-btn" onclick="popupsClose()">X</span>
                     <p data-section="pupuptext" data-value="pupup4">3. Selecciona la unidad final.</p> 
                 </div>
             </div>
@@ -241,38 +243,41 @@
 
     </div>
 
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                        Description Bock                                                                                
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <div class="contDescript">
         <div class="board" id = "descrip">
             <div style="text-align: center;">
                 <h1>Que es MUL?</h1>
-                <p style="text-align: center;"class="ptexDesc">MUL es una herramienta que te permite converit las unidades basicas de medida</p>
-                <p style="text-align: center; padding-bottom: 20px;" class="ptexDesc">del sistema interanaciona de medidas (SI), con tan solo 3 pasos.</p>
+                <p style="text-align: center;" class="ptexDesc genTex">MUL es una herramienta que te permite converit las unidades basicas de medida</p>
+                <p style="text-align: center; padding-bottom: 20px;" class="ptexDesc genTex">del sistema interanaciona de medidas (SI), con tan solo 3 pasos.</p>
             </div>
             <div class="row">
                 <div id="contDinamic">
                     <div id="anterior">&lt;</div>
-                    <div class="caja">1. Escribir el numero haciendo que la coma coincida con la unidad correspondiente en MUL.</div>
-                    <div class="caja">2. Buscar la unidad final deseada en MUL </div>
-                    <div class="caja">3. Desplazar la coma a la pocicion final y en caso de ser necesario rellenar las celdas basias con 0.</div>
+                    <div class="caja ">1. Escribir el numero haciendo que la coma coincida con la unidad correspondiente en MUL.</div>
+                    <div class="caja ">2. Buscar la unidad final deseada en MUL </div>
+                    <div class="caja ">3. Desplazar la coma a la pocicion final y en caso de ser necesario rellenar las celdas basias con 0.</div>
                     <div id="siguiente">&gt;</div>
                 </div>
             </div>
             <div style="text-align: center;">
-                <p style="padding-top: 20px;" class="ptexDesc">MUL está diseñada para facilitar el aprendizaje en la conversión de unidades mediante métodos mnemotécnicos, optimizando los recursos 
+                <p style="padding-top: 20px;" class="ptexDesc genTex">MUL está diseñada para facilitar el aprendizaje en la conversión de unidades mediante métodos mnemotécnicos, optimizando los recursos 
                     neuronales destinados a la resolución de problemas matemáticos y reduciendo el esfuerzo requerido para la conversión de unidades.</p>
-                <p style="padding-top: 20px;" class="ptexDesc">MUL evita que la persona realice cálculos matemáticos, pero no omite el proceso de conversión, sino que lo integra en cada ejercicio, 
+                <p style="padding-top: 20px;" class="ptexDesc genTex">MUL evita que la persona realice cálculos matemáticos, pero no omite el proceso de conversión, sino que lo integra en cada ejercicio, 
                     lo que facilita la memorización de los factores de conversión. Al contener estos factores y al ser visualizada durante períodos prolongados, 
                     la retentiva de la herramienta reducirá la posibilidad de cometer errores en la conversión de unidades del Sistema Internacional (SI).</p>
-                <p class="ptexDesc"></p>
+                <p class="ptexDesc genTex"></p>
             </div>
         </div>
     </div>
 
 
 
-    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                                                         Example Bock                                                                                
-        ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                    Example Bock                                                                                
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <div class= "example">
 		<div id="example" style=" margin: 0px auto 20px auto; border: 2px solid transparent; " class="board">
 			<div style="position: relative;">
@@ -282,7 +287,7 @@
 				</div>
 				<!-- Contenido del párrafo -->
                 <div class="exBlockCon">
-					<p class="pDesText">En el siguiente video se muestra un ejemplo de converción de unidades de longitud.</p>
+					
                     <div class="row exDetCont">
                         <img src="icon/indicate-arrow.png" class="indicArrow">
                         <p class="pDesText">778,576 metros [m] a Megametros [Mm].</p>
@@ -294,10 +299,10 @@
                         <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
                     </button>
                     <div class="exTexCont" id="InfTex1">
-                        <p class="pDesText">1. Se busca la unidad inicial en MUL, en este caso metros [m] y se escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.</p>
-					<p class="pDesText">2. Se busca la unidad final en MUL, la cual en este caso es Megametros [Mm] y se desplaza la coma a esta posición.</p>
-					<p class="pDesText">3. En caso de que se tengan celdas vacias entre la coma y el numero se llenan con ceros y antes de la coma tambien se coloca un cero.</p>
-				    </div>
+                        <p class="pDesText ">1. Se busca la unidad inicial en MUL, en este caso metros [m] y se escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.</p>
+                        <p class="pDesText ">2. Se busca la unidad final en MUL, la cual en este caso es Megametros [Mm] y se desplaza la coma a esta posición.</p>
+                        <p class="pDesText ">3. En caso de que se tengan celdas vacias entre la coma y el numero se llenan con ceros y antes de la coma tambien se coloca un cero.</p>
+                    </div>
 				</div>
 			</div>
 			<div style="border: 2px solid transparent; text-align: center;">
@@ -313,10 +318,10 @@
 				</div>
 				<!-- Contenido del párrafo -->
                 <div class="exBlockCon">
-					<p class="pDesText">En el siguiente video se muestra un ejemplo de converción de unidades de area.</p>
+					
                     <div class="row exDetCont">
                         <img src="icon/indicate-arrow.png" class="indicArrow">
-                        <p class="pDesText">0,778576 hektar [ha] a centimeter cuadrados [cm^2].</p>
+                        <p class="pDesText genTex">0,778576 hektar [ha] a centimeter cuadrados [cm^2].</p>
                     </div>
 					<button class="buttDetEx"  id="InfoBut2">
                         <img src="icon/Information-indicator-black.png" class="imgButtDetEx">
@@ -325,9 +330,9 @@
                         <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
                     </button>
                     <div class="exTexCont" id="InfTex2">
-                        <p class="pDesText">1. Se busca la unidad inicial en MUL, en este caso hektar [ha] y se escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.</p>
-					    <p class="pDesText">2. Se busca la unidad final en MUL, la cual en este caso es centimeter cuadrad [cm^2] y se desplaza la coma a esta posición.</p>
-					    <p class="pDesText">3. Los ceros que se encuentran antes del primer numero se borran.</p>
+                        <p class="pDesText genTex">1. Se busca la unidad inicial en MUL, en este caso hektar [ha] y se escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.</p>
+					    <p class="pDesText genTex">2. Se busca la unidad final en MUL, la cual en este caso es centimeter cuadrad [cm^2] y se desplaza la coma a esta posición.</p>
+					    <p class="pDesText genTex">3. Los ceros que se encuentran antes del primer numero se borran.</p>
 				    </div>
 				</div>
 			</div>
@@ -344,10 +349,10 @@
 				</div>
 				<!-- Contenido del párrafo -->
 				<div class="exBlockCon">
-					<p class="pDesText">En el siguiente video se muestra un ejemplo de converción de unidades de volumen.</p>
+					
                     <div class="row exDetCont">
                         <img src="icon/indicate-arrow.png" class="indicArrow">
-                        <p class="pDesText">7785,76 centimetros cubicos [cm^3] a kilometros cubicos [Km^3].</p>
+                        <p class="pDesText genTex">7785,76 centimetros cubicos [cm^3] a kilometros cubicos [Km^3].</p>
                     </div>
 					<button class="buttDetEx"  id="InfoBut3">
                         <img src="icon/Information-indicator-black.png" class="imgButtDetEx">
@@ -356,9 +361,9 @@
                         <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
                     </button>
                     <div class="exTexCont" id="InfTex3">
-                        <p class="pDesText">1. Se busca la unidad inicial en MUL, en este caso kubikcentimeter [cm^3] y se escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.</p>
-                        <p class="pDesText">2. Se busca la unidad final en MUL, la cual en este caso es kubikkilometer [Km^3] y se desplaza la coma a esta posición.</p>
-                        <p class="pDesText">3. En caso de que se tengan celdas vacias entre la coma y el numero se llenan con ceros y antes de la coma tambien se coloca un cero.</p>
+                        <p class="pDesText genTex">1. Se busca la unidad inicial en MUL, en este caso kubikcentimeter [cm^3] y se escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.</p>
+                        <p class="pDesText genTex">2. Se busca la unidad final en MUL, la cual en este caso es kubikkilometer [Km^3] y se desplaza la coma a esta posición.</p>
+                        <p class="pDesText genTex">3. En caso de que se tengan celdas vacias entre la coma y el numero se llenan con ceros y antes de la coma tambien se coloca un cero.</p>
 				    </div>
                 </div>
 			</div>
@@ -371,24 +376,28 @@
 		</div>
 	</div>
 
-    <footer class="footerCont" >
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                    Footer Bock                                                                                
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+    <footer class="footerCont genTex" >
         <div class="container">
             <div style="max-width: 1200px;" class="row">
                 <a href="#" class="contenBotton">
                     <img src="icon/Confused.png" class="imgFooter">
-                    <h3 class="textButFoot"><strong>Preguntas frecuentes</strong></h3>
+                    <h3 class="textButFoot genTex"><strong>Preguntas frecuentes</strong></h3>
                 </a>
                 <a href="#" class="contenBotton">
                     <img src="icon/Mail-01-256.png" class="imgFooter">
-                    <h3 class="textButFoot"><strong>Contactenos</strong></h3>
+                    <h3 class="textButFoot genTex"><strong>Contactenos</strong></h3>
                 </a>
                 <a href="#" class="contenBotton">
                     <img src="icon/User-Group.png" class="imgFooter">
-                    <h3 class="textButFoot"><strong>El equipo</strong></h3>
+                    <h3 class="textButFoot genTex"><strong>El equipo</strong></h3>
                 </a>
                 <a href="#" class="contenBotton">
                     <img src="icon/Agreement-01-256.png" class="imgFooter">
-                    <h3 class="textButFoot"><strong>Politicas de confidencialidad</strong></h3>
+                    <h3 class="textButFoot genTex"><strong>Politicas de confidencialidad</strong></h3>
                 </a>
             </div>
             <p style="text-align: center;"><strong> &copy; Maßeinheitenumwandlung und Lineal</strong> <br> by Ing. Mauricio Mora MSc.</p>

@@ -3,7 +3,6 @@
     width: 100%;
     max-width: 1200px;
     min-width: 600px;
-    height: 750px;
     margin: 20px auto;
     border: 2px solid transparent;
     background-color: white;
@@ -52,9 +51,9 @@
     text-align: center;
     margin-top: auto;
     border-top: 10px solid transparent;
-    font-family: Comic Sans MS;
-    font-size: 18px;
+    font-family: comic sans-serif;
     font-weight: bold;
+    font-size: 18px;
     float: left;
     z-index: 100;
 }
@@ -101,8 +100,7 @@
 }
 
 .textNotice {
-    font-family: Comic Sans MS; 
-    font-size: 15px; 
+    font-size: 20px; 
     font-weight: normal;
 }
 
@@ -117,9 +115,10 @@
 }
 
 .textForm {
+    font-family: Arial, Helvetica, sans-serif; 
     text-align: center;
     margin: 20px auto; 
-    font-size: 15px; 
+    font-size: 18px; 
     float: left;
 }
 
@@ -163,25 +162,24 @@
     width: 30%;
     justify-content: center;
     text-align: center;
-    border: 2px solid black;
     border-collapse: collapse;
     }
     
 .buttonArt {
     justify-content: center;
+    font-family: comic sans-serif; 
     text-align: center;
     background-color: var(--button-free);
+    border-radius: 10px;
     width: 100%;
     height: 50px;   
     transition: all 0.3s;
     }
 
 .buttonArt:hover {
+
     transform: scale(1.1);
     font-size: 20px; 
-    background-color: var(--button-over);
-    text-decoration: underline;
-    border: 4px solid black;
 }
 
 #help-btn {

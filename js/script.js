@@ -25,11 +25,7 @@ window.onload = function() {
 	//window.onresize();
 	permitirPuntoComa(event);
 	changeColor("1");
-	popupWrapper1.style.display = "block";
-	popupWrapper2.style.display = "block";
-	popupWrapper3.style.display = "block";
-	popupWrapper4.style.display = "block";
-	helpBtn.style.background = "#60B5EA";
+	popupsDis();
 };
 
 
@@ -252,7 +248,7 @@ function splitNumber() {
 		return;
 	}
 	
-	closePopup();
+	popupsClose();
 	
 	let exponente1 = parseFloat(escalaSelect.selectedOptions[0].getAttribute("data-exponent"));
 	let exponente2 = parseFloat(unidadSelect.selectedOptions[0].getAttribute("data-exponent"));
@@ -360,13 +356,13 @@ function splitNumber() {
 	if (lenguage === "es") { 
 		if (exponente1 > exponente2){
 			//Texto de explicaion de la accion
-			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] se multiplico " + inputMult + " veces por 10, lo que desplaza la coma a " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], como muestra la flecha.";
+			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] se multiplico " + inputMult + " veces por 10, lo que desplaza la coma a " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], como muestra la flecha de arriba.";
 			document.getElementById("textoRes1").innerHTML = textoRes1;
 			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] * 10^" + inputMult + " = " + result + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
 			document.getElementById("textoRes2").innerHTML = textoRes2;
 		}else if (exponente1 < exponente2){		
 			//Texto de explicaion de la accion
-			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] se divide " + absInputMult + " veces por 10, lo que desplaza la coma a " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], como muestra la flecha.";
+			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] se divide " + absInputMult + " veces por 10, lo que desplaza la coma a " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], como muestra la flecha de arriba.";
 			document.getElementById("textoRes1").innerHTML = textoRes1;
 			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] / 10^" + absInputMult + " = " + result + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
 			document.getElementById("textoRes2").innerHTML = textoRes2;
@@ -377,13 +373,13 @@ function splitNumber() {
 	} else if (lenguage === "en") { 
 		if (exponente1 > exponente2){
 			//Texto de explicaion de la accion
-			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] is multiplied " + inputMult + " times by 10, which moves the decimal point to " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], as shown by the arrow.";
+			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] is multiplied " + inputMult + " times by 10, which moves the decimal point to " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], as shown in the above arrow.";
 			document.getElementById("textoRes1").innerHTML = textoRes1;
 			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] * 10^" + inputMult + " = " + result + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
 			document.getElementById("textoRes2").innerHTML = textoRes2;
 		}else if (exponente1 < exponente2){		
 			//Texto de explicaion de la accion
-			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] is divided " + absInputMult + " times by 10, which moves the decimal point to " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], as shown by the arrow.";
+			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] is divided " + absInputMult + " times by 10, which moves the decimal point to " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], as shown in the above arrow.";
 			document.getElementById("textoRes1").innerHTML = textoRes1;
 			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] / 10^" + absInputMult + " = " + result + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
 			document.getElementById("textoRes2").innerHTML = textoRes2;
@@ -709,34 +705,47 @@ const popupWrapper2 = document.getElementById('popupWrapper2');
 const popupWrapper3 = document.getElementById('popupWrapper3');
 const popupWrapper4 = document.getElementById('popupWrapper4');
 const helpBtn = document.getElementById('help-btn');
+const divBlock = document.getElementById('mostrar_tabla');
 
 
-function closePopup() {
-	popupWrapper1.style.display = "none";
-	popupWrapper2.style.display = "none";
-	popupWrapper3.style.display = "none";
-	popupWrapper4.style.display = "none";
-	helpBtn.style.background = "white";
+function popupsDis() {
+		popupWrapper1.style.display = "block";
+		popupWrapper2.style.display = "block";
+		popupWrapper3.style.display = "block";
+		popupWrapper4.style.display = "block";
+		helpBtn.style.background = "#60B5EA";
+		divBlock.style.height = "880px";
+}
+
+function popupsClose() {
+		event.preventDefault();
+		popupWrapper1.style.display = "none";
+		popupWrapper2.style.display = "none";
+		popupWrapper3.style.display = "none";
+		popupWrapper4.style.display = "none";
+		helpBtn.style.background = "white";
+		divBlock.style.height = "";
 }
 
 helpBtn.addEventListener('click', () => {
-	popupWrapper1.style.display = "block";
-	popupWrapper2.style.display = "block";
-	popupWrapper3.style.display = "block";
-	popupWrapper4.style.display = "block";
-	helpBtn.style.background = "#60B5EA";
+	console.log(popupWrapper1.style.display);
+	if (popupWrapper1.style.display === "none") {
+		popupsDis();
+	} else {
+		popupsClose()
+	}
+	
 });
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // languages functions
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-const flagElement = document.getElementById('languagButton');
+const flagElementOption = document.getElementById('languageOptions');
 const textsToChange =document.querySelectorAll("[data-section]");
 
-
-const changeLanguage = async (languages) => {
-	const requestJson = await fetch("./languages/" + languages + ".json");
-	const textLang = await requestJson.json();
+const changeLanguage = (languages) => {
+	const requestJson = fetch("./languages/" + languages + ".json");
+	const textLang = requestJson.json();
 
 	for (const textToChange of textsToChange) {
 		const section = textToChange.dataset.section;
@@ -745,19 +754,40 @@ const changeLanguage = async (languages) => {
 	}
 }	
 
-flagElement.addEventListener("click", (e) => {
-	document.getElementById("selectLang").innerHTML = e.target.dataset.languages;
-	changeLanguage(e.target.dataset.languages);
+
+flagElementOption.addEventListener("click", (e) => {
+	document.getElementById("selectLang").innerHTML = e.target.parentElement.dataset.languages;
+	changeLanguage(e.target.parentElement.dataset.languages);
 	splitNumber();
 });
 
 
+// function to change the flags
+function selectLanguage(language) {
+	var languageSelector = document.getElementById('languageSelector');
+	var languageOptions = document.getElementById('languageOptions').getElementsByTagName('img');
 
-languageSelect.addEventListener('change', function(event) {
-    const selectedValue = event.target.value;
-	changeLanguage(selectedValue);
-	splitNumber();
+	for (var i = 0; i < languageOptions.length; i++) {
+		if (languageOptions[i].alt === language.toUpperCase()) {
+			languageSelector.getElementsByTagName('img')[0].src = languageOptions[i].src;
+		}
+	}
 
-});
+	toggleLanguageOptions();
+}
 
+function toggleLanguageOptions() {
+	var languageOptions = document.getElementById('languageOptions');
+	languageOptions.style.display = (languageOptions.style.display === 'none') ? 'block' : 'none';
+}
 
+// Close the language options if clicked outside
+window.onclick = function(event) {
+	var languageSelector = document.getElementById('languageSelector');
+	if (!event.target.matches('#languageSelector img')) {
+		var languageOptions = document.getElementById('languageOptions');
+		if (languageOptions.style.display === 'block') {
+			languageOptions.style.display = 'none';
+		}
+	}
+}

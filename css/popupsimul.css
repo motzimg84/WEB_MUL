@@ -21,7 +21,6 @@
     border-right: 30px solid transparent;
     border-bottom: 50px solid black;
     top: calc(0% - 50px);
-
     }
 
 .popup-arrow-up1 {
@@ -33,6 +32,7 @@
 }
 
 .popup {
+    font-family: comic sans-serif;
     position: relative;
     width: 30%; 
     background-color: #ffffff;
@@ -46,6 +46,7 @@
     }
     
 .popup-up {
+    font-family: comic sans-serif;
     position: relative;
     width: 30%; 
     background-color: #ffffff;
@@ -59,10 +60,31 @@
 
 .close-btn {
     position: absolute;
-    font-family: Comic Sans MS; 
-    font-size: 16px; 
     font-weight: bold;
+    font-size: 16px; 
     top: calc(10% );
     right: calc(10% );
     cursor: pointer;
+    }
+
+    .buttCloPopup {
+        display: none;
+        text-align: center;
+        height: 30px;
+        width: 30px;
+        float: right; 
+    
+        border-radius: 20px; 
+        transition: all 0.3s;
+        cursor: pointer; 
+        display: block;
+        z-index: 999; 
+    }
+    
+    .buttCloPopup:hover{
+        transform: scale(1.1);
+        font-size: 20px; 
+        text-decoration: underline;
+        background-color:  var(--button-over);
+        border: 4px solid black;
     }

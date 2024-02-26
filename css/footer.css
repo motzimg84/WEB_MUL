@@ -1,9 +1,6 @@
 .footerCont {
     position: relative;
     color: white;
-    font-family: Arial, Helvetica, sans-serif; 
-    font-size: 12px; 
-    font-weight: bold;
     width: 100%; 
     background-color: black;
     padding: 0px;
@@ -45,9 +42,6 @@
 }
 
 .textButFoot{
-    font-family: Arial, Helvetica, sans-serif; 
-    font-size: 12px; 
-    font-weight: bold;
     color: white;
     text-decoration: none;
     margin: -10px;

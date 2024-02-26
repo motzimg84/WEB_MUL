@@ -8,7 +8,10 @@
     
     "simultext":{
         "simul-titel": "Simulador de MUL",
-        "simul-num" : "Convertir el número: "
+        "simul-num" : "Convertir el número: ",
+        "simul-butL" : "Longitud",
+        "simul-butA" : "Area",
+        "simul-butV" : "Volumen"
     },
 
     "pupuptext": {
