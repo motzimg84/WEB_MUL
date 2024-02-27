@@ -23,21 +23,25 @@ window.onload = function() {
 	// Llamar a la función una vez al inicio para ejecutarla también al cargar la página
 	//Function to modify the Zoom from the page, to maintein the image visible
 	//window.onresize();
-	permitirPuntoComa(event);
-	changeColor("1");
-	popupsDis();
 
 	var idioma = navigator.language;
 	var dosPrimerasLetras = idioma[0] + idioma[1];
 	if (dosPrimerasLetras === "es" || dosPrimerasLetras === "en" || dosPrimerasLetras === "de") {
+		document.getElementById("selectLang").innerHTML = dosPrimerasLetras;
+		console.log(dosPrimerasLetras);
 		changeLanguage(dosPrimerasLetras);
 		selectLanguage(dosPrimerasLetras);
 	} else {
 		dosPrimerasLetras = "en";
+		document.getElementById("selectLang").innerHTML = dosPrimerasLetras;
+		console.log(dosPrimerasLetras)
 		changeLanguage(dosPrimerasLetras);
 		selectLanguage(dosPrimerasLetras);
-	}
+	}	
 	
+	permitirPuntoComa(event);
+	changeColor("1");
+	popupsDis();
 };
 
 
@@ -364,9 +368,10 @@ function splitNumber() {
 		j++;
 	}
 	
-	let lenguage = document.getElementById("selectLang").innerHTML;
+	let language = document.getElementById("selectLang").innerHTML;
+	console.log(language);
 	
-	if (lenguage === "es") { 
+	if (language === "es") { 
 		if (exponente1 > exponente2){
 			//Texto de explicaion de la accion
 			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] se multiplico " + inputMult + " veces por 10, lo que desplaza la coma a " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], como muestra la flecha de arriba.";
@@ -383,7 +388,7 @@ function splitNumber() {
 			document.getElementById("textoRes1").innerHTML = "";
 			document.getElementById("textoRes2").innerHTML = "";
 		}
-	} else if (lenguage === "en") { 
+	} else if (language === "en") { 
 		if (exponente1 > exponente2){
 			//Texto de explicaion de la accion
 			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] is multiplied " + inputMult + " times by 10, which moves the decimal point to " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], as shown in the above arrow.";
@@ -401,7 +406,7 @@ function splitNumber() {
 			document.getElementById("textoRes2").innerHTML = "";
 		}
 	
-	} else if (lenguage === "de") { 
+	} else if (language === "de") { 
 		if (exponente1 > exponente2){
 			//Texto de explicaion de la accion
 			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] wird " + inputMult + " mal mit 10 multipliziert, wodurch sich der Dezimalpunkt auf " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] verschiebt (siehe Pfeil oben).";
@@ -846,7 +851,8 @@ const changeLanguage = async (languages) => {
 
 
 flagElementOption.addEventListener("click", (e) => {
-	document.getElementById("selectLang").innerHTML = e.target.parentElement.dataset.languages;
+	document.getElementById("selectLang").innerHTML = languages;
+	console.log(languages);
 	changeLanguage(e.target.parentElement.dataset.languages);
 	splitNumber();
 	popupsDis();

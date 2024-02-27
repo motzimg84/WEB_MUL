@@ -18,7 +18,7 @@
         "desCaja1": "1. Write the number with the decimal point corresponding to the unit in MUL",
         "desCaja2": "2. Search for the desired end unit in MUL",
         "desCaja3": "3. Move the decimal point to the end position and fill the cells with 0 if necessary",
-        "desText1": "MUL is designed to facilitate the learning of unit conversion through mnemonic methods, optimizing neural resources for mathematical problem solving and reducing the effort required for unit conversion. <br>MUL prevents the person from performing mathematical calculations, but does not omit the conversion process; rather, it integrates it into each exercise, facilitating the memorization of conversion factors. By including these factors and displaying them for a longer period of time, the tool's memorability will reduce the possibility of making mistakes when converting International System (SI) units."
+        "desText1": "MUL is designed to facilitate your learning of unit conversion through mnemonic methods, optimizing your neural resources for mathematical problem solving and reducing the effort required for unit conversion. <br>MUL prevents you from performing mathematical calculations, but does not omit the conversion process; rather, it integrates it into each exercise, facilitating your memorization of conversion factors. By including these factors and displaying them for a longer period of time, the tool's memorability will reduce your possibility of making mistakes when converting International System (SI) units."
     },
 
    "exampText": {

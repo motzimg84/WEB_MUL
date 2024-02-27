@@ -18,7 +18,7 @@
         "desCaja1": "1. Escribir el numero haciendo que la coma coincida con la unidad correspondiente en MUL.",
         "desCaja2": "2. Buscar la unidad final deseada en MUL ",
         "desCaja3": "3. Desplazar la coma a la pocicion final y en caso de ser necesario rellenar las celdas basias con 0.",
-        "desText1": "MUL está diseñada para facilitar el aprendizaje en la conversión de unidades mediante métodos mnemotécnicos, optimizando los recursos neuronales destinados a la resolución de problemas matemáticos y reduciendo el esfuerzo requerido para la conversión de unidades. <br>MUL evita que la persona realice cálculos matemáticos, pero no omite el proceso de conversión, sino que lo integra en cada ejercicio, lo que facilita la memorización de los factores de conversión. Al contener estos factores y al ser visualizada durante períodos prolongados, la retentiva de la herramienta reducirá la posibilidad de cometer errores en la conversión de unidades del Sistema Internacional (SI)."
+        "desText1": "MUL está diseñada para facilitarte el aprendizaje en la conversión de unidades mediante métodos mnemotécnicos, optimizando tus recursos neuronales destinados a la resolución de problemas matemáticos y reduciendo el esfuerzo requerido para la conversión de unidades. <br>MUL evita que realices cálculos matemáticos, pero no omite el proceso de conversión, sino que lo integra en cada ejercicio, lo que facilita tu memorización de los factores de conversión. Al contener estos factores y al ser visualizada durante períodos prolongados, la retentiva de la herramienta reducirá tu posibilidad de cometer errores en la conversión de unidades del Sistema Internacional (SI)."
     },
 
     "exampText": {
