@@ -39,8 +39,8 @@
         </button>
         <div id="languageOptions">
             <button class="buttLangOpt" data-languages="es"><img src="./flags/es.png" alt="ES" class="imgLangOpt" onclick="selectLanguage('es')" ></button>
-            <button class="buttLangOpt" data-languages="en"><img src="./flags/gb.png" alt="EN" class="imgLangOpt" onclick="selectLanguage('en')" ></button>
-            <button class="buttLangOpt" data-languages="de"><img src="./flags/at.png" alt="DE" class="imgLangOpt" onclick="selectLanguage('de')" ></button>
+            <button class="buttLangOpt" data-languages="en"><img src="./flags/us.png" alt="EN" class="imgLangOpt" onclick="selectLanguage('en')" ></button>
+            <button class="buttLangOpt" data-languages="de"><img src="./flags/de.png" alt="DE" class="imgLangOpt" onclick="selectLanguage('de')" ></button>
         </div>
     </div>
 
@@ -49,17 +49,17 @@
 
     <div class="contLogo">
         <img src="img/Logo_MUL.png" class="imgLog"/>
-    </div>
+    </div>  
 
 
 
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                                                        Description Bock                                                                                
+                                                Description Block                                                                                
     ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <div class="contDescript">
         <div class="columna">
-            <img id="imageMUL" src="./img/MUL_V1.png" >
+            <img class="rightFlip" id="imageMUL" src="./img/MUL_V1.png" >
         </div>
         <div class="board" id = "descrip">
             <div style="text-align: center;">
@@ -108,9 +108,9 @@
                         <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
                     </button>
                     <div class="exTexCont" id="InfTex1">
-                        <p class="pDesText ">1. Se busca la unidad inicial en MUL, en este caso metros [m] y se escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.</p>
-                        <p class="pDesText ">2. Se busca la unidad final en MUL, la cual en este caso es Megametros [Mm] y se desplaza la coma a esta posición.</p>
-                        <p class="pDesText ">3. En caso de que se tengan celdas vacias entre la coma y el numero se llenan con ceros y antes de la coma tambien se coloca un cero.</p>
+                        <p class="pDesText " data-section="exampText" data-value="exampExpL1">1. Se busca la unidad inicial en MUL, en este caso metros [m] y se escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.</p>
+                        <p class="pDesText " data-section="exampText" data-value="exampExpL2">2. Se busca la unidad final en MUL, la cual en este caso es Megametros [Mm] y se desplaza la coma a esta posición.</p>
+                        <p class="pDesText " data-section="exampText" data-value="exampExpL3">3. En caso de que se tengan celdas vacias entre la coma y el numero se llenan con ceros y antes de la coma tambien se coloca un cero.</p>
                     </div>
 				</div>
 			</div>
@@ -139,9 +139,9 @@
                         <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
                     </button>
                     <div class="exTexCont" id="InfTex2">
-                        <p class="pDesText">1. Se busca la unidad inicial en MUL, en este caso hektar [ha] y se escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.</p>
-					    <p class="pDesText">2. Se busca la unidad final en MUL, la cual en este caso es centimeter cuadrad [cm^2] y se desplaza la coma a esta posición.</p>
-					    <p class="pDesText">3. Los ceros que se encuentran antes del primer numero se borran.</p>
+                         <p class="pDesText " data-section="exampText" data-value="exampExpA1">1. Se busca la unidad inicial en MUL, en este caso hektar [ha] y se escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.</p>
+					     <p class="pDesText " data-section="exampText" data-value="exampExpA2">2. Se busca la unidad final en MUL, la cual en este caso es centimeter cuadrad [cm^2] y se desplaza la coma a esta posición.</p>
+					     <p class="pDesText " data-section="exampText" data-value="exampExpA3">3. Los ceros que se encuentran antes del primer numero se borran.</p>
 				    </div>
 				</div>
 			</div>
@@ -170,9 +170,9 @@
                         <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
                     </button>
                     <div class="exTexCont" id="InfTex3">
-                        <p class="pDesText">1. Se busca la unidad inicial en MUL, en este caso kubikcentimeter [cm^3] y se escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.</p>
-                        <p class="pDesText">2. Se busca la unidad final en MUL, la cual en este caso es kubikkilometer [Km^3] y se desplaza la coma a esta posición.</p>
-                        <p class="pDesText">3. En caso de que se tengan celdas vacias entre la coma y el numero se llenan con ceros y antes de la coma tambien se coloca un cero.</p>
+                         <p class="pDesText " data-section="exampText" data-value="exampExpV1">1. Se busca la unidad inicial en MUL, en este caso kubikcentimeter [cm^3] y se escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.</p>
+                         <p class="pDesText " data-section="exampText" data-value="exampExpV2">2. Se busca la unidad final en MUL, la cual en este caso es kubikkilometer [Km^3].</p>
+                         <p class="pDesText " data-section="exampText" data-value="exampExpV3">3. Se desplaza la coma a [Km^3], antes de la coma se pone un 0 y los espacio hasta el numero se rellenan con 0.</p>
 				    </div>
                 </div>
 			</div>

@@ -28,6 +28,22 @@
     align-items: center;
 }
 
+.columna img {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: 2.0s ease-in-out all;
+    z-index: 800;
+}
+
+.columna img.rightFlip {
+    transform: translate(500px, -500px);
+}
+
+.columna img.visible {
+    opacity: 1;
+    transform: scale(1) ;
+}
+
 #imageMUL {
 
     height: 613px; 

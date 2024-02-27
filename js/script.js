@@ -882,3 +882,26 @@ window.onclick = function(event) {
 		}
 	}
 }
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Image animator
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+const image1 = document.getElementById('imageMUL');
+
+const chargeImag = (entries, observerImg) => {
+	
+	entries.forEach((element) => {
+		if (element.isIntersecting){
+			element.target.classList.add('visible');
+		}
+	});
+}
+
+const observerImg = new IntersectionObserver(chargeImag, {
+	root: null,
+	rootMargin: '0px 0px 100px 0px',
+	threschold: 1.0
+});
+
+observerImg.observe(image1);

@@ -24,10 +24,19 @@
     "exampText": {
         "exampTitel1": "¿Cómo convertir unidades lineales con MUL?",
         "exampDet1": "778.576 metros [m] a Megámetros [Mm].",
+        "exampExpL1": "1. Se busca la unidad inicial en MUL, en este caso metros [m] y se escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.",
+        "exampExpL2": "2. Se busca la unidad final en MUL, la cual en este caso es Megametros [Mm].",
+        "exampExpL3": "3. Se desplaza la coma hasta los [Mm], antes de la coma se pone un 0 y los espacio hasta el numero se rellenan con 0.",
         "exampTitel2": "¿Cómo se convierten unidades de área con MUL?",
         "exampDet2": "0.778576 hectáreas [ha] a centímetros cuadrados [cm^2].",
+        "exampExpA2": "1. Se busca la unidad inicial en MUL, en este caso hektar [ha] y se escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.",
+        "exampExpA3": "2. Se busca la unidad final en MUL, la cual en este caso es centimeter cuadrad [cm^2] y se desplaza la coma a esta posición.",
+        "exampExpA1": "3. Se desplaza la coma hasta los [cm^2], en este ejercicio los ceros que se encuentran antes del primer numero se borran y los espacios en blanco entre el numero y la coma se llena con 0.",
         "exampTitel3": "¿Cómo se convierten unidades de volumen con MUL?",
-        "exampDet3": "7785.76 centímetros cúbicos [cm^3] a kilómetros cúbicos [Km^3]."
+        "exampDet3": "7785.76 centímetros cúbicos [cm^3] a kilómetros cúbicos [Km^3].",
+        "exampExpV1": "1. Se busca la unidad inicial en MUL, en este caso kubikcentimeter [cm^3] ySe escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.",
+        "exampExpV2": "2. Se busca la unidad final en MUL, la cual en este caso es kubikkilometer [Km^3].",
+        "exampExpV3": "3. Se desplaza la coma a [Km^3], antes de la comaSe pone un 0 y los espacio hasta el numeroSe rellenan con 0."
     },
 
     "simultext":{

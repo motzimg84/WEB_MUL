@@ -24,10 +24,19 @@
    "exampText": {
         "exampTitel1": "Wie werden lineare Einheiten mit MUL umgewandelt?",
         "exampDet1": "778,576 Meter [m] in Megameter [Mm].",
+        "exampExpL1": "1. Die erste Einheit in MUL suchen, in diesem Fall Meter [m], und die Zahl so schreiben, dass das Komma mit der Position der Einheit in MUL übereinstimmt.",
+        "exampExpL2": "2. Die letzte Einheit in MUL suchen, in diesem Fall Megameter [Mm].",
+        "exampExpL3": "3. Das Komma nach [Mm] verschieben, eine 0 vor das Komma setzen und die Zwischenräume bis zur Zahl mit 0 auffüllen.",
         "exampTitel2": "Wie werden Flächeneinheiten mit MUL konvertiert?",
         "exampDet2": "0,778576 Hektar [ha] in Quadratzentimeter [cm^2].",
+        "exampExpA2": "1. Finde die erste Einheit in MUL, in diesem Fall Hektar [ha], und schreibe die Zahl so, dass das Komma mit der Position der Einheit in MUL übereinstimmt.",
+        "exampExpA3": "2. Finde die letzte Einheit in MUL, in diesem Fall Zentimeter zum Quadrat [cm^2], und setze den Dezimalpunkt an diese Stelle.",
+        "exampExpA1": "3. Verschiebe den Dezimalpunkt nach [cm^2], wobei die Nullen vor der ersten Zahl gelöscht und die Leerzeichen zwischen der Zahl und dem Dezimalpunkt mit 0 aufgefüllt werden.",
         "exampTitel3": "Wie werden Volumeneinheiten mit MUL konvertiert?",
-        "exampDet3": "7785,76 Kubikzentimeter [cm^3] in Kubikkilometer [km^3]."
+        "exampDet3": "7785,76 Kubikzentimeter [cm^3] in Kubikkilometer [km^3].",
+        "exampExpV1": "1. Finde die Anfangseinheit in MUL, in diesem Fall Kubikzentimeter [cm^3], und schreibe die Zahl so, dass das Komma mit der Position der Einheit in MUL übereinstimmt..",
+        "exampExpV2": "2. Bestimme die letzte Einheit in MUL, in diesem Fall Kubikkilometer [Km^3]..",
+        "exampExpV3": "3. Verschiebe das Komma nach [Km^3], setze eine 0 vor das Komma und fülle die Zwischenräume bis zur Zahl mit 0 auf.."
     },
 
     "simultext":{
