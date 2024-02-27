@@ -23,9 +23,9 @@
                 <div class="conteinterImag" id="conteinterImag">
                     <img src="img/MUL_Logo_bar.png" class="navbar-img" />
                 </div>
-                <button class="navbar-item" onclick="scrollToSection('descrip')" data-section="navbartext" data-value="navbar-butt2">Que es MUL?</button>
-                <button class="navbar-item" onclick="scrollToSection('example')" data-section="navbartext" data-value="navbar-butt3">Ejemplos</button>
-                <button class="navbar-item" onclick="scrollToSection('mostrar_tabla')" data-section="navbartext" data-value="navbar-butt1">Simulador</button>
+                <button class="navbar-item" onclick="scrollToSection('descrip')" data-section="navbartext" data-value="navbar-butt1">¿Que es MUL?</button>
+                <button class="navbar-item" onclick="scrollToSection('example')" data-section="navbartext" data-value="navbar-butt2">¿Como se usa MUL?</button>
+                <button class="navbar-item" onclick="scrollToSection('mostrar_tabla')" data-section="navbartext" data-value="navbar-butt3">Simulador de MUL</button>
                 <button class="navbar-item" data-section="navbartext" data-value="navbar-butt4">Historia</button>
             </div>
         </div>
@@ -34,13 +34,13 @@
 
     <div  id="languageSelector">
         <button style="cursor: pointer;" class="buttLangOpt">
-            <img src="./flags/es.svg" alt="ES" class="imgLangOpt" onclick="selectLanguage('es')">
+            <img src="./flags/es.png" alt="ES" class="imgLangOpt" onclick="selectLanguage('es')">
             <p style="display: none;" id="selectLang">es</p>
         </button>
         <div id="languageOptions">
-            <button class="buttLangOpt" data-languages="es"><img src="./flags/es.svg" alt="ES" class="imgLangOpt" onclick="selectLanguage('es')" ></button>
-            <button class="buttLangOpt" data-languages="en"><img src="./flags/gb.svg" alt="EN" class="imgLangOpt" onclick="selectLanguage('en')" ></button>
-            <button class="buttLangOpt" data-languages="de"><img src="./flags/at.svg" alt="DE" class="imgLangOpt" onclick="selectLanguage('de')" ></button>
+            <button class="buttLangOpt" data-languages="es"><img src="./flags/es.png" alt="ES" class="imgLangOpt" onclick="selectLanguage('es')" ></button>
+            <button class="buttLangOpt" data-languages="en"><img src="./flags/gb.png" alt="EN" class="imgLangOpt" onclick="selectLanguage('en')" ></button>
+            <button class="buttLangOpt" data-languages="de"><img src="./flags/at.png" alt="DE" class="imgLangOpt" onclick="selectLanguage('de')" ></button>
         </div>
     </div>
 
@@ -58,27 +58,25 @@
                                                         Description Bock                                                                                
     ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <div class="contDescript">
+        <div class="columna">
+            <img id="imageMUL" src="./img/MUL_V1.png" >
+        </div>
         <div class="board" id = "descrip">
             <div style="text-align: center;">
-                <h1>Que es MUL?</h1>
-                <p style="text-align: center;" class="ptexDesc">MUL es una herramienta que te permite converit las unidades basicas de medida</p>
-                <p style="text-align: center; padding-bottom: 20px;" class="ptexDesc">del sistema interanaciona de medidas (SI), con tan solo 3 pasos.</p>
+                <h1 data-section="navbartext" data-value="navbar-butt1">¿Que es MUL?</h1>
+                <p style="text-align: center;" class="ptexDesc" data-section="descripText" data-value="desTextIntro">MUL es una herramienta que te permite converit las unidades de medida <br> del sistema interanaciona de medidas (SI), con tan solo 3 pasos.</p>
             </div>
             <div class="row">
                 <div id="contDinamic">
                     <div id="anterior"><img src="./icon/left-arrow-256.png" class="directionImg"></div>
-                    <div class="caja ">1. Escribir el numero haciendo que la coma coincida con la unidad correspondiente en MUL.</div>
-                    <div class="caja ">2. Buscar la unidad final deseada en MUL </div>
-                    <div class="caja ">3. Desplazar la coma a la pocicion final y en caso de ser necesario rellenar las celdas basias con 0.</div>
+                    <div class="caja " data-section="descripText" data-value="desCaja1">1. Escribir el numero haciendo que la coma coincida con la unidad correspondiente en MUL.</div>
+                    <div class="caja " data-section="descripText" data-value="desCaja2">2. Buscar la unidad final deseada en MUL </div>
+                    <div class="caja " data-section="descripText" data-value="desCaja3">3. Desplazar la coma a la pocicion final y en caso de ser necesario rellenar las celdas basias con 0.</div>
                     <div id="siguiente"><img src="./icon/right-arrow-256.png" class="directionImg"></div>
                 </div>
             </div>
             <div style="text-align: center;">
-                <p style="padding-top: 20px;" class="ptexDesc">MUL está diseñada para facilitar el aprendizaje en la conversión de unidades mediante métodos mnemotécnicos, optimizando los recursos 
-                    neuronales destinados a la resolución de problemas matemáticos y reduciendo el esfuerzo requerido para la conversión de unidades.</p>
-                <p style="padding-top: 20px;" class="ptexDesc">MUL evita que la persona realice cálculos matemáticos, pero no omite el proceso de conversión, sino que lo integra en cada ejercicio, 
-                    lo que facilita la memorización de los factores de conversión. Al contener estos factores y al ser visualizada durante períodos prolongados, 
-                    la retentiva de la herramienta reducirá la posibilidad de cometer errores en la conversión de unidades del Sistema Internacional (SI).</p>
+                <p style="padding-top: 20px;" class="ptexDesc" data-section="descripText" data-value="desText1">MUL está diseñada para facilitar el aprendizaje en la conversión de unidades mediante métodos mnemotécnicos, optimizando los recursos neuronales destinados a la resolución de problemas matemáticos y reduciendo el esfuerzo requerido para la conversión de unidades. <br>MUL evita que la persona realice cálculos matemáticos, pero no omite el proceso de conversión, sino que lo integra en cada ejercicio, lo que facilita la memorización de los factores de conversión. Al contener estos factores y al ser visualizada durante períodos prolongados, la retentiva de la herramienta reducirá la posibilidad de cometer errores en la conversión de unidades del Sistema Internacional (SI).</p>
                 <p class="ptexDesc"></p>
             </div>
         </div>
@@ -94,14 +92,14 @@
 			<div style="position: relative;">
 				<!-- Título centrado -->
 				<div class="divDesTitel">
-					<span class="desTitel">Ejemplo de conversión de unidades lineales</span>
+					<span class="desTitel" data-section="exampText" data-value="exampTitel1">¿Cómo convertir unidades lineales con MUL?</span>
 				</div>
 				<!-- Contenido del párrafo -->
                 <div class="exBlockCon">
 					
                     <div class="row exDetCont">
                         <img src="icon/indicate-arrow.png" class="indicArrow">
-                        <p class="pDesText">778,576 metros [m] a Megametros [Mm].</p>
+                        <p class="pDesText" data-section="exampText" data-value="exampDet1">778,576 metros [m] a Megametros [Mm].</p>
                     </div>
 					<button class="buttDetEx"  id="InfoBut1">
                         <img src="icon/Information-indicator-black.png" class="imgButtDetEx">
@@ -117,7 +115,7 @@
 				</div>
 			</div>
 			<div style="border: 2px solid transparent; text-align: center;">
-				<video class="video-container" id="MUL_Laenge" controls>
+				<video class="video-container" id="MUL_Laenge" controls muted>
 					<source src="video/20240223_MUL_Laengen.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
@@ -125,14 +123,14 @@
 			<div >
 				<!-- Título centrado -->
 				<div style="width: 100%; background-color: #FFFF00;" class="divDesTitel">
-					<span class="desTitel" >Ejemplo de conversión de unidades de area</span>
+					<span class="desTitel" data-section="exampText" data-value="exampTitel2">¿como se convierten unidades de area con MUL?</span>
 				</div>
 				<!-- Contenido del párrafo -->
                 <div class="exBlockCon">
 					
                     <div class="row exDetCont">
                         <img src="icon/indicate-arrow.png" class="indicArrow">
-                        <p class="pDesText">0,778576 hektar [ha] a centimeter cuadrados [cm^2].</p>
+                        <p class="pDesText" data-section="exampText" data-value="exampDet2">0,778576 hektar [ha] a centimeter cuadrados [cm^2].</p>
                     </div>
 					<button class="buttDetEx"  id="InfoBut2">
                         <img src="icon/Information-indicator-black.png" class="imgButtDetEx">
@@ -148,7 +146,7 @@
 				</div>
 			</div>
 			<div style="border: 2px solid transparent; text-align: center;">
-				<video class="video-container" id="MUL_Flechen" controls>
+				<video class="video-container" id="MUL_Flechen" controls muted>
 					<source src="video/20240223_MUL_Flechen.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
@@ -156,14 +154,14 @@
 			<div >
 				<!-- Título centrado -->
 				<div style="width: 100%; background-color: #70AD47;" class="divDesTitel">
-					<span class="desTitel">Ejemplo de conversión de unidades de volumen</span>
+					<span class="desTitel" data-section="exampText" data-value="exampTitel3">¿como se convierten unidades de volumen con MUL?</span>
 				</div>
 				<!-- Contenido del párrafo -->
 				<div class="exBlockCon">
 					
                     <div class="row exDetCont">
                         <img src="icon/indicate-arrow.png" class="indicArrow">
-                        <p class="pDesText">7785,76 centimetros cubicos [cm^3] a kilometros cubicos [Km^3].</p>
+                        <p class="pDesText" data-section="exampText" data-value="exampDet3">7785,76 centimetros cubicos [cm^3] a kilometros cubicos [Km^3].</p>
                     </div>
 					<button class="buttDetEx"  id="InfoBut3">
                         <img src="icon/Information-indicator-black.png" class="imgButtDetEx">
@@ -179,7 +177,7 @@
                 </div>
 			</div>
 			<div style="border: 2px solid transparent; text-align: center;">
-				<video class="video-container" id="MUL_Volumen" controls>
+				<video class="video-container" id="MUL_Volumen" controls muted>
 					<source src="video/20240223_MUL_Volumen.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
@@ -193,7 +191,7 @@
 <div class="containerMUL" id="mostrar_tabla">
     <div style="margin-top: 10px;"></div>
     <div style="text-align: center;">
-        <h1 data-section="simultext" data-value="simul-titel" >Simulador de MUL?</h1>
+        <h1 data-section="navbartext" data-value="navbar-butt3">Simulador de MUL?</h1>
         <button class="help-btn" id="help-btn">?</button>
     </div>
     <div>
@@ -382,7 +380,7 @@
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                                     Footer Bock                                                                                
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-
+<div style="width: 100%; background-color: black;">
     <footer class="footerCont" >
         <div class="container">
             <div style="max-width: 1200px;" class="row">
@@ -407,7 +405,7 @@
             
         </div>
     </footer>
-
+</div>
     <script src="js/script.js"></script>
 </body>
 </html>

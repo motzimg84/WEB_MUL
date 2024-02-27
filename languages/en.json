@@ -1,17 +1,9 @@
 {
     "navbartext": {
-        "navbar-butt1": "Simulator",
-        "navbar-butt2": "What is MUL",
-        "navbar-butt3": "Example",
+        "navbar-butt1": "What is MUL? ",
+        "navbar-butt2": "How to use MUL? ",
+        "navbar-butt3": "MUL Simulator",
         "navbar-butt4": "History"
-    },
-
-    "simultext":{
-        "simul-titel": "MUL Simulator",
-        "simul-num" : "Convert the number: ",
-        "simul-butL" : "Length",
-        "simul-butA" : "Area",
-        "simul-butV" : "Volume"
     },
 
     "pupuptext": {
@@ -19,5 +11,30 @@
         "pupup2": "2. Selects the initial unit.",
         "pupup3": "You can change the SI conversion unit between length, area, or volume.",
         "pupup4": "3. Select the final unit."
+    },
+
+    "descripText": {
+        "desTextIntro": "MUL is a tool that allows you to convert units of the <br> International System of Units (SI) in only 3 steps.",
+        "desCaja1": "1. Write the number with the decimal point corresponding to the unit in MUL",
+        "desCaja2": "2. Search for the desired end unit in MUL",
+        "desCaja3": "3. Move the decimal point to the end position and fill the cells with 0 if necessary",
+        "desText1": "MUL is designed to facilitate the learning of unit conversion through mnemonic methods, optimizing neural resources for mathematical problem solving and reducing the effort required for unit conversion. <br>MUL prevents the person from performing mathematical calculations, but does not omit the conversion process; rather, it integrates it into each exercise, facilitating the memorization of conversion factors. By including these factors and displaying them for a longer period of time, the tool's memorability will reduce the possibility of making mistakes when converting International System (SI) units."
+    },
+
+   "exampText": {
+        "exampTitel1": "How to convert linear units with MUL?",
+        "exampDet1": "778.576 meters [m] to Megameters [Mm].",
+        "exampleTitle2": "How to convert area units with MUL?",
+        "exampDet2": "0.778576 hectare [ha] to square centimeter [cm^2]",
+        "exampTitle3": "How to convert volume units with MUL?",
+        "examplDet3": "7785.76 cubic centimeters [cm^3] to cubic kilometers [km^3]," 
+    },
+
+    "simultext":{
+        "simul-num" : "Convert the number: ",
+        "simul-butL" : "Lengths",
+        "simul-butA" : "Areas",
+        "simul-butV" : "Volumes"
     }
+ 
 }   

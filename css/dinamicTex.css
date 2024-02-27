@@ -1,11 +1,37 @@
 .contDescript {
+    display: flex; /* Usamos flexbox para crear la división en columnas */
     width: 100%;
     max-width: 1200px; 
     min-width: 600px;
     margin: 20px auto;
     padding: 10 px;
+    background-color: #fff;
     border: 2px solid transparent; 
     padding: 0px;
+}
+
+.board {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.columna {
+    display: flex; /* Usamos flexbox para crear la división en columnas */
+    background-color: gray;
+    border-radius: 10px;
+    padding: 10px; /* Añadimos un poco de espacio alrededor del contenido */
+    box-sizing: border-box; /* Incluimos el padding en el cálculo del ancho */
+    justify-content: center;
+    align-items: center;
+}
+
+#imageMUL {
+
+    height: 613px; 
+    width: 115px;
 }
 
 #contDinamic {

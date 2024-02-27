@@ -26,6 +26,18 @@ window.onload = function() {
 	permitirPuntoComa(event);
 	changeColor("1");
 	popupsDis();
+
+	var idioma = navigator.language;
+	var dosPrimerasLetras = idioma[0] + idioma[1];
+	if (dosPrimerasLetras === "es" || dosPrimerasLetras === "en" || dosPrimerasLetras === "de") {
+		changeLanguage(dosPrimerasLetras);
+		selectLanguage(dosPrimerasLetras);
+	} else {
+		dosPrimerasLetras = "en";
+		changeLanguage(dosPrimerasLetras);
+		selectLanguage(dosPrimerasLetras);
+	}
+	
 };
 
 
@@ -363,7 +375,7 @@ function splitNumber() {
 			document.getElementById("textoRes2").innerHTML = textoRes2;
 		}else if (exponente1 < exponente2){		
 			//Texto de explicaion de la accion
-			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] se divide " + absInputMult + " veces por 10, lo que desplaza la coma a " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], como muestra la flecha de arriba.";
+			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] se divide " + absInputMult + " veces entre  10, lo que desplaza la coma a " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], como muestra la flecha de arriba.";
 			document.getElementById("textoRes1").innerHTML = textoRes1;
 			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] / 10^" + absInputMult + " = " + result + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
 			document.getElementById("textoRes2").innerHTML = textoRes2;
@@ -381,6 +393,24 @@ function splitNumber() {
 		}else if (exponente1 < exponente2){		
 			//Texto de explicaion de la accion
 			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] is divided " + absInputMult + " times by 10, which moves the decimal point to " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], as shown in the above arrow.";
+			document.getElementById("textoRes1").innerHTML = textoRes1;
+			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] / 10^" + absInputMult + " = " + result + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
+			document.getElementById("textoRes2").innerHTML = textoRes2;
+		} else {
+			document.getElementById("textoRes1").innerHTML = "";
+			document.getElementById("textoRes2").innerHTML = "";
+		}
+	
+	} else if (lenguage === "de") { 
+		if (exponente1 > exponente2){
+			//Texto de explicaion de la accion
+			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] wird " + inputMult + " mal mit 10 multipliziert, wodurch sich der Dezimalpunkt auf " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] verschiebt (siehe Pfeil oben).";
+			document.getElementById("textoRes1").innerHTML = textoRes1;
+			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] * 10^" + inputMult + " = " + result + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
+			document.getElementById("textoRes2").innerHTML = textoRes2;
+		}else if (exponente1 < exponente2){		
+			//Texto de explicaion de la accion
+			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] wird " + absInputMult + " mal durch 10, dividiert, wodurch sich der Dezimalpunkt auf " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] verschiebt (siehe Pfeil oben).";
 			document.getElementById("textoRes1").innerHTML = textoRes1;
 			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] / 10^" + absInputMult + " = " + result + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
 			document.getElementById("textoRes2").innerHTML = textoRes2;
@@ -517,7 +547,6 @@ function changeColor(cellNumber) {
 
 cell1.addEventListener('mouseenter', function() {
 	let indice = document.getElementById("indice").innerHTML;
-	console.log(indice);
 	if (indice !== "1"){
 		cell1.style.backgroundColor = "gray";
 		cell1.style.textDecoration = "underline";
@@ -528,7 +557,6 @@ cell1.addEventListener('mouseenter', function() {
 
 cell2.addEventListener('mouseenter', function() {
 	let indice = document.getElementById("indice").innerHTML;
-	console.log(indice);
 	if (indice !== "2"){
 		cell2.style.backgroundColor = "gray";
 		cell2.style.textDecoration = "underline";
@@ -539,7 +567,6 @@ cell2.addEventListener('mouseenter', function() {
 
 cell3.addEventListener('mouseenter', function() {
 	let indice = document.getElementById("indice").innerHTML;
-	console.log(indice);
 	if (indice !== "3"){
 		cell3.style.backgroundColor = "gray";
 		cell3.style.textDecoration = "underline";
@@ -550,7 +577,6 @@ cell3.addEventListener('mouseenter', function() {
 
 cell1.addEventListener('mouseleave', function() {
 	let indice = document.getElementById("indice").innerHTML;
-	console.log(indice);
 	if (indice !== "1"){
 		cell1.style.backgroundColor = "darkgray";
 		cell1.style.textDecoration = "none";
@@ -561,7 +587,6 @@ cell1.addEventListener('mouseleave', function() {
 
 cell2.addEventListener('mouseleave', function() {
 	let indice = document.getElementById("indice").innerHTML;
-	console.log(indice);
 	if (indice !== "2"){
 		cell2.style.backgroundColor = "darkgray";
 		cell2.style.textDecoration = "none";
@@ -572,7 +597,6 @@ cell2.addEventListener('mouseleave', function() {
 
 cell3.addEventListener('mouseleave', function() {
 	let indice = document.getElementById("indice").innerHTML;
-	console.log(indice);
 	if (indice !== "3"){
 		cell3.style.backgroundColor = "darkgray";
 		cell3.style.textDecoration = "none";
@@ -825,6 +849,7 @@ flagElementOption.addEventListener("click", (e) => {
 	document.getElementById("selectLang").innerHTML = e.target.parentElement.dataset.languages;
 	changeLanguage(e.target.parentElement.dataset.languages);
 	splitNumber();
+	popupsDis();
 });
 
 
