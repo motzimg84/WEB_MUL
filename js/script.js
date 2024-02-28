@@ -233,6 +233,8 @@ function validarNumero() {
 
 	if (numero.charAt(0) === "0" && numero.charAt(1) === "0") {
 		numero="0";
+	} else if (numero.length >= 2 && numero.charAt(0) === "0" && numero.charAt(1) != ",") {
+		numero = numero.slice(1);
 	}
 	// Actualizar el valor del input con el número validado
 	inputNumero.value = numero;
