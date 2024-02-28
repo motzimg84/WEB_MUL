@@ -7,17 +7,18 @@
     },
 
     "pupuptext": {
-        "pupup1": "1. Geben Sie hier die Zahl ein.",
-        "pupup2": "2. Wählen Sie die erste Einheit.", 
-        "pupup3": "Sie können die SI-Einheit für die Umrechnung zwischen Länge, Fläche oder Volumen ändern.",
-        "pupup4": "3. Wählen Sie die endgültige Einheit."
+        "pupup1": "1. Gib hier die Zahl ein.",
+        "pupup2": "2. Wähle die erste Einheit aus.", 
+        "pupup3": "Du kannst die SI-Einheit für die Umrechnung zwischen Länge, Fläche oder Volumen ändern.",
+        "pupup4": "3. Wähle die endgültige Einheit."
     },
+    
 
     "descripText": {
-        "desTextIntro": "MUL ist ein Werkzeug, mit dem Sie die Einheiten des Internationalen <br> Einheitensystems (SI) in nur 3 Schritten umwandeln können.",
-        "desCaja1": "1. Schreiben Sie die Zahl, bei der das Komma mit der entsprechenden Einheit in MUL übereinstimmt",
+        "desTextIntro": "MUL ist ein Werkzeug, mit dem du die Einheiten des Internationalen <br> Einheitensystems (SI) in nur 3 Schritten umwandeln kannst.",
+        "desCaja1": "1. Schreibe die Zahl, bei der das Komma mit der entsprechenden Einheit in MUL übereinstimmt",
         "desCaja2": "2. Finde die gewünschte Endeinheit in MUL", 
-        "desCaja3": "3. verschiebe das Komma an die Endposition und fülle die Zellen ggf. mit 0 auf",
+        "desCaja3": "3. Verschiebe das Komma an die Endposition und fülle die Zellen ggf. mit 0 auf",
         "desText1": "MUL wurde entwickelt, um dir das Erlernen der Einheitenumrechnung durch mnemotechnische Methoden zu erleichtern, deine neuronalen Ressourcen für das Lösen mathematischer Probleme zu optimieren und den Aufwand für die Einheitenumrechnung zu reduzieren. <br>MUL erspart dir das mathematische Rechnen, lässt aber den Umrechnungsvorgang nicht aus, sondern integriert ihn in jede Übung, wodurch das Einprägen der Umrechnungsfaktoren erleichtert wird. Durch die Einbeziehung dieser Faktoren und ihre Anzeige über einen längeren Zeitraum verringert die Einprägsamkeit des Tools die Möglichkeit, Fehler bei der Umrechnung der Einheiten des Internationalen Einheitensystems (SI) zu machen."
     },
 

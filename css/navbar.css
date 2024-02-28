@@ -11,6 +11,9 @@
 }
 
 .container {
+    position: relative;
+    display: flex; /* Usamos flexbox para crear la división en columnas */
+    flex-direction: row;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -19,8 +22,7 @@
 
 .conteinterImag{
     float: left;
-    height: auto;
-    border: 4px solid transparent;
+    height: 100%;
 }
 
 #contMenu{
@@ -42,6 +44,19 @@
     top: 20px;
     right: 75px;
     z-index: 1000;
+}
+
+.navbarBut {
+
+    flex: 1;
+
+}
+
+.navbar-items {
+    width: 1200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-item {
@@ -70,20 +85,23 @@
 
 .navbar-img {
     position: relative;
-    display: block;
-    object-fit: cover; 
-    float: left;
+    display: block; 
     margin: 5px;
     margin-right: 20px;
     width: 120px;
     height: 50px;
-    z-index: 900; /* Asigna un z-index alto para que la imagen esté siempre al frente */ 
+    z-index: 900; /* Asigna un z-index alto para que la imagen esté siempre al frente */
 }
 
-.navbar-items {
-    width: 89%;
-}
+@media screen and (max-width: 1270px) {
+    .navbar-items {
+        width: 900px;
+    }
 
+    .navbar-item {
+        width: 250px;
+    }
+}
 
 @media screen and (max-width: 800px) {
     .navbar {
@@ -94,12 +112,29 @@
         padding: 10px 0;
     }
 
+    .container{
+        margin-left: 50px;
+    }
+
+    .conteinterImag{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbarBut {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .navbar-items {
+        width: 80%;
         flex-direction: column;
         align-items: center;
         top: 0;
         left: 0;
-        width: 100%;
         padding: 10px 0;
         display: flex;
     }
@@ -108,12 +143,11 @@
         display: flex;
     }
     .navbar-item {
+        width: 250px;
         margin: 5px;
     }
 
     .navbar-img {
-        margin: 5px;
-        margin-right: 20px;
         width: 120px;
         height: 50px; 
     }

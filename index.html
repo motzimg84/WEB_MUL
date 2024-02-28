@@ -23,10 +23,15 @@
                 <div class="conteinterImag" id="conteinterImag">
                     <img src="img/MUL_Logo_bar.png" class="navbar-img" />
                 </div>
-                <button class="navbar-item" onclick="scrollToSection('descrip')" data-section="navbartext" data-value="navbar-butt1">¿Que es MUL?</button>
-                <button class="navbar-item" onclick="scrollToSection('example')" data-section="navbartext" data-value="navbar-butt2">¿Como se usa MUL?</button>
-                <button class="navbar-item" onclick="scrollToSection('mostrar_tabla')" data-section="navbartext" data-value="navbar-butt3">Simulador de MUL</button>
-                <button class="navbar-item" data-section="navbartext" data-value="navbar-butt4">Historia</button>
+                <div class="navbarBut">
+                    <button class="navbar-item" onclick="scrollToSection('descrip')" data-section="navbartext" data-value="navbar-butt1">¿Que es MUL?</button>
+                
+                    <button class="navbar-item" onclick="scrollToSection('example')" data-section="navbartext" data-value="navbar-butt2">¿Como se usa MUL?</button>
+                
+                    <button class="navbar-item" onclick="scrollToSection('mostrar_tabla')" data-section="navbartext" data-value="navbar-butt3">Simulador de MUL</button>
+                
+                    <button class="navbar-item" data-section="navbartext" data-value="navbar-butt4">Historia</button>
+                </div>
             </div>
         </div>
     </div>
@@ -51,15 +56,14 @@
         <img src="img/Logo_MUL.png" class="imgLog"/>
     </div>  
 
-
-
-
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                                 Description Block                                                                                
     ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <div class="contDescript">
         <div class="columna">
-            <img class="rightFlip" id="imageMUL" src="./img/MUL_V1.png" >
+            <img style="display: none;" class="rightFlip obsImgMUL" data-languages="de" src="./img/MUL_V1_de.png">
+            <img style="display: none;" class="rightFlip obsImgMUL" data-languages="en" src="./img/MUL_V1_en.png">
+            <img style="display: none;" class="rightFlip obsImgMUL" data-languages="es" src="./img/MUL_V1_es.png">
         </div>
         <div class="board" id = "descrip">
             <div style="text-align: center;">
@@ -195,7 +199,11 @@
         <button class="help-btn" id="help-btn">?</button>
     </div>
     <div>
-        <img src="img/MUL_V3.png" class="imgMUL" />
+        <div class="contSimImag">
+            <img style="display: none;" data-languages="de" src="img/MUL_V3_de.png" class="imgMUL obsImgSimMUL" />
+            <img style="display: none;" data-languages="en" src="img/MUL_V3_en.png" class="imgMUL obsImgSimMUL" />
+            <img style="display: none;" data-languages="es" src="img/MUL_V3_es.png" class="imgMUL obsImgSimMUL" />
+        </div>
         <div class="containerGrid">
             <div class="left-column">
                 <!-- Contenido de la columna izquierda -->
@@ -304,7 +312,7 @@
             <div class="contForm">
                 <p class="textForm manTexPos" data-section="simultext" data-value="simul-num">Convertir el número: </p>
 
-                <input class="textForm imputValue" type="text" id="input" value="0,5" onkeydown="return event.key !== 'Enter';" placeholder="Ingrese un numero" oninput="permitirPuntoComa(event)" />
+                <input class="textForm imputValue" type="text" id="input"  onkeydown="return event.key !== 'Enter';" placeholder="Ingrese un numero" oninput="permitirPuntoComa(event)" />
 
 
                 <p class="textForm manTexPos"> de </p>	
@@ -381,9 +389,9 @@
                                                     Footer Bock                                                                                
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <div style=" min-width: 600px; width: 100%; background-color: black;">
-    <footer class="footerCont" >
+    <footer class="footerCont">
         <div class="container">
-            <div style="max-width: 1200px;" class="row">
+            <div class="rowFoot">
                 <a href="#" class="contenBotton">
                     <img src="icon/Confused.png" class="imgFooter">
                     <h3 class="textButFoot"><strong>Preguntas frecuentes</strong></h3>
@@ -401,9 +409,13 @@
                     <h3 class="textButFoot"><strong>Politicas de confidencialidad</strong></h3>
                 </a>
             </div>
-            <p style="text-align: center;"><strong> &copy; Maßeinheitenumwandlung und Lineal</strong> <br> by Ing. Mauricio Mora MSc.</p>
+            <div style="border-collapse: collapse; margin-top: 500px; width: 1200px; border: 2px solid blue;">
+                <p style="text-align: center;"><strong> &copy; Maßeinheitenumwandlung und Lineal</strong> <br> by Ing. Mauricio Mora MSc.</p>
+            </div>
+            
         </div>
     </footer>
+    
 </div>
     <script src="js/script.js"></script>
 </body>

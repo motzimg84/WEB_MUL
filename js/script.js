@@ -28,18 +28,14 @@ window.onload = function() {
 	var dosPrimerasLetras = idioma[0] + idioma[1];
 	if (dosPrimerasLetras === "es" || dosPrimerasLetras === "en" || dosPrimerasLetras === "de") {
 		document.getElementById("selectLang").innerHTML = dosPrimerasLetras;
-		console.log(dosPrimerasLetras);
-		changeLanguage(dosPrimerasLetras);
-		selectLanguage(dosPrimerasLetras);
 	} else {
 		dosPrimerasLetras = "en";
 		document.getElementById("selectLang").innerHTML = dosPrimerasLetras;
-		console.log(dosPrimerasLetras)
-		changeLanguage(dosPrimerasLetras);
-		selectLanguage(dosPrimerasLetras);
 	}	
-	
-	permitirPuntoComa(event);
+	changeLanguage(dosPrimerasLetras);
+	selectLanguage(dosPrimerasLetras);
+	changeLangImage(dosPrimerasLetras);
+	splitNumber();
 	changeColor("1");
 	popupsDis();
 };
@@ -225,7 +221,6 @@ function permitirPuntoComa(event) {
 function validarNumero() {
 	var inputNumero = document.getElementById("input");
 	var numero = inputNumero.value;
-
 	// Eliminar todos los caracteres excepto números y la primera coma
 	numero = numero.replace(/[^\d,]/g, '');
 	
@@ -235,9 +230,13 @@ function validarNumero() {
 		numero = partes[0] + ',' + partes[1];
 	}
 
+
+	if (numero.charAt(0) === "0" && numero.charAt(1) === "0") {
+		numero="0";
+	}
 	// Actualizar el valor del input con el número validado
 	inputNumero.value = numero;
-	
+
 	splitNumber();
 }
 
@@ -248,18 +247,20 @@ function clearSyst(){
 		document.getElementById("C" + k).innerHTML = "";
 		document.getElementById("V" + k).innerHTML = "";
 	}
+		
+		flechaUp.style.display = "none";
+		colaF.style.display = "none";
+		colaFL.style.display = "none";
 }
 
 
 function splitNumber() {
 	let input = document.getElementById("input").value;
-	if (input === '') {
+	const numeroFloat = parseFloat (input.replace(',', '.'));
+	
+	if (input === '' || numeroFloat === 0 ) {
 		// La celda está vacía, terminamos la función sin hacer nada más
-		clearSyst()
-		cola.style.backgroundColor = "transparent";
-		colaUp.style.backgroundColor = "transparent";
-		colaFle.style.backgroundColor = "transparent";
-		flechaUp.style.borderBottomColor = "transparent";
+		clearSyst();
 		document.getElementById("textoRes1").innerHTML = "";
 		document.getElementById("textoRes2").innerHTML = "";
 		return;
@@ -369,7 +370,6 @@ function splitNumber() {
 	}
 	
 	let language = document.getElementById("selectLang").innerHTML;
-	console.log(language);
 	
 	if (language === "es") { 
 		if (exponente1 > exponente2){
@@ -428,7 +428,6 @@ function splitNumber() {
 		document.getElementById("textoRes2").innerHTML = "";
 	}
 
-
 	arrowDarw ();
 }
 
@@ -436,11 +435,13 @@ function splitNumber() {
 // Funktion to draw the Arrow
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 function arrowDarw () {
-
+	var numero = document.getElementById("input").value
+	
 	var exponente1 = parseFloat(unidadSelect.selectedOptions[0].getAttribute("data-exponent"));  
 	var exponente2 = parseFloat(escalaSelect.selectedOptions[0].getAttribute("data-exponent"));
 
 	let indiceBot = document.getElementById("indice").innerHTML;
+	
 
 	// Obtener la posición del elemento con respecto al viewport
 	var posCenter = elementoCenter.getBoundingClientRect();
@@ -467,7 +468,7 @@ function arrowDarw () {
 	unidad.style.setProperty("--colorBotSelect", color);
 	escala.style.setProperty("--colorBotSelect", color);
 
-	if (input && exponente1 != exponente2) {
+	if (input && exponente1 != exponente2 && numero != "") {
 		
 		flechaUp.style.display = "";
 		colaF.style.display = "";
@@ -823,7 +824,6 @@ function popupsClose() {
 }
 
 helpBtn.addEventListener('click', () => {
-	console.log(popupWrapper1.style.display);
 	if (popupWrapper1.style.display === "none") {
 		popupsDis();
 	} else {
@@ -835,6 +835,7 @@ helpBtn.addEventListener('click', () => {
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // languages functions
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Funktion to load the .json
 const flagElementOption = document.getElementById('languageOptions');
 const textsToChange =document.querySelectorAll("[data-section]");
 
@@ -849,13 +850,19 @@ const changeLanguage = async (languages) => {
 	}
 }	
 
-
+//Funktion to listen the flag button.
 flagElementOption.addEventListener("click", (e) => {
-	document.getElementById("selectLang").innerHTML = languages;
-	console.log(languages);
-	changeLanguage(e.target.parentElement.dataset.languages);
-	splitNumber();
-	popupsDis();
+	const language = e.target.parentElement.dataset.languages;
+	imgMUL.forEach((image) => {
+		if (image.dataset.languages === language){
+			document.getElementById("selectLang").innerHTML = language
+			changeLanguage(language);
+			changeLangImage(language);
+			splitNumber();
+			popupsDis();
+		}
+    });
+
 });
 
 
@@ -893,21 +900,40 @@ window.onclick = function(event) {
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Image animator
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-const image1 = document.getElementById('imageMUL');
+const imgMUL = document.querySelectorAll('.obsImgMUL');
+const imgSimMUL = document.querySelectorAll('.obsImgSimMUL');
 
 const chargeImag = (entries, observerImg) => {
-	
-	entries.forEach((element) => {
-		if (element.isIntersecting){
-			element.target.classList.add('visible');
-		}
-	});
+    entries.forEach((element) => {
+        if (element.isIntersecting) {
+            element.target.classList.add('visible');
+        }
+    });
 }
 
 const observerImg = new IntersectionObserver(chargeImag, {
-	root: null,
-	rootMargin: '0px 0px 100px 0px',
-	threschold: 1.0
+    root: null,
+    rootMargin: '500px 0px 500px 0px',
+    threshold: 1.0
 });
 
-observerImg.observe(image1);
+imgMUL.forEach((image) => {
+    observerImg.observe(image);
+});
+
+function changeLangImage(language) {
+	// Ocultar todas las imágenes
+    imgMUL.forEach((image) => {
+        image.style.display = 'none';
+		if (image.dataset.languages === language){
+			image.style.display = 'block';
+		}
+    });
+
+	imgSimMUL.forEach((image) => {
+        image.style.display = 'none';
+		if (image.dataset.languages === language){
+			image.style.display = 'block';
+		}
+    });
+}
