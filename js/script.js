@@ -713,31 +713,30 @@ function handleVisibility() {
     var video2 = document.getElementById('MUL_Flechen');
     var video3 = document.getElementById('MUL_Volumen');
 
-    if (!video1Visible && isElementInViewport(video1)) {
-        video1.play();
-        video1Visible = true;
-    } else if (video1Visible && !isElementInViewport(video1)) {
+    if (video1Visible && !isElementInViewport(video1)) {
         video1.pause();
         video1Visible = false;
+    } else if (!video1Visible && isElementInViewport(video1)) {
+        video1.play();
+        video1Visible = true;
     }
 
-    if (!video2Visible && isElementInViewport(video2)) {
-        video2.play();
-        video2Visible = true;
-    } else if (video2Visible && !isElementInViewport(video2)) {
+    if (video2Visible && !isElementInViewport(video2)) {
         video2.pause();
         video2Visible = false;
+    } else if (!video2Visible && isElementInViewport(video2)) {
+        video2.play();
+        video2Visible = true;
     }
 
-    if (!video3Visible && isElementInViewport(video3)) {
-        video3.play();
-        video3Visible = true;
-    } else if (video3Visible && !isElementInViewport(video3)) {
+    if (video3Visible && !isElementInViewport(video3)) {
         video3.pause();
         video3Visible = false;
+    } else if (!video3Visible && isElementInViewport(video3)) {
+        video3.play();
+        video3Visible = true;
     }
 }
-
 
 // Manejar eventos de desplazamiento y redimensionamiento de ventana
 window.addEventListener('scroll', handleVisibility);
