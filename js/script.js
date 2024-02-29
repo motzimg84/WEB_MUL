@@ -704,42 +704,40 @@ function createOptions(indice) {
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Función para verificar si un elemento está en la vista
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-function isElementInViewport(el) {
-	var rect = el.getBoundingClientRect();
-	return (
-		rect.top >= 0 &&
-		rect.left >= 0 &&
-		rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-		rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-	);
-}
+var video1Visible = false;
+var video2Visible = false;
+var video3Visible = false;
 
-// Función para manejar el evento scroll y verificar si el video está en la vista
 function handleVisibility() {
-	var video1 = document.getElementById('MUL_Laenge');
+    var video1 = document.getElementById('MUL_Laenge');
+    var video2 = document.getElementById('MUL_Flechen');
+    var video3 = document.getElementById('MUL_Volumen');
 
-	if (isElementInViewport(video1)) {
-		video1.play();
-	} else {
-		video1.pause();
-	}
-	
-	var video2 = document.getElementById('MUL_Flechen');
+    if (!video1Visible && isElementInViewport(video1)) {
+        video1.play();
+        video1Visible = true;
+    } else if (video1Visible && !isElementInViewport(video1)) {
+        video1.pause();
+        video1Visible = false;
+    }
 
-	if (isElementInViewport(video2)) {
-		video2.play();
-	} else {
-		video2.pause();
-	}
+    if (!video2Visible && isElementInViewport(video2)) {
+        video2.play();
+        video2Visible = true;
+    } else if (video2Visible && !isElementInViewport(video2)) {
+        video2.pause();
+        video2Visible = false;
+    }
 
-	var video3 = document.getElementById('MUL_Volumen');
-
-	if (isElementInViewport(video3)) {
-		video3.play();
-	} else {
-		video3.pause();
-	}
+    if (!video3Visible && isElementInViewport(video3)) {
+        video3.play();
+        video3Visible = true;
+    } else if (video3Visible && !isElementInViewport(video3)) {
+        video3.pause();
+        video3Visible = false;
+    }
 }
+
 
 // Manejar eventos de desplazamiento y redimensionamiento de ventana
 window.addEventListener('scroll', handleVisibility);
