@@ -722,7 +722,7 @@ function handleVisibility() {
 
     if (video1Visible && !isElementInCenterViewport(video1)) {
         video1.pause();
-        video1Visible = false;
+        
     } else if (!video1Visible && isElementInCenterViewport(video1)) {
         video1.play();
         video1Visible = true;
@@ -730,7 +730,7 @@ function handleVisibility() {
 
     if (video2Visible && !isElementInCenterViewport(video2)) {
         video2.pause();
-        video2Visible = false;
+        
     } else if (!video2Visible && isElementInCenterViewport(video2)) {
         video2.play();
         video2Visible = true;
@@ -738,7 +738,7 @@ function handleVisibility() {
 
     if (video3Visible && !isElementInCenterViewport(video3)) {
         video3.pause();
-        video3Visible = false;
+        
     } else if (!video3Visible && isElementInCenterViewport(video3)) {
         video3.play();
         video3Visible = true;
