@@ -708,42 +708,53 @@ var video1Visible = false;
 var video2Visible = false;
 var video3Visible = false;
 
+function isElementInCenterViewport(el) {
+    var rect = el.getBoundingClientRect();
+    var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    var center = rect.top + rect.height / 2;
+    return center >= 0 && center <= viewportHeight;
+}
+
 function handleVisibility() {
     var video1 = document.getElementById('MUL_Laenge');
     var video2 = document.getElementById('MUL_Flechen');
     var video3 = document.getElementById('MUL_Volumen');
 
-    if (video1Visible && !isElementInViewport(video1)) {
+    if (video1Visible && !isElementInCenterViewport(video1)) {
         video1.pause();
         video1Visible = false;
-    } else if (!video1Visible && isElementInViewport(video1)) {
+    } else if (!video1Visible && isElementInCenterViewport(video1)) {
         video1.play();
         video1Visible = true;
     }
 
-    if (video2Visible && !isElementInViewport(video2)) {
+    if (video2Visible && !isElementInCenterViewport(video2)) {
         video2.pause();
         video2Visible = false;
-    } else if (!video2Visible && isElementInViewport(video2)) {
+    } else if (!video2Visible && isElementInCenterViewport(video2)) {
         video2.play();
         video2Visible = true;
     }
 
-    if (video3Visible && !isElementInViewport(video3)) {
+    if (video3Visible && !isElementInCenterViewport(video3)) {
         video3.pause();
         video3Visible = false;
-    } else if (!video3Visible && isElementInViewport(video3)) {
+    } else if (!video3Visible && isElementInCenterViewport(video3)) {
         video3.play();
         video3Visible = true;
     }
 }
 
-// Manejar eventos de desplazamiento y redimensionamiento de ventana
+// Manejar el evento scroll
+window.addEventListener('scroll', handleVisibility);
+
+
+/* Manejar eventos de desplazamiento y redimensionamiento de ventana
 window.addEventListener('scroll', handleVisibility);
 window.addEventListener('resize', handleVisibility);
 
 // Reproducir el video automáticamente cuando se cargue la página
-window.addEventListener('load', handleVisibility);	
+window.addEventListener('load', handleVisibility);	*/
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Move text sideways function
