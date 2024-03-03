@@ -1,49 +1,48 @@
 {
     "navbartext": {
-        "navbar-butt1": "¿Que es MUL?",
-        "navbar-butt2": "¿Como se usa MUL?",
+        "navbar-butt1": "¿Qué es MUL?",
+        "navbar-butt2": "¿Cómo se usa MUL?",
         "navbar-butt3": "Simulador de MUL",
         "navbar-butt4": "Historia"
     },
     
     "pupuptext": {
-        "pupup1": "1. Ingresa el aqui el numero.",
+        "pupup1": "1. Ingresa el número aquí.",
         "pupup2": "2. Selecciona la unidad inicial.",
-        "pupup3": "Puedes cambiar la unidad de conversion SI. entre Longitud, Area o Volumen.",
+        "pupup3": "Puedes cambiar la unidad de conversión entre Longitud, Área o Volumen.",
         "pupup4": "3. Selecciona la unidad final."
     },
-
+    
     "descripText": {
-        "desTextIntro": "MUL es una herramienta que te permite converit las unidades de medida <br> del sistema interanaciona de medidas (SI), con tan solo 3 pasos.",
-        "desCaja1": "1. Escribir el numero haciendo que la coma coincida con la unidad correspondiente en MUL.",
-        "desCaja2": "2. Buscar la unidad final deseada en MUL ",
-        "desCaja3": "3. Desplazar la coma a la pocicion final y en caso de ser necesario rellenar las celdas basias con 0.",
-        "desText1": "MUL está diseñada para facilitarte el aprendizaje en la conversión de unidades mediante métodos mnemotécnicos, optimizando tus recursos neuronales destinados a la resolución de problemas matemáticos y reduciendo el esfuerzo requerido para la conversión de unidades. <br>MUL evita que realices cálculos matemáticos, pero no omite el proceso de conversión, sino que lo integra en cada ejercicio, lo que facilita tu memorización de los factores de conversión. Al contener estos factores y al ser visualizada durante períodos prolongados, la retentiva de la herramienta reducirá tu posibilidad de cometer errores en la conversión de unidades del Sistema Internacional (SI)."
+        "desTextIntro": "MUL es una herramienta que te permite convertir las unidades de medida del Sistema Internacional de Unidades (SI) con tan solo 3 pasos.",
+        "desCaja1": "1. Escribe el número haciendo que la coma coincida con la unidad correspondiente en MUL.",
+        "desCaja2": "2. Busca la unidad final deseada en MUL.",
+        "desCaja3": "3. Desplaza la coma a la posición final y, en caso de ser necesario, rellena las celdas vacías con 0.",
+        "desText1": "MUL está diseñada para facilitarte el aprendizaje en la conversión de unidades mediante métodos mnemotécnicos, optimizando tus recursos neuronales destinados a la resolución de problemas matemáticos y reduciendo el esfuerzo requerido para la conversión de unidades. MUL evita que realices cálculos matemáticos, pero no omite el proceso de conversión, sino que lo integra en cada ejercicio, lo que facilita tu memorización de los factores de conversión. Al contener estos factores y ser visualizada durante períodos prolongados, la retentiva de la herramienta reducirá tu posibilidad de cometer errores en la conversión de unidades del Sistema Internacional (SI)."
     },
-
+    
     "exampText": {
         "exampTitel1": "¿Cómo convertir unidades lineales con MUL?",
         "exampDet1": "778.576 metros [m] a Megámetros [Mm].",
-        "exampExpL1": "1. Se busca la unidad inicial en MUL, en este caso metros [m] y se escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.",
-        "exampExpL2": "2. Se busca la unidad final en MUL, la cual en este caso es Megametros [Mm].",
-        "exampExpL3": "3. Se desplaza la coma hasta los [Mm], antes de la coma se pone un 0 y los espacio hasta el numero se rellenan con 0.",
+        "exampExpL1": "1. Se busca la unidad inicial en MUL, en este caso metros [m], y se escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.",
+        "exampExpL2": "2. Se busca la unidad final en MUL, que en este caso es Megámetros [Mm].",
+        "exampExpL3": "3. Se desplaza la coma hasta los [Mm], antes de la coma se pone un 0 y los espacios hasta el número se rellenan con 0.",
         "exampTitel2": "¿Cómo convertir unidades de área con MUL?",
         "exampDet2": "0.778576 hectáreas [ha] a centímetros cuadrados [cm^2].",
-        "exampExpA2": "1. Se busca la unidad inicial en MUL, en este caso hektar [ha] y se escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.",
-        "exampExpA3": "2. Se busca la unidad final en MUL, la cual en este caso es centimeter cuadrad [cm^2] y se desplaza la coma a esta posición.",
-        "exampExpA1": "3. Se desplaza la coma hasta los [cm^2], en este ejercicio los ceros que se encuentran antes del primer numero se borran y los espacios en blanco entre el numero y la coma se llena con 0.",
+        "exampExpA2": "1. Se busca la unidad inicial en MUL, en este caso hectáreas [ha], y se escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.",
+        "exampExpA3": "2. Se busca la unidad final en MUL, que en este caso es centímetros cuadrados [cm^2], y se desplaza la coma a esta posición.",
+        "exampExpA1": "3. Se desplaza la coma hasta los [cm^2]. En este ejercicio, los ceros que se encuentran antes del primer número se borran y los espacios en blanco entre el número y la coma se llenan con 0.",
         "exampTitel3": "¿Cómo convertir unidades de volumen con MUL?",
         "exampDet3": "7785.76 centímetros cúbicos [cm^3] a kilómetros cúbicos [Km^3].",
-        "exampExpV1": "1. Se busca la unidad inicial en MUL, en este caso kubikcentimeter [cm^3] ySe escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.",
-        "exampExpV2": "2. Se busca la unidad final en MUL, la cual en este caso es kubikkilometer [Km^3].",
-        "exampExpV3": "3. Se desplaza la coma a [Km^3], antes de la comaSe pone un 0 y los espacio hasta el numeroSe rellenan con 0."
+        "exampExpV1": "1. Se busca la unidad inicial en MUL, en este caso centímetros cúbicos [cm^3], y se escribe el número haciendo que la coma coincida con la posición de la unidad en MUL.",
+        "exampExpV2": "2. Se busca la unidad final en MUL, que en este caso es kilómetros cúbicos [Km^3].",
+        "exampExpV3": "3. Se desplaza la coma a [Km^3]. Antes de la coma se pone un 0 y los espacios hasta el número se rellenan con 0."
     },
-
+    
     "simultext":{
         "simul-num" : "Convertir el número: ",
         "simul-butL" : "Longitudes",
         "simul-butA" : "Áreas",
         "simul-butV" : "Volúmenes"
-    }
-
+    }    
 }   

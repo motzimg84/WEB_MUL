@@ -923,7 +923,7 @@ const chargeImag = (entries, observerImg) => {
 
 const observerImg = new IntersectionObserver(chargeImag, {
     root: null,
-    rootMargin: '500px 0px 500px 500px',
+    rootMargin: '500px 0px 500px -100px',
     threshold: 1.0
 });
 

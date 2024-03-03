@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>MUL - Units Converter</title>
+    <link rel="icon" type="image/png" href="img/MUL_Logo_min.png"/>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<style>
+    body {
+        background-image: url('img/fondoWebMUL.png');
+        background-size: cover; /* Para cubrir todo el fondo */
+        background-repeat: no-repeat; /* Para evitar que se repita la imagen */
+        background-position: center;
+        background-attachment: fixed;
+    }
+</style>
+<body>
+    <div class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-items">
+                <div class="conteinterImag" id="conteinterImag">
+                    <img src="img/MUL_Logo_bar.png" class="navbar-img" />
+                </div>
+                <div class="navbarBut">
+                    <a href="./index.html">
+                    <button class="navbar-item" onclick="scrollToSection('descrip')" data-section="navbartext" data-value="navbar-butt1">¿Que es MUL?</button>
+                     </a>
+                     <a href="./index.html">
+                    <button class="navbar-item" onclick="scrollToSection('example')" data-section="navbartext" data-value="navbar-butt2">¿Como se usa MUL?</button>
+                     </a>
+                     <a href="./index.html" onclick="scrollToSection('mostrar_tabla')">
+                    <button class="navbar-item" onclick="scrollToSection('mostrar_tabla')" data-section="navbartext" data-value="navbar-butt3">Simulador de MUL</button>
+                    </a>
+                    <button class="navbar-item" data-section="navbartext" data-value="navbar-butt4">Historia</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="navbar-button" id="navbarButton">&#9776;</button>
+
+    <div  id="languageSelector">
+        <button style="cursor: pointer;" class="buttLangOpt">
+            <img src="./flags/es.png" alt="ES" class="imgLangOpt" onclick="selectLanguage('es')">
+            <p style="display: none;" id="selectLang">es</p>
+        </button>
+        <div id="languageOptions">
+            <button class="buttLangOpt" data-languages="es"><img src="./flags/es.png" alt="ES" class="imgLangOpt" onclick="selectLanguage('es')" ></button>
+            <button class="buttLangOpt" data-languages="en"><img src="./flags/us.png" alt="EN" class="imgLangOpt" onclick="selectLanguage('en')" ></button>
+            <button class="buttLangOpt" data-languages="de"><img src="./flags/de.png" alt="DE" class="imgLangOpt" onclick="selectLanguage('de')" ></button>
+        </div>
+    </div>
+
+    <div class="contMenu" id="contMenu">
+    </div>
+
+    <div class="contLogo">
+        <img src="img/Logo_MUL.png" class="imgLog"/>
+    </div>  
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                Pravcy Plitics                                                                                
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <div class= "example">
+        <div id="example" style=" margin: 0px auto 20px auto; border: 2px solid transparent; " class="board">
+            <h1>Política Legal y de Privacidad</h1>
+                
+    
+            <p>Fecha de Vigencia: [Insertar Fecha]<br><br>
+    
+                Gracias por visitar [Nombre de tu Sitio Web] (el "Sitio Web"). Este Sitio Web es propiedad y está operado por [Nombre de tu Empresa]. Por favor, lee esta Política Legal y de Privacidad cuidadosamente antes de utilizar el Sitio Web.<br><br>
+    
+                1. **Derechos de Propiedad Intelectual:**<br>
+    
+                El diseño de este Sitio Web está inspirado en MUL y el simulador, y todos los derechos sobre el diseño, la disposición, las imágenes, los logotipos y el nombre están reservados. El uso no autorizado de este Sitio Web puede dar lugar a una reclamación por daños y/o ser considerado un delito.<br><br>
+    
+                2. **Política de Privacidad:**<br>
+    
+                Esta Política de Privacidad describe cómo [Nombre de tu Empresa] utiliza y protege cualquier información que proporciones al utilizar este Sitio Web. [Nombre de tu Empresa] se compromete a garantizar que se proteja tu privacidad. Al utilizar este Sitio Web, aceptas las prácticas de datos descritas en esta declaración.<br><br>
+    
+                3. **Información que Recopilamos:**<br>
+    
+                No recopilamos ninguna información personal identificable. No hay opciones de suscripción disponibles en este Sitio Web.<br><br>
+    
+                4. **Uso de la Información:**<br>
+    
+                Tu información nunca será vendida o compartida con terceros. No enviamos correos electrónicos periódicos ni realizamos ningún tipo de suscripción.<br>
+    
+                La información de los clientes se utiliza únicamente con fines comerciales, transaccionales y contables.<br><br>
+    
+                5. **Seguridad:**<br>
+    
+                Nos comprometemos a garantizar que tu información esté segura. Para evitar accesos o divulgaciones no autorizadas, hemos implementado procedimientos físicos, electrónicos y administrativos adecuados para proteger y resguardar la información que recopilamos en línea.<br><br>
+    
+                6. **Enlaces a Otros Sitios Web:**<br>
+    
+                Nuestro Sitio Web puede contener enlaces a otros sitios web de interés. Sin embargo, una vez que abandonas nuestro sitio, no tenemos control sobre esos otros sitios web. Por lo tanto, no podemos ser responsables de la protección y privacidad de la información que proporciones mientras visitas esos sitios. Debes tener precaución y revisar la declaración de privacidad aplicable al sitio web en cuestión.<br><br>
+    
+                7. **Control de tu Información Personal:**<br>
+    
+                Al utilizar este Sitio Web, indicas tu aceptación de esta Política Legal y de Privacidad. Si no estás de acuerdo con esta Política, por favor no utilices nuestro Sitio Web. Nos reservamos el derecho de realizar cambios en esta Política en cualquier momento. Cualquier cambio se publicará en esta página y tu uso continuado del Sitio Web tras la publicación de los cambios indicará tu aceptación de dichos cambios.<br>
+    
+                Para preguntas o inquietudes con respecto a esta Política, contáctanos en [Tu Correo de Contacto].<br><br>
+    
+                Gracias por visitar [Nombre de tu Sitio Web].<br><br>
+    
+                [Nombre de tu Empresa]<br>
+                [Dirección de tu Empresa]<br>
+                [Correo de Contacto de tu Empresa]<br>
+                [URL de tu Sitio Web]<br>
+    
+            </p>
+        </div>
+    </div>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                    Footer Bock                                                                                
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <div>
+        <footer id="footerCont">
+            <div class="contFooter">
+                <div class="box">
+                    <a href="#" class="contenBotton">
+                        <img src="icon/Confused.png" class="imgFooter">
+                        <h3 class="textButFoot"><strong>Preguntas frecuentes</strong></h3>
+                    </a>
+                    <a href="#" class="contenBotton">
+                        <img src="icon/Mail-01-256.png" class="imgFooter">
+                        <h3 class="textButFoot"><strong>Contactenos</strong></h3>
+                    </a>
+                    <a href="#" class="contenBotton">
+                        <img src="icon/User-Group.png" class="imgFooter">
+                        <h3 class="textButFoot"><strong>El equipo</strong></h3>
+                    </a>
+                    <a href="./provacy.html" class="contenBotton">
+                        <img src="icon/Agreement-01-256.png" class="imgFooter">
+                        <h3 class="textButFoot"><strong>Politicas de confidencialidad</strong></h3>
+                    </a>
+                </div>
+                <div class="box">
+                    <p style="margin-top: 50px; text-align: center;"><strong> &copy; Maßeinheitenumwandlung und Lineal</strong> <br> by Ing. Mauricio Mora MSc.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
