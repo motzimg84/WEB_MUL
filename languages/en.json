@@ -33,7 +33,7 @@
         "exampExpA3": "2. Find the end unit in MUL, in this case centimeters squared [cm^2], and move the decimal point to that position.",
         "exampExpA1": "3. Move the decimal point to [cm^2], in this exercise removing the zeros before the first number and filling the spaces between the number and the decimal point with 0.",
         "exampTitel3": "How to convert volume units with MUL?",
-        "examplDet3": "7785.76 cubic centimeters [cm^3] to cubic kilometers [km^3].",
+        "exampDet3": "7785.76 cubic centimeters [cm^3] to cubic kilometers [km^3].",
         "exampExpV1": "1. Searches for the first unit in MUL, here kubikcentimeter [cm^3], and writes the number with the comma matching the unit's position in MUL..",
         "exampExpV2": "2. Find the last unit in MUL, which in this case is cubic kilometers [km^3]..",
         "exampExpV3": "3. Move the decimal point to [Km^3], put a 0 before the decimal point, and fill the spaces up to the number with 0.."
