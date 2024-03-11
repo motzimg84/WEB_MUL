@@ -21,6 +21,8 @@
 .contenBotton {
     width: 25%;
     float: left;
+    background-color: transparent;
+    border: transparent;
     text-align: center;
     margin-bottom: 30px;
     text-decoration: none;

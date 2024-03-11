@@ -17,6 +17,7 @@
     }
 </style>
 <body>
+<header>
     <div class="navbar" id="navbar">
         <div class="container">
             <div class="navbar-items">
@@ -24,13 +25,15 @@
                     <img src="img/MUL_Logo_bar.png" class="navbar-img" />
                 </div>
                 <div class="navbarBut">
-                    <button class="navbar-item" onclick="scrollToSection('descrip')" data-section="navbartext" data-value="navbar-butt1">¿Que es MUL?</button>
+                    <button class="navbar-item" id="navbarButt1" onclick="scrollToSection('descrip')" data-section="navbartext" data-value="navbar-butt1">¿Que es MUL?</button>
                 
-                    <button class="navbar-item" onclick="scrollToSection('example')" data-section="navbartext" data-value="navbar-butt2">¿Como se usa MUL?</button>
+                    <button class="navbar-item" id="navbarButt2" onclick="scrollToSection('example')" data-section="navbartext" data-value="navbar-butt2">¿Como se usa MUL?</button>
                 
-                    <button class="navbar-item" onclick="scrollToSection('mostrar_tabla')" data-section="navbartext" data-value="navbar-butt3">Simulador de MUL</button>
+                    <button class="navbar-item" id="navbarButt3" onclick="scrollToSection('mostrar_tabla')" data-section="navbartext" data-value="navbar-butt3">Simulador de MUL</button>
+
+                    <button class="navbar-item" id="navbarButt4" data-section="navbartext" data-value="navbar-butt4" style="display: none;">MUL</button>
                 
-                    <button class="navbar-item" data-section="navbartext" data-value="navbar-butt4">Historia</button>
+                    <button class="navbar-item" id="navbarButt5" data-section="navbartext" data-value="navbar-butt5">Unidades SI</button>
                 </div>
             </div>
         </div>
@@ -55,7 +58,9 @@
     <div class="contLogo">
         <img src="img/Logo_MUL.png" class="imgLog"/>
     </div>  
+</header>
 
+<div style="display: block;" id="bodySim">
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                                 Description Block                                                                                
     ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
@@ -192,222 +197,279 @@
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                                     Simulation Bock                                                                                
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<div class="containerMUL" id="mostrar_tabla">
-    <div style="margin-top: 10px;"></div>
-    <div style="text-align: center;">
-        <h1 data-section="navbartext" data-value="navbar-butt3">Simulador de MUL?</h1>
-        <button class="help-btn" id="help-btn">?</button>
-    </div>
-    <div>
-        <div class="contSimImag">
-            <img style="display: none;" data-languages="de" src="img/MUL_V3_de.png" class="imgMUL obsImgSimMUL" />
-            <img style="display: none;" data-languages="en" src="img/MUL_V3_en.png" class="imgMUL obsImgSimMUL" />
-            <img style="display: none;" data-languages="es" src="img/MUL_V3_es.png" class="imgMUL obsImgSimMUL" />
+    <div class="containerMUL" id="mostrar_tabla">
+        <div style="margin-top: 10px;"></div>
+        <div style="text-align: center;">
+            <h1 data-section="navbartext" data-value="navbar-butt3">Simulador de MUL?</h1>
+            <button class="help-btn" id="help-btn">?</button>
         </div>
-        <div class="containerGrid">
-            <div class="left-column">
-                <!-- Contenido de la columna izquierda -->
+        <div>
+            <div class="contSimImag">
+                <img style="display: none;" data-languages="de" src="img/MUL_V3_de.png" class="imgMUL obsImgSimMUL" />
+                <img style="display: none;" data-languages="en" src="img/MUL_V3_en.png" class="imgMUL obsImgSimMUL" />
+                <img style="display: none;" data-languages="es" src="img/MUL_V3_es.png" class="imgMUL obsImgSimMUL" />
             </div>
-            <div class="center-column" id="center-column">
-                <!-- Contenido de la columna central -->
-                <div class= "tdCell_L" id="V1"></div>
-                <div class= "tdCell_S" id="C1"></div>
-                <div class= "tdCell_L" id="V2"></div>
-                <div class= "tdCell_S" id="C2"></div>
-                <div class= "tdCell_L" id="V3"></div>
-                <div class= "tdCell_S" id="C3"></div>
-                <div class= "tdCell_L" id="V4"></div>
-                <div class= "tdCell_S" id="C4"></div>
-                <div class= "tdCell_L" id="V5"></div>
-                <div class= "tdCell_S" id="C5"></div>
-                <div class= "tdCell_L" id="V6"></div>
-                <div class= "tdCell_S" id="C6"></div>
-                <div class= "tdCell_L" id="V7"></div>
-                <div class= "tdCell_S" id="C7"></div>
-                <div class= "tdCell_L" id="V8"></div>
-                <div class= "tdCell_S" id="C8"></div>
-                <div class= "tdCell_L" id="V9"></div>
-                <div class= "tdCell_S" id="C9"></div>
-                <div class= "tdCell_L" id="V10"></div>
-                <div class= "tdCell_S" id="C10"></div>
-                <div class= "tdCell_L" id="V11"></div>
-                <div class= "tdCell_S" id="C11"></div>
-                <div class= "tdCell_L" id="V12"></div>
-                <div class= "tdCell_S" id="C12"></div>
-                <div class= "tdCell_L" id="V13"></div>
-                <div class= "tdCell_S" id="C13"></div>
-                <div class= "tdCell_L" id="V14"></div>
-                <div class= "tdCell_S" id="C14"></div>
-                <div class= "tdCell_L" id="V15"></div>
-                <div class= "tdCell_S" id="C15"></div>
-                <div class= "tdCell_L" id="V16"></div>
-                <div class= "tdCell_S" id="C16"></div>
-                <div class= "tdCell_L" id="V17"></div>
-                <div class= "tdCell_S" id="C17"></div>
-                <div class= "tdCell_L" id="V18"></div>
-                <div class= "tdCell_S" id="C18"></div>
-                <div class= "tdCell_L" id="V19"></div>
-                <div class= "tdCell_S" id="C19"></div>
-                <div class= "tdCell_L" id="V20"></div>
-                <div class= "tdCell_S" id="C20"></div>
-                <div class= "tdCell_L" id="V21"></div>
-                <div class= "tdCell_S" id="C21"></div>
-                <div class= "tdCell_L" id="V22"></div>
-                <div class= "tdCell_S" id="C22"></div>
-                <div class= "tdCell_L" id="V23"></div>
-                <div class= "tdCell_S" id="C23"></div>
-                <div class= "tdCell_L" id="V24"></div>
-                <div class= "tdCell_S" id="C24"></div>
-                <div class= "tdCell_L" id="V25"></div>
-                <div class= "tdCell_S" id="C25"></div>
-                <div class= "tdCell_L" id="V26"></div>
-                <div class= "tdCell_S" id="C26"></div>                       
-            </div>
-            <div class="right-column">
-                <!-- Contenido de la columna derecha -->
-            </div>
-        </div>
-    </div>
-    <!-- Codigo para genera la felcha -->
-    <div class="flechaLine">
-        <div class="colaFL" id="colaFL"></div>
-    </div>
-    <div class="flechaUp" id="flechaUp"></div>
-    <div class="flechaStyle">
-        <div class="colaF" id="colaF"></div>
-        
-    </div>
-    <div class="row">
-        <div class="solNotice">
-            <h1 class="textNotice" id= "textoRes1"></h1>
-        </div>
-        <div class="solNotice">
-            <h1 class="textNotice" id= "textoRes2"></h1>
-        </div>
-    </div>
-
-    <div class="row">
-        <Form style="width: 100%;">
-            <div style="height: 0px; " class="row">
-                <div  id="popupWrapper1" class="popupWrapper">
-                    <div style= "top: -25px; left: 12%; float: left; " id="popup" class="popup">
-                        <div class="popup-arrow"></div>
-                        <button class="buttCloPopup"  onclick="popupsClose()">
-                            <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
-                        </button>
-                        <p data-section="pupuptext" data-value="pupup1">1. Ingresa el aqui el numero.</p> 
-                    </div>
+            <div class="containerGrid">
+                <div class="left-column">
+                    <!-- Contenido de la columna izquierda -->
                 </div>
-                <div id="popupWrapper2" class="popupWrapper">
-                    <div style= "top: -25px; left: 24%; float: left; " id="popup" class="popup">
-                        <div class="popup-arrow"></div>
-                        <button class="buttCloPopup"  onclick="popupsClose()">
-                            <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
-                        </button>
-                        <p data-section="pupuptext" data-value="pupup2">2. Selecciona la unidad inicial.</p> 
-                    </div>
+                <div class="center-column" id="center-column">
+                    <!-- Contenido de la columna central -->
+                    <div class= "tdCell_L" id="V1"></div>
+                    <div class= "tdCell_S" id="C1"></div>
+                    <div class= "tdCell_L" id="V2"></div>
+                    <div class= "tdCell_S" id="C2"></div>
+                    <div class= "tdCell_L" id="V3"></div>
+                    <div class= "tdCell_S" id="C3"></div>
+                    <div class= "tdCell_L" id="V4"></div>
+                    <div class= "tdCell_S" id="C4"></div>
+                    <div class= "tdCell_L" id="V5"></div>
+                    <div class= "tdCell_S" id="C5"></div>
+                    <div class= "tdCell_L" id="V6"></div>
+                    <div class= "tdCell_S" id="C6"></div>
+                    <div class= "tdCell_L" id="V7"></div>
+                    <div class= "tdCell_S" id="C7"></div>
+                    <div class= "tdCell_L" id="V8"></div>
+                    <div class= "tdCell_S" id="C8"></div>
+                    <div class= "tdCell_L" id="V9"></div>
+                    <div class= "tdCell_S" id="C9"></div>
+                    <div class= "tdCell_L" id="V10"></div>
+                    <div class= "tdCell_S" id="C10"></div>
+                    <div class= "tdCell_L" id="V11"></div>
+                    <div class= "tdCell_S" id="C11"></div>
+                    <div class= "tdCell_L" id="V12"></div>
+                    <div class= "tdCell_S" id="C12"></div>
+                    <div class= "tdCell_L" id="V13"></div>
+                    <div class= "tdCell_S" id="C13"></div>
+                    <div class= "tdCell_L" id="V14"></div>
+                    <div class= "tdCell_S" id="C14"></div>
+                    <div class= "tdCell_L" id="V15"></div>
+                    <div class= "tdCell_S" id="C15"></div>
+                    <div class= "tdCell_L" id="V16"></div>
+                    <div class= "tdCell_S" id="C16"></div>
+                    <div class= "tdCell_L" id="V17"></div>
+                    <div class= "tdCell_S" id="C17"></div>
+                    <div class= "tdCell_L" id="V18"></div>
+                    <div class= "tdCell_S" id="C18"></div>
+                    <div class= "tdCell_L" id="V19"></div>
+                    <div class= "tdCell_S" id="C19"></div>
+                    <div class= "tdCell_L" id="V20"></div>
+                    <div class= "tdCell_S" id="C20"></div>
+                    <div class= "tdCell_L" id="V21"></div>
+                    <div class= "tdCell_S" id="C21"></div>
+                    <div class= "tdCell_L" id="V22"></div>
+                    <div class= "tdCell_S" id="C22"></div>
+                    <div class= "tdCell_L" id="V23"></div>
+                    <div class= "tdCell_S" id="C23"></div>
+                    <div class= "tdCell_L" id="V24"></div>
+                    <div class= "tdCell_S" id="C24"></div>
+                    <div class= "tdCell_L" id="V25"></div>
+                    <div class= "tdCell_S" id="C25"></div>
+                    <div class= "tdCell_L" id="V26"></div>
+                    <div class= "tdCell_S" id="C26"></div>                       
+                </div>
+                <div class="right-column">
+                    <!-- Contenido de la columna derecha -->
                 </div>
             </div>
-
-            <div class="contForm">
-                <p class="textForm manTexPos" data-section="simultext" data-value="simul-num">Convertir el número: </p>
-
-                <input class="textForm imputValue" type="text" id="input"  onkeydown="return event.key !== 'Enter';" placeholder="Ingrese un numero" oninput="permitirPuntoComa(event)" />
-
-
-                <p class="textForm manTexPos"> de </p>	
-
-                <select class="textForm selectors textNotice" id="unidad" onchange="splitNumber()">
-                <option value="Tm" data-exponent="0">Tm</option>
-                <option value="Gm" data-exponent="3">Gm</option>
-                <option value="Mm" data-exponent="6">Mm</option>
-                <option value="Km" data-exponent="9">Km</option>
-                <option value="Hm" data-exponent="10">Hm</option>
-                <option value="Dm" data-exponent="11">Dm</option>
-                <option value="m" data-exponent="12" selected>m</option>
-                <option value="dm" data-exponent="13">dm</option>
-                <option value="cm" data-exponent="14">cm</option>
-                <option value="mm" data-exponent="15">mm</option>
-                <option value="µm" data-exponent="18">µm</option>
-                <option value="nm" data-exponent="21">nm</option>
-                <option value="pm" data-exponent="24">pm</option>
-                </select>
-
-                <p class="textForm manTexPos" > a </p>
-
-                <select class="textForm selectors textNotice" id="escala" onchange="splitNumber()">
-                <option value="Tm" data-exponent="0">Tm</option>
-                <option value="Gm" data-exponent="3">Gm</option>
-                <option value="Mm" data-exponent="6">Mm</option>
-                <option value="Km" data-exponent="9">Km</option>
-                <option value="Hm" data-exponent="10">Hm</option>
-                <option value="Dm" data-exponent="11">Dm</option>
-                <option value="m" data-exponent="12" selected>m</option>
-                <option value="dm" data-exponent="13">dm</option>
-                <option value="cm" data-exponent="14">cm</option>
-                <option value="mm" data-exponent="15">mm</option>
-                <option value="µm" data-exponent="18">µm</option>
-                <option value="nm" data-exponent="21">nm</option>
-                <option value="pm" data-exponent="24">pm</option>
-                </select>
+        </div>
+        <!-- Codigo para genera la felcha -->
+        <div class="flechaLine">
+            <div class="colaFL" id="colaFL"></div>
+        </div>
+        <div class="flechaUp" id="flechaUp"></div>
+        <div class="flechaStyle">
+            <div class="colaF" id="colaF"></div>
+            
+        </div>
+        <div class="row">
+            <div class="solNotice">
+                <h1 class="textNotice" id= "textoRes1"></h1>
             </div>
-        </Form>
-    </div>
-
-    <div class="row">
-        <table class="table2" id="table2" >
-            <td class= "tdBut"><button class="buttonArt" data-section="simultext" data-value="simul-butL" style = "background-color: white;" id="cell1" onclick="presCell('1')"  selected>Longitud</button></td>
-            <td class= "tdBut"><button class="buttonArt" data-section="simultext" data-value="simul-butA" id="cell2" onclick="presCell('2')" >Area</button></td>
-            <td class= "tdBut"><button class="buttonArt" data-section="simultext" data-value="simul-butV" id="cell3" onclick="presCell('3')" >Volumen</button></td>
-            <td style= "display: none" id = "indice">1</td>
-        </table>
-    </div>
-
-    <div style="height: 0px; " class="row">
-        <div id="popupWrapper4" class="popupWrapper">
-            <div style= "top: -3px; left: 5%; float: left; " id="popup" class="popup-up">
-                <div class="popup-arrow-up1"></div>
-                <button class="buttCloPopup"  onclick="popupsClose()">
-                    <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
-                </button>
-                <p data-section="pupuptext" data-value="pupup3">Puedes cambiar la unidad de conversion SI. entre Longitud, Area o Volumen. </p> 
+            <div class="solNotice">
+                <h1 class="textNotice" id= "textoRes2"></h1>
             </div>
         </div>
-        <div id="popupWrapper3" class="popupWrapper">
-            <div style= "top: -110px; left: 40%; float: left; " id="popup" class="popup-up">
-                <div class="popup-arrow-up2"></div>
-                <button class="buttCloPopup"  onclick="popupsClose()">
-                    <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
-                </button>
-                <p data-section="pupuptext" data-value="pupup4">3. Selecciona la unidad final.</p> 
+
+        <div class="row">
+            <Form style="width: 100%;">
+                <div style="height: 0px; " class="row">
+                    <div  id="popupWrapper1" class="popupWrapper">
+                        <div style= "top: -25px; left: 12%; float: left; " id="popup" class="popup">
+                            <div class="popup-arrow"></div>
+                            <button class="buttCloPopup"  onclick="popupsClose()">
+                                <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
+                            </button>
+                            <p data-section="pupuptext" data-value="pupup1">1. Ingresa el aqui el numero.</p> 
+                        </div>
+                    </div>
+                    <div id="popupWrapper2" class="popupWrapper">
+                        <div style= "top: -25px; left: 24%; float: left; " id="popup" class="popup">
+                            <div class="popup-arrow"></div>
+                            <button class="buttCloPopup"  onclick="popupsClose()">
+                                <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
+                            </button>
+                            <p data-section="pupuptext" data-value="pupup2">2. Selecciona la unidad inicial.</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contForm">
+                    <p class="textForm manTexPos" data-section="simultext" data-value="simul-num">Convertir el número: </p>
+
+                    <input class="textForm imputValue" type="text" id="input"  onkeydown="return event.key !== 'Enter';" placeholder="Ingrese un numero" oninput="permitirPuntoComa(event)" />
+
+
+                    <p class="textForm manTexPos"> de </p>	
+
+                    <select class="textForm selectors textNotice" id="unidad" onchange="splitNumber()">
+                    <option value="Tm" data-exponent="0">Tm</option>
+                    <option value="Gm" data-exponent="3">Gm</option>
+                    <option value="Mm" data-exponent="6">Mm</option>
+                    <option value="Km" data-exponent="9">Km</option>
+                    <option value="Hm" data-exponent="10">Hm</option>
+                    <option value="Dm" data-exponent="11">Dm</option>
+                    <option value="m" data-exponent="12" selected>m</option>
+                    <option value="dm" data-exponent="13">dm</option>
+                    <option value="cm" data-exponent="14">cm</option>
+                    <option value="mm" data-exponent="15">mm</option>
+                    <option value="µm" data-exponent="18">µm</option>
+                    <option value="nm" data-exponent="21">nm</option>
+                    <option value="pm" data-exponent="24">pm</option>
+                    </select>
+
+                    <p class="textForm manTexPos" > a </p>
+
+                    <select class="textForm selectors textNotice" id="escala" onchange="splitNumber()">
+                    <option value="Tm" data-exponent="0">Tm</option>
+                    <option value="Gm" data-exponent="3">Gm</option>
+                    <option value="Mm" data-exponent="6">Mm</option>
+                    <option value="Km" data-exponent="9">Km</option>
+                    <option value="Hm" data-exponent="10">Hm</option>
+                    <option value="Dm" data-exponent="11">Dm</option>
+                    <option value="m" data-exponent="12" selected>m</option>
+                    <option value="dm" data-exponent="13">dm</option>
+                    <option value="cm" data-exponent="14">cm</option>
+                    <option value="mm" data-exponent="15">mm</option>
+                    <option value="µm" data-exponent="18">µm</option>
+                    <option value="nm" data-exponent="21">nm</option>
+                    <option value="pm" data-exponent="24">pm</option>
+                    </select>
+                </div>
+            </Form>
+        </div>
+
+        <div class="row">
+            <table class="table2" id="table2" >
+                <td class= "tdBut"><button class="buttonArt" data-section="simultext" data-value="simul-butL" style = "background-color: white;" id="cell1" onclick="presCell('1')"  selected>Longitud</button></td>
+                <td class= "tdBut"><button class="buttonArt" data-section="simultext" data-value="simul-butA" id="cell2" onclick="presCell('2')" >Area</button></td>
+                <td class= "tdBut"><button class="buttonArt" data-section="simultext" data-value="simul-butV" id="cell3" onclick="presCell('3')" >Volumen</button></td>
+                <td style= "display: none" id = "indice">1</td>
+            </table>
+        </div>
+
+        <div style="height: 0px; " class="row">
+            <div id="popupWrapper4" class="popupWrapper">
+                <div style= "top: -3px; left: 5%; float: left; " id="popup" class="popup-up">
+                    <div class="popup-arrow-up1"></div>
+                    <button class="buttCloPopup"  onclick="popupsClose()">
+                        <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
+                    </button>
+                    <p data-section="pupuptext" data-value="pupup3">Puedes cambiar la unidad de conversion SI. entre Longitud, Area o Volumen. </p> 
+                </div>
+            </div>
+            <div id="popupWrapper3" class="popupWrapper">
+                <div style= "top: -110px; left: 40%; float: left; " id="popup" class="popup-up">
+                    <div class="popup-arrow-up2"></div>
+                    <button class="buttCloPopup"  onclick="popupsClose()">
+                        <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
+                    </button>
+                    <p data-section="pupuptext" data-value="pupup4">3. Selecciona la unidad final.</p> 
+                </div>
             </div>
         </div>
     </div>
 </div>
+<div style="display: none;" id="bodyPolitcs">
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                Pravcy Plitics                                                                                
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <div class= "example">
+        <div id="example" style=" margin: 0px auto 20px auto; border: 2px solid transparent; " class="board">
+            <h1 data-section="privText" data-value="titel">Política Legal y de Privacidad</h1>
+                
+    
+            <p data-section="privText" data-value="text">Fecha de Vigencia: 03.2024.
+                Gracias por visitar www.mul.com (el "Sitio Web"). Este Sitio Web es propiedad y está operado por Ing, Mauricio Mora, MSc. Por favor, lee esta Política Legal y de Privacidad cuidadosamente antes de utilizar el Sitio Web.<br><br>
+    
+                1. **Derechos de Propiedad Intelectual:**<br>
+    
+                El diseño de este Sitio Web está inspirado en MUL y el simulador, y todos los derechos sobre el diseño, la disposición, las imágenes, los logotipos y el nombre están reservados. El uso no autorizado de este Sitio Web puede dar lugar a una reclamación por daños y/o ser considerado un delito.<br><br>
+    
+                2. **Política de Privacidad:**<br>
+    
+                Esta Política de Privacidad describe cómo Ing, Mauricio Mora, MSc. utiliza y protege cualquier información que proporciones al utilizar este Sitio Web. Ing, Mauricio Mora, MSc. se compromete a garantizar que se proteja tu privacidad. Al utilizar este Sitio Web, aceptas las prácticas de datos descritas en esta declaración.<br><br>
+    
+                3. **Información que Recopilamos:**<br>
+    
+                No recopilamos ninguna información personal identificable. No hay opciones de suscripción disponibles en este Sitio Web.<br><br>
+    
+                4. **Uso de la Información:**<br>
+    
+                Tu información nunca será vendida o compartida con terceros. No enviamos correos electrónicos periódicos ni realizamos ningún tipo de suscripción.<br>
+    
+                La información de los clientes se utiliza únicamente con fines comerciales, transaccionales y contables.<br><br>
+    
+                5. **Seguridad:**<br>
+    
+                Nos comprometemos a garantizar que tu información esté segura. Para evitar accesos o divulgaciones no autorizadas, hemos implementado procedimientos físicos, electrónicos y administrativos adecuados para proteger y resguardar la información que recopilamos en línea.<br><br>
+    
+                6. **Enlaces a Otros Sitios Web:**<br>
+    
+                Nuestro Sitio Web puede contener enlaces a otros sitios web de interés. Sin embargo, una vez que abandonas nuestro sitio, no tenemos control sobre esos otros sitios web. Por lo tanto, no podemos ser responsables de la protección y privacidad de la información que proporciones mientras visitas esos sitios. Debes tener precaución y revisar la declaración de privacidad aplicable al sitio web en cuestión.<br><br>
+    
+                7. **Control de tu Información Personal:**<br>
+    
+                Al utilizar este Sitio Web, indicas tu aceptación de esta Política Legal y de Privacidad. Si no estás de acuerdo con esta Política, por favor no utilices nuestro Sitio Web. Nos reservamos el derecho de realizar cambios en esta Política en cualquier momento. Cualquier cambio se publicará en esta página y tu uso continuado del Sitio Web tras la publicación de los cambios indicará tu aceptación de dichos cambios.<br>
+    
+                Para preguntas o inquietudes con respecto a esta Política, contáctanos en [Tu Correo de Contacto].<br><br>
+    
+                Gracias por visitar www.mul.com.<br><br>
+    
+                Ing, Mauricio Mora, MSc.<br>
+                [Dirección de tu Empresa]<br>
+                [Correo de Contacto de tu Empresa]<br>
+                [URL de tu Sitio Web]<br>
+    
+            </p>
+        </div>
+    </div>
+</div>
 
+<div id="blockFooter">
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                                     Footer Bock                                                                                
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<div>
+
     <footer id="footerCont">
         <div class="contFooter">
             <div class="box">
-                <a href="#" class="contenBotton">
+                <button class="contenBotton" id="questions">
                     <img src="icon/Confused.png" class="imgFooter">
-                    <h3 class="textButFoot"><strong>Preguntas frecuentes</strong></h3>
-                </a>
-                <a href="#" class="contenBotton">
+                    <h3 class="textButFoot" data-section="footText" data-value="textBut1"><strong>Preguntas frecuentes</strong></h3>
+                </button>
+                <button class="contenBotton" id="contact">
                     <img src="icon/Mail-01-256.png" class="imgFooter">
-                    <h3 class="textButFoot"><strong>Contactenos</strong></h3>
-                </a>
-                <a href="#" class="contenBotton">
+                    <h3 class="textButFoot" data-section="footText" data-value="textBut2"><strong>Contactenos</strong></h3>
+                </button>
+                <button class="contenBotton" id="team">
                     <img src="icon/User-Group.png" class="imgFooter">
-                    <h3 class="textButFoot"><strong>El equipo</strong></h3>
-                </a>
-                <a href="#" class="contenBotton">
+                    <h3 class="textButFoot" data-section="footText" data-value="textBut3"><strong>El equipo</strong></h3>
+                </button>
+                <button class="contenBotton" id="plolitics">
                     <img src="icon/Agreement-01-256.png" class="imgFooter">
-                    <h3 class="textButFoot"><strong>Politicas de confidencialidad</strong></h3>
-                </a>
+                    <h3 class="textButFoot" data-section="footText" data-value="textBut4"><strong>Politicas de confidencialidad</strong></h3>
+                </button>
             </div>
             <div class="box">
                 <p style="margin-top: 50px; text-align: center;"><strong> &copy; Maßeinheitenumwandlung und Lineal</strong> <br> by Ing. Mauricio Mora MSc.</p>
@@ -415,6 +477,10 @@
         </div>
     </footer>
 </div>
-    <script src="js/script.js"></script>
+
+<script src="js/button.js"></script>
+<script src="js/split.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

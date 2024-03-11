@@ -54,13 +54,12 @@
 
 .navbar-items {
     width: 1200px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    text-align: center;    
 }
 
 .navbar-item {
     width: 200px;
+    display: inline;
     background-color: white;
     padding: 10px 20px;
     font-family: comic sans-serif;
@@ -93,7 +92,7 @@
     z-index: 900; /* Asigna un z-index alto para que la imagen esté siempre al frente */
 }
 
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1300px) {
     .navbar-items {
         width: 900px;
     }
@@ -103,7 +102,7 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 940px) {
     .navbar {
         border: 2px solid Black;
         flex-direction: column;
@@ -151,4 +150,13 @@
         width: 120px;
         height: 50px; 
     }
+}
+
+@media screen and (max-width: 350px) {
+
+    .navbar-items {
+       margin-top: 50px;
+    }
+    
+
 }
