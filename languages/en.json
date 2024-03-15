@@ -46,6 +46,10 @@
         "simul-butA" : "Areas",
         "simul-butV" : "Volumes"
     },
+
+    "input": {
+        "placeholderText": "Enter a number"
+    },
  
     "footText":{
         "textBut1" : "Frequently Asked Questions",

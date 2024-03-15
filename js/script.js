@@ -225,7 +225,15 @@ const changeLanguage = async (languages) => {
 	for (const textToChange of textsToChange) {
 		const section = textToChange.dataset.section;
 		const value = textToChange.dataset.value;
-		textToChange.innerHTML = textLang[section][value];
+		if (section === "input"){
+			// Obtener el elemento input
+			var input = document.getElementById('input');
+			// Actualizar el placeholder con el valor del JSON
+			input.placeholder = textLang[section][value];
+		} else {
+			textToChange.innerHTML = textLang[section][value];
+		}
+		
 	}
 }	
 

@@ -48,6 +48,10 @@
         "simul-butV" : "Volumen"
     },
 
+    "input": {
+        "placeholderText": "Geben Sie eine Zahl ein"
+    },
+
     "footText":{
         "textBut1" : "Häufig gestellte Fragen",
         "textBut2" : "Kontaktieren Sie uns",
