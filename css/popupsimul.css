@@ -44,7 +44,8 @@
     float: left;
     z-index: 999;
     }
-    
+
+
 .popup-up {
     font-family: comic sans-serif;
     position: relative;
@@ -67,24 +68,24 @@
     cursor: pointer;
     }
 
-    .buttCloPopup {
-        display: none;
-        text-align: center;
-        height: 30px;
-        width: 30px;
-        float: right; 
-    
-        border-radius: 20px; 
-        transition: all 0.3s;
-        cursor: pointer; 
-        display: block;
-        z-index: 999; 
-    }
-    
-    .buttCloPopup:hover{
-        transform: scale(1.1);
-        font-size: 20px; 
-        text-decoration: underline;
-        background-color:  var(--button-over);
-        border: 4px solid black;
-    }
+.buttCloPopup {
+    display: none;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    float: right; 
+
+    border-radius: 20px; 
+    transition: all 0.3s;
+    cursor: pointer; 
+    display: block;
+    z-index: 999; 
+}
+
+.buttCloPopup:hover{
+    transform: scale(1.1);
+    font-size: 20px; 
+    text-decoration: underline;
+    background-color:  var(--button-over);
+    border: 4px solid black;
+}
