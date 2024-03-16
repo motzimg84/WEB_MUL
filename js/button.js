@@ -93,12 +93,21 @@ InfoCloBut3.addEventListener('click', function() {
 });	
 
 plolitics.addEventListener('click', function() {
+	const bodyPolitcs = document.getElementById('bodyPolitcs');
+
 	menuComplement();
+	bodyPolitcs.style.display = "block";
+});	
+
+navbarButt5.addEventListener('click', function() {
+	const bodySIUnit = document.getElementById('bodySIUnit');
+
+	menuComplement();
+	bodySIUnit.style.display = "block";
 });	
 
 function menuComplement(){
 	const bodySim = document.getElementById('bodySim');
-	const bodyPolitcs = document.getElementById('bodyPolitcs');
 	const navbarButt1 = document.getElementById('navbarButt1');
 	const navbarButt2 = document.getElementById('navbarButt2');
 	const navbarButt3 = document.getElementById('navbarButt3');
@@ -106,7 +115,6 @@ function menuComplement(){
 	const navbarButt5 = document.getElementById('navbarButt5');
 	
 	bodySim.style.display = "none";
-	bodyPolitcs.style.display = "block";
 	
 	navbarButt1.style.display = "none"
 	navbarButt2.style.display = "none"

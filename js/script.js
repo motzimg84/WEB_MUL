@@ -38,6 +38,8 @@ window.onload = function() {
 	splitNumber();
 	changeColor("1");
 	popupsDis();
+
+	window.scrollTo({top: 0, behavior: 'smooth'});
 };
 
 

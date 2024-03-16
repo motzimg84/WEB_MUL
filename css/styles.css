@@ -18,3 +18,11 @@ html, body {
     padding: 0;
 }
 
+a {
+    transition: all 0.3s;
+}
+
+a:hover {
+    font-size: 18px; 
+    transform: scale(1.1);
+}
