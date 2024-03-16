@@ -95,19 +95,33 @@ InfoCloBut3.addEventListener('click', function() {
 plolitics.addEventListener('click', function() {
 	const bodyPolitcs = document.getElementById('bodyPolitcs');
 
-	menuComplement();
+	const navbarButt4 = document.getElementById('navbarButt4');
+	const navbarButt5 = document.getElementById('navbarButt5');
+
+	menuClous();
+	navbarButt4.style.display = "inline-block"
+	navbarButt5.style.display = "inline-block"
 	bodyPolitcs.style.display = "block";
 });	
 
 navbarButt5.addEventListener('click', function() {
 	const bodySIUnit = document.getElementById('bodySIUnit');
 
-	menuComplement();
+	const navbarButt4 = document.getElementById('navbarButt4');
+	const navbarButt5 = document.getElementById('navbarButt5');
+
+	menuClous();
+	navbarButt4.style.display = "inline-block"
+	navbarButt5.style.display = "none"
 	bodySIUnit.style.display = "block";
+
 });	
 
-function menuComplement(){
+function menuClous(){
 	const bodySim = document.getElementById('bodySim');
+	const bodyPolitcs = document.getElementById('bodyPolitcs');
+	const bodySIUnit = document.getElementById('bodySIUnit');
+
 	const navbarButt1 = document.getElementById('navbarButt1');
 	const navbarButt2 = document.getElementById('navbarButt2');
 	const navbarButt3 = document.getElementById('navbarButt3');
@@ -115,6 +129,8 @@ function menuComplement(){
 	const navbarButt5 = document.getElementById('navbarButt5');
 	
 	bodySim.style.display = "none";
+	bodyPolitcs.style.display = "none";
+	bodySIUnit.style.display = "none";
 	
 	navbarButt1.style.display = "none"
 	navbarButt2.style.display = "none"
@@ -128,6 +144,8 @@ function menuComplement(){
 navbarButt4.addEventListener('click', function() {
 	const bodySim = document.getElementById('bodySim');
 	const bodyPolitcs = document.getElementById('bodyPolitcs');
+	const bodySIUnit = document.getElementById('bodySIUnit');
+
 	const navbarButt1 = document.getElementById('navbarButt1');
 	const navbarButt2 = document.getElementById('navbarButt2');
 	const navbarButt3 = document.getElementById('navbarButt3');
@@ -136,7 +154,8 @@ navbarButt4.addEventListener('click', function() {
 	
 	bodySim.style.display = "block";
 	bodyPolitcs.style.display = "none";
-	
+	bodySIUnit.style.display = "none";
+
 	navbarButt1.style.display = "inline-block"
 	navbarButt2.style.display = "inline-block"
 	navbarButt3.style.display = "inline-block"

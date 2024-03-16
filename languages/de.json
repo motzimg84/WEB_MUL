@@ -49,11 +49,11 @@
     },
 
     "input": {
-        "placeholderText": "Geben Sie eine Zahl ein"
+        "placeholderText": "Zahl eingeben"
     },
 
     "footText":{
-        "textBut1" : "Häufig gestellte Fragen",
+        "textBut1" : "servicio@multool.com",
         "textBut2" : "Kontaktieren Sie uns",
         "textBut3" : "Das Team",
         "textBut4" : "Datenschutzrichtlinien"
@@ -62,8 +62,11 @@
     "privText":{
         "titel" : "Rechtliche und Datenschutzrichtlinie",
         "text" : "Wirksamkeitsdatum: 03.2024. Vielen Dank für Ihren Besuch auf www.mul.com (die Website). Diese Website gehört Ing, Mauricio Mora, MSc. Bitte lesen Sie diese rechtlichen und Datenschutzrichtlinien sorgfältig durch, bevor Sie die Website verwenden.<br><br> 1. **Geistiges Eigentum:**<br> Das Design dieser Website ist von MUL und dem Simulator inspiriert, und alle Rechte am Design, Layout, Bildern, Logos und Namen sind vorbehalten. Eine unbefugte Nutzung dieser Website kann zu Schadensersatzansprüchen führen und/oder als Straftat angesehen werden.<br><br> 2. **Datenschutzrichtlinie:**<br> Diese Datenschutzrichtlinie beschreibt, wie Ing, Mauricio Mora, MSc. alle Informationen verwendet und schützt, die Sie beim Besuch dieser Website bereitstellen. Ing, Mauricio Mora, MSc. verpflichtet sich, Ihre Privatsphäre zu schützen. Durch die Nutzung dieser Website stimmen Sie den in dieser Erklärung beschriebenen Datenerfassungspraktiken zu.<br><br> 3. **Informationen, die wir sammeln:**<br> Wir sammeln keine personenbezogenen Daten. Es gibt keine Abonnementoptionen auf dieser Website.<br><br> 4. **Verwendung von Informationen:**<br> Ihre Informationen werden niemals verkauft oder an Dritte weitergegeben. Wir versenden keine regelmäßigen E-Mails oder führen keine Art von Abonnement durch.<br> Kundendaten werden ausschließlich für geschäftliche, transaktionale und Buchhaltungszwecke verwendet.<br><br> 5. **Sicherheit:**<br> Wir verpflichten uns, Ihre Informationen sicher aufzubewahren. Um unbefugten Zugriff oder eine unbefugte Offenlegung zu verhindern, haben wir geeignete physische, elektronische und verwaltungstechnische Verfahren implementiert, um die Informationen, die wir online erfassen, zu schützen und zu sichern.<br><br> 6. **Links zu anderen Websites:**<br> Unsere Website kann Links zu anderen Websites von Interesse enthalten. Sobald Sie jedoch diese Links verwenden, um unsere Website zu verlassen, haben wir keine Kontrolle mehr über diese anderen Websites. Daher können wir nicht für den Schutz und die Privatsphäre der von Ihnen bereitgestellten Informationen auf diesen Websites verantwortlich sein. Sie sollten vorsichtig sein und die Datenschutzerklärung überprüfen, die für die betreffende Website gilt.<br><br> 7. **Kontrolle Ihrer persönlichen Informationen:**<br> Durch die Nutzung dieser Website erklären Sie Ihre Zustimmung zu diesen rechtlichen und Datenschutzrichtlinien. Wenn Sie mit dieser Richtlinie nicht einverstanden sind, verwenden Sie bitte unsere Website nicht. Wir behalten uns das Recht vor, diese Richtlinie jederzeit zu ändern. Änderungen werden auf dieser Seite veröffentlicht, und Ihre fortgesetzte Nutzung der Website nach der Veröffentlichung von Änderungen deutet auf Ihre Zustimmung zu solchen Änderungen hin.<br> Bei Fragen oder Bedenken zu dieser Richtlinie kontaktieren Sie uns bitte unter [Ihre Kontakt-E-Mail].<br><br> Vielen Dank für Ihren Besuch auf www.mul.com.<br><br> Ing, Mauricio Mora, MSc.<br> [Ihre Unternehmensadresse]<br> [Ihre Unternehmenskontakt-E-Mail]<br> [Ihre Website-URL]<br>"
-    }
-    
+    },
 
+    "siunitText":{
+        "titel" : "Sistema interanacional de unidades (SI)",
+        "text" : "Hallo"
+    }
  
 }   

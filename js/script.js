@@ -291,6 +291,7 @@ window.onclick = function(event) {
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 const imgMUL = document.querySelectorAll('.obsImgMUL');
 const imgSimMUL = document.querySelectorAll('.obsImgSimMUL');
+const imgIS = document.querySelectorAll('.obsImgIS');
 
 const chargeImag = (entries, observerImg) => {
     entries.forEach((element) => {
@@ -302,7 +303,7 @@ const chargeImag = (entries, observerImg) => {
 
 const observerImg = new IntersectionObserver(chargeImag, {
     root: null,
-    rootMargin: '1000px 0px 1000px -100px',
+    rootMargin: '1000px 500px 1000px 0px',
     threshold: 1.0
 });
 
@@ -320,6 +321,13 @@ function changeLangImage(language) {
     });
 
 	imgSimMUL.forEach((image) => {
+        image.style.display = 'none';
+		if (image.dataset.languages === language){
+			image.style.display = 'block';
+		}
+    });
+
+	imgIS.forEach((image) => {
         image.style.display = 'none';
 		if (image.dataset.languages === language){
 			image.style.display = 'block';
