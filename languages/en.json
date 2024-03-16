@@ -65,7 +65,25 @@
 
     "siunitText":{
         "titel" : "Sistema interanacional de unidades (SI)",
-        "text" : "Hi"
+        "text1" : "The International System of Units (SI) is the global standard for measuring various physical quantities, being fundamental in fields such as science, engineering, industry, and commerce. It consists of seven base units that serve as a starting point for deriving other more specific units. The seven base units of the SI are: :<br><br>",
+        "subtitel2" : "Meter (m):",
+        "text2" : "Unit of length, defined as the distance traveled by light in a vacuum during a specific time interval. :<br><br>",
+        "subtitel3" : "Kilogram (kg):",
+        "text3" : "Unit of mass, originally defined by a platinum-iridium cylinder in France. :<br><br>",
+        "subtitel4" : "Second (s):",
+        "text4" : "Unit of time, based on the radiation of cesium-133 atoms. :<br><br>",
+        "subtitel5" : "Ampere (A): ",
+        "text5" : "Unit of electric current, defined by the force between conductors. :<br><br>",
+        "subtitel6" : "Kelvin (K):",
+        "text6" : "Unit of thermodynamic temperature, based on the triple point of water. :<br><br>",
+        "subtitel7" : "Mole (mol):",
+        "text7" : "Unit of amount of substance, defined by the number of atoms in a specific mass of carbon-12. :<br><br>",
+        "subtitel8" : "Candela (cd): ",
+        "text8" : "Unit of luminous intensity in a specific direction, based on monochromatic radiation. :<br><br>",
+        "text9" : "In addition to these base units, the SI includes derived units obtained through combinations of the base units, covering a wide range of physical quantities such as velocity, force, energy, pressure, among others. In total, the SI consists of 22 derived units that cover scientific and practical applications. :<br><br>In the current method of unit conversion, it is proposed to learn conversion factors, such as those listed below: :",
+        "text10" : "In addition to the quantity and variety of units. For example, some derived units include: :<br><br>Square meter (m²), Cubic meter (m³), Meter per second (m/s), Liter (L), Hertz (Hz), Newton (N), Joule (J), Pascal (Pa), Watt (W), Coulomb (C), Tesla (T), Weber (Wb), Lumen (lm), Lux (lx), Hertz (Hz), Siemens (S), Farad (F), Gray (Gy), Sievert (Sv), Watt per square meter (W/m²).:<br><br>Faced with this complexity, MUL offers an innovative solution for unit conversion. By using conversion factors based on powers of ten, MUL simplifies the process and makes it more accessible to users. With MUL, converting between different units becomes easier and more efficient, allowing for smoother handling of physical quantities in various applications. You can find more information about the SI system on the ",
+        "text11" : "official website of the BIPM"
+
     }
     
 }   

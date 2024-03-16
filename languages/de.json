@@ -66,7 +66,25 @@
 
     "siunitText":{
         "titel" : "Sistema interanacional de unidades (SI)",
-        "text" : "Hallo"
+        "text1" : "Das Internationale Einheitensystem (SI) ist der globale Standard zur Messung verschiedener physikalischer Größen und ist in Bereichen wie Wissenschaft, Technik, Industrie und Handel grundlegend. Es besteht aus sieben Basiseinheiten, die als Ausgangspunkt für die Ableitung anderer spezifischerer Einheiten dienen. Die sieben Basiseinheiten des SI sind: :<br><br>",
+        "subtitel2" : "Meter (m):",
+        "text2" : "Maßeinheit für die Länge, definiert als die von Licht während eines bestimmten Zeitintervalls im Vakuum zurückgelegte Strecke. :<br><br>",
+        "subtitel3" : "Kilogramm (kg):",
+        "text3" : "Maßeinheit für die Masse, ursprünglich definiert durch einen Platin-Iridium-Zylinder in Frankreich. :<br><br>",
+        "subtitel4" : "Sekunde (s):",
+        "text4" : "Maßeinheit für die Zeit, basierend auf der Strahlung von Cäsium-133-Atomen. :<br><br>",
+        "subtitel5" : "Ampere (A):",
+        "text5" : "Maßeinheit für den elektrischen Strom, definiert durch die Kraft zwischen Leitern. :<br><br>",
+        "subtitel6" : "Kelvin (K):",
+        "text6" : "Maßeinheit für die thermodynamische Temperatur, basierend auf dem Tripelpunkt des Wassers. :<br><br>",
+        "subtitel7" : "Mol (mol):",
+        "text7" : "Maßeinheit für die Stoffmenge, definiert durch die Anzahl von Atomen in einer spezifischen Masse von Kohlenstoff-12. :<br><br>",
+        "subtitel8" : "Candela (cd):",
+        "text8" : "Maßeinheit für die Lichtstärke in einer bestimmten Richtung, basierend auf monochromatischer Strahlung. :<br><br>",
+        "text9" : "Zusätzlich zu diesen Basiseinheiten umfasst das SI abgeleitete Einheiten, die durch Kombinationen der Basiseinheiten erhalten werden und eine breite Palette physikalischer Größen wie Geschwindigkeit, Kraft, Energie, Druck und andere abdecken. Insgesamt besteht das SI aus 22 abgeleiteten Einheiten, die wissenschaftliche und praktische Anwendungen abdecken. :<br><br>Im aktuellen Verfahren zur Einheitenumrechnung wird vorgeschlagen, Umrechnungsfaktoren zu lernen, wie sie unten aufgeführt sind:",
+        "text10" : "Neben der Menge und Vielfalt der Einheiten. Einige abgeleitete Einheiten sind zum Beispiel: :<br><br>Quadratmeter (m²), Kubikmeter (m³), Meter pro Sekunde (m/s), Liter (L), Hertz (Hz), Newton (N), Joule (J), Pascal (Pa), Watt (W), Coulomb (C), Tesla (T), Weber (Wb), Lumen (lm), Lux (lx), Hertz (Hz), Siemens (S), Farad (F), Gray (Gy), Sievert (Sv), Watt pro Quadratmeter (W/m²).:<br><br>Angesichts dieser Komplexität bietet MUL eine innovative Lösung für die Einheitenumrechnung. Durch die Verwendung von Umrechnungsfaktoren, die auf Potenzen von zehn basieren, vereinfacht MUL den Prozess und macht ihn für dich zugänglicher. Mit MUL wird die Umrechnung zwischen verschiedenen Einheiten einfacher und effizienter, was ein reibungsloseres Handling physikalischer Größen in verschiedenen Anwendungen ermöglicht. Weitere Informationen zum SI-System findest du auf",
+        "text11" : "der offiziellen Website des BIPM"
+
     }
  
 }   
