@@ -24,6 +24,9 @@ window.onload = function() {
 	//Function to modify the Zoom from the page, to maintein the image visible
 	//window.onresize();
 
+	// Llamar a la función cuando sea necesario
+	actualizarCookiesYCaché();
+
 	var idioma = navigator.language;
 	var dosPrimerasLetras = idioma[0] + idioma[1];
 	if (dosPrimerasLetras === "es" || dosPrimerasLetras === "en" || dosPrimerasLetras === "de") {
@@ -42,6 +45,17 @@ window.onload = function() {
 	window.scrollTo({top: 0, behavior: 'smooth'});
 };
 
+function actualizarCookiesYCaché() {
+    // Actualizar cookies
+    document.cookie = "cookieName=cookieValue; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+
+    // Limpiar caché
+    caches.keys().then(function(cacheNames) {
+        cacheNames.forEach(function(cacheName) {
+            caches.delete(cacheName);
+        });
+    });
+}
 
 /*window.onresize = function() {
 	var viewportWidth = window.innerWidth;
