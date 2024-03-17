@@ -61,7 +61,7 @@
     },
 
     "siunitText":{
-        "titel" : "Sistema interanacional de unidades (SI)",
+        "titel" : "International System of Units (SI)",
         "text1" : "The International System of Units (SI) is the global standard for measuring various physical quantities, being fundamental in fields such as science, engineering, industry, and commerce. It consists of seven base units that serve as a starting point for deriving other more specific units. The seven base units of the SI are: :<br><br>",
         "subtitel2" : "Meter (m):",
         "text2" : "Unit of length, defined as the distance traveled by light in a vacuum during a specific time interval. :<br><br>",

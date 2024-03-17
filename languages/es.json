@@ -61,7 +61,7 @@
     },
 
     "siunitText":{
-        "titel" : "Sistema interanacional de unidades (SI)",
+        "titel" : "Sistema Internacional de Unidades (SI)",
         "text1" : "El Sistema Internacional de Unidades (SI) es el estándar global para la medición de diversas magnitudes físicas, siendo fundamental en campos como la ciencia, la ingeniería, la industria y el comercio. Consta de siete unidades básicas que sirven como punto de partida para derivar otras unidades más específicas. Las siete unidades básicas del SI son:<br><br>",
         "subtitel2" : "Metro (m): ",
         "text2" : "Unidad de longitud, definida como la distancia que recorre la luz en el vacío durante un intervalo de tiempo específico. <br><br>",

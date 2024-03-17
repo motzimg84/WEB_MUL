@@ -62,7 +62,7 @@
     },
 
     "siunitText":{
-        "titel" : "Sistema interanacional de unidades (SI)",
+        "titel" : "Internationales Einheitensystem (SI)",
         "text1" : "Das Internationale Einheitensystem (SI) ist der globale Standard zur Messung verschiedener physikalischer Größen und ist in Bereichen wie Wissenschaft, Technik, Industrie und Handel grundlegend. Es besteht aus sieben Basiseinheiten, die als Ausgangspunkt für die Ableitung anderer spezifischerer Einheiten dienen. Die sieben Basiseinheiten des SI sind: :<br><br>",
         "subtitel2" : "Meter (m):",
         "text2" : "Maßeinheit für die Länge, definiert als die von Licht während eines bestimmten Zeitintervalls im Vakuum zurückgelegte Strecke. :<br><br>",
