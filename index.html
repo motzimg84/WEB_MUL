@@ -25,9 +25,9 @@
                     <img src="img/MUL_Logo_bar.png" class="navbar-img" />
                 </div>
                 <div class="navbarBut">
-                    <button class="navbar-item" id="navbarButt1" onclick="scrollToSection('descrip')" data-section="navbartext" data-value="navbar-butt1">¿Que es MUL?</button>
+                    <button class="navbar-item" id="navbarButt1" data-section="navbartext" data-value="navbar-butt1">¡Usa MUL!</button>
                 
-                    <button class="navbar-item" id="navbarButt2" onclick="scrollToSection('example')" data-section="navbartext" data-value="navbar-butt2">¿Como se usa MUL?</button>
+                    <button class="navbar-item" id="navbarButt2" data-section="navbartext" data-value="navbar-butt2">¡Acerca de MUL!</button>
                 
                     <button class="navbar-item" id="navbarButt3" onclick="scrollToSection('mostrar_tabla')" data-section="navbartext" data-value="navbar-butt3">Simulador de MUL</button>
 
@@ -38,7 +38,8 @@
             </div>
         </div>
     </div>
-    <button class="navbar-button" id="navbarButton">&#9776;</button>
+    <button class="navbar-button" id="navbarButton"><img src="./icon/Menu-02-256.png" id="navBut"></button>
+    <button class="navbar-button" id="salesButton"><img src="./icon/Shopping-Cart-02-256.png" id="shoppCart"></button>
 
     <div  id="languageSelector">
         <button style="cursor: pointer;" class="buttLangOpt">
@@ -60,7 +61,7 @@
     </div>  
 </header>
 
-<div style="display: block;" id="bodySim">
+<div style="display: block;" id="bodyExamp">
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                                 Description Block                                                                                
     ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
@@ -69,18 +70,20 @@
             <img style="display: none;" class="rightFlip obsImgMUL" data-languages="de" src="./img/MUL_V1_de.png">
             <img style="display: none;" class="rightFlip obsImgMUL" data-languages="en" src="./img/MUL_V1_en.png">
             <img style="display: none;" class="rightFlip obsImgMUL" data-languages="es" src="./img/MUL_V1_es.png">
+            <div class="bildProtec"></div>
         </div>
         <div class="board" id = "descrip">
             <div style="text-align: center;">
-                <h1 data-section="navbartext" data-value="navbar-butt1">¿Que es MUL?</h1>
-                <p style="text-align: center;" class="ptexDesc" data-section="descripText" data-value="desTextIntro">MUL es una herramienta que te permite converit las unidades de medida <br> del sistema interanaciona de medidas (SI), con tan solo 3 pasos.</p>
+                <h1 data-section="descripText" data-value="desTitel">¡Convierte la complejidad en simplicidad con MUL!</h1>
+                <p style="text-align: center;" class="ptexDesc" data-section="descripText" data-value="desTextIntro">¿Te has sentido abrumado por la cantidad de unidades de medida en el Sistema Internacional (SI)? ¡No estás solo! La conversión de unidades puede ser un verdadero dolor de cabeza, especialmente cuando tus resultados dependen de ello. Pero no te preocupes, tenemos la solución perfecta para ti: ¡MUL, tu herramienta definitiva para convertir unidades de manera rápida, precisa y sin complicaciones!<br><br>
+                MUL te permite convertir las unidades de medida del Sistema Internacional de Unidades (SI) en tan solo 3 simples pasos:</p>
             </div>
             <div style="height: 200px; padding: 20px;" class="row">
                 <div  id="contDinamic">
                     <div id="anterior"><img src="./icon/left-arrow-256.png" class="directionImg"></div>
-                    <div class="caja " data-section="descripText" data-value="desCaja1">1. Escribir el numero haciendo que la coma coincida con la unidad correspondiente en MUL.</div>
-                    <div class="caja " data-section="descripText" data-value="desCaja2">2. Buscar la unidad final deseada en MUL </div>
-                    <div class="caja " data-section="descripText" data-value="desCaja3">3. Desplazar la coma a la pocicion final y en caso de ser necesario rellenar las celdas basias con 0.</div>
+                    <div class="caja " data-section="descripText" data-value="desCaja1">1. Escribe el número, asegurándote de que la coma coincida con la unidad correspondiente en MUL.</div>
+                    <div class="caja " data-section="descripText" data-value="desCaja2">2. Busca la unidad final deseada en MUL.</div>
+                    <div class="caja " data-section="descripText" data-value="desCaja3">3. Desplaza la coma a la posición final y, si es necesario, rellena las celdas vacías con ceros.</div>
                     <div id="siguiente"><img src="./icon/right-arrow-256.png" class="directionImg"></div>
                 </div>
             </div>
@@ -193,202 +196,340 @@
 			</div>
 		</div>
 	</div>
+</div>
+<div style="display: none;" id="bodyAboutMUL">
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                About MUL                                                                             
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <div class= "example">
+        <div id="example" style=" margin: 0px auto 20px auto; border: 2px solid transparent; " class="board">
+            <div>
+                <h1 data-section="abMulText" data-value="titel">¡Solución Innovadora para la Conversión de Unidades de Medida!<br><br></h1>
 
-<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                                                    Simulation Bock                                                                                
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    <div class="containerMUL" id="mostrar_tabla">
-        <div style="margin-top: 10px;"></div>
-        <div style="text-align: center;">
-            <h1 data-section="navbartext" data-value="navbar-butt3">Simulador de MUL?</h1>
-            <button class="help-btn" id="help-btn">?</button>
-        </div>
-        <div>
-            <div class="contSimImag">
-                <img style="display: none;" data-languages="de" src="img/MUL_V3_de.png" class="imgMUL obsImgSimMUL" />
-                <img style="display: none;" data-languages="en" src="img/MUL_V3_en.png" class="imgMUL obsImgSimMUL" />
-                <img style="display: none;" data-languages="es" src="img/MUL_V3_es.png" class="imgMUL obsImgSimMUL" />
-            </div>
-            <div class="containerGrid">
-                <div class="left-column">
-                    <!-- Contenido de la columna izquierda -->
-                </div>
-                <div class="center-column" id="center-column">
-                    <!-- Contenido de la columna central -->
-                    <div class= "tdCell_L" id="V1"></div>
-                    <div class= "tdCell_S" id="C1"></div>
-                    <div class= "tdCell_L" id="V2"></div>
-                    <div class= "tdCell_S" id="C2"></div>
-                    <div class= "tdCell_L" id="V3"></div>
-                    <div class= "tdCell_S" id="C3"></div>
-                    <div class= "tdCell_L" id="V4"></div>
-                    <div class= "tdCell_S" id="C4"></div>
-                    <div class= "tdCell_L" id="V5"></div>
-                    <div class= "tdCell_S" id="C5"></div>
-                    <div class= "tdCell_L" id="V6"></div>
-                    <div class= "tdCell_S" id="C6"></div>
-                    <div class= "tdCell_L" id="V7"></div>
-                    <div class= "tdCell_S" id="C7"></div>
-                    <div class= "tdCell_L" id="V8"></div>
-                    <div class= "tdCell_S" id="C8"></div>
-                    <div class= "tdCell_L" id="V9"></div>
-                    <div class= "tdCell_S" id="C9"></div>
-                    <div class= "tdCell_L" id="V10"></div>
-                    <div class= "tdCell_S" id="C10"></div>
-                    <div class= "tdCell_L" id="V11"></div>
-                    <div class= "tdCell_S" id="C11"></div>
-                    <div class= "tdCell_L" id="V12"></div>
-                    <div class= "tdCell_S" id="C12"></div>
-                    <div class= "tdCell_L" id="V13"></div>
-                    <div class= "tdCell_S" id="C13"></div>
-                    <div class= "tdCell_L" id="V14"></div>
-                    <div class= "tdCell_S" id="C14"></div>
-                    <div class= "tdCell_L" id="V15"></div>
-                    <div class= "tdCell_S" id="C15"></div>
-                    <div class= "tdCell_L" id="V16"></div>
-                    <div class= "tdCell_S" id="C16"></div>
-                    <div class= "tdCell_L" id="V17"></div>
-                    <div class= "tdCell_S" id="C17"></div>
-                    <div class= "tdCell_L" id="V18"></div>
-                    <div class= "tdCell_S" id="C18"></div>
-                    <div class= "tdCell_L" id="V19"></div>
-                    <div class= "tdCell_S" id="C19"></div>
-                    <div class= "tdCell_L" id="V20"></div>
-                    <div class= "tdCell_S" id="C20"></div>
-                    <div class= "tdCell_L" id="V21"></div>
-                    <div class= "tdCell_S" id="C21"></div>
-                    <div class= "tdCell_L" id="V22"></div>
-                    <div class= "tdCell_S" id="C22"></div>
-                    <div class= "tdCell_L" id="V23"></div>
-                    <div class= "tdCell_S" id="C23"></div>
-                    <div class= "tdCell_L" id="V24"></div>
-                    <div class= "tdCell_S" id="C24"></div>
-                    <div class= "tdCell_L" id="V25"></div>
-                    <div class= "tdCell_S" id="C25"></div>
-                    <div class= "tdCell_L" id="V26"></div>
-                    <div class= "tdCell_S" id="C26"></div>                       
-                </div>
-                <div class="right-column">
-                    <!-- Contenido de la columna derecha -->
-                </div>
-            </div>
-        </div>
-        <!-- Codigo para genera la felcha -->
-        <div class="flechaLine">
-            <div class="colaFL" id="colaFL"></div>
-        </div>
-        <div class="flechaUp" id="flechaUp"></div>
-        <div class="flechaStyle">
-            <div class="colaF" id="colaF"></div>
-            
-        </div>
-        <div class="row">
-            <div class="solNotice">
-                <h1 class="textNotice" id= "textoRes1"></h1>
-            </div>
-            <div class="solNotice">
-                <h1 class="textNotice" id= "textoRes2"></h1>
-            </div>
-        </div>
+                <p data-section="abMulText" data-value="text1">La conversión de unidades en el Sistema Internacional (SI) ha sido un desafío persistente, afectando tanto a estudiantes como a profesionales en diversos campos. La complejidad de este proceso ha generado dificultades en su comprensión y ejecución, lo que se refleja en estudios académicos y experiencias prácticas. Ante esta problemática, se propuso la creación de una solución efectiva y eficiente: el Maßeinheitenumwandlung und Lineal (MUL), diseñado para simplificar la conversión de unidades de manera rápida y precisa.<br><br>
+                </p>
+                <h2 data-section="abMulText" data-value="subTitel2">Problema Identificado:<br><br></h2>
+                
+                <p data-section="abMulText" data-value="text2">Estudios realizados por diversos autores, como Schröder (2014), Lassnitzer y Gaidoschik (2019), y Dinçer y Osmanoglu (2018), han destacado las dificultades experimentadas por estudiantes y profesionales al realizar conversiones de unidades dentro del Sistema Internacional (SI). Estas dificultades se han traducido en errores en cálculos y en la comprensión incompleta de los conceptos de conversión, lo que ha afectado negativamente a los resultados académicos y profesionales. La falta de herramientas efectivas y accesibles para abordar esta problemática ha agravado la situación, generando la necesidad de una solución innovadora.<br><br>
+                </p>
+                <h2 data-section="abMulText" data-value="subTitel3">Creación de MUL:<br><br></h2>
+                
+                <p data-section="abMulText" data-value="text3">En respuesta a esta problemática, el Ing. Mauricio Mora, MSc., desarrolló el Maßeinheitenumwandlung und Lineal (MUL) en el año 2023. Inspirado en principios de Design Thinking y Lean Thinking, el desarrollo de MUL se centró en comprender las necesidades de los usuarios y en diseñar una herramienta intuitiva y práctica para la conversión de unidades de medida. El proceso de desarrollo de MUL incluyó la identificación de los problemas clave asociados con la conversión de unidades, la generación de ideas para abordar estos problemas, la creación de prototipos y pruebas iterativas para refinar la funcionalidad y la usabilidad de la herramienta.<br><br>
+                </p>
 
-        <div class="row">
-            <Form style="width: 100%;">
-                <div style="height: 0px; " class="row">
-                    <div  id="popupWrapper1" class="popupWrapper">
-                        <div style= "top: -25px; left: 12%; float: left; " id="popup" class="popup">
-                            <div class="popup-arrow"></div>
-                            <button class="buttCloPopup"  onclick="popupsClose()">
-                                <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
-                            </button>
-                            <p data-section="pupuptext" data-value="pupup1">1. Ingresa el aqui el numero.</p> 
-                        </div>
-                    </div>
-                    <div id="popupWrapper2" class="popupWrapper">
-                        <div style= "top: -25px; left: 24%; float: left; " id="popup" class="popup">
-                            <div class="popup-arrow"></div>
-                            <button class="buttCloPopup"  onclick="popupsClose()">
-                                <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
-                            </button>
-                            <p data-section="pupuptext" data-value="pupup2">2. Selecciona la unidad inicial.</p> 
-                        </div>
-                    </div>
+                <h2 data-section="abMulText" data-value="subTitel4">Pruebas y Validación:<br><br></h2>
+                
+                <p data-section="abMulText" data-value="text4">Para validar la efectividad de MUL, se llevaron a cabo extensas pruebas con diferentes versiones del prototipo. Estas pruebas implicaron la participación de usuarios reales, tanto estudiantes como profesionales, quienes realizaron conversiones de unidades utilizando MUL en situaciones de la vida real. El feedback recopilado durante estas pruebas fue fundamental para perfeccionar el diseño y la funcionalidad de MUL, garantizando su utilidad y facilidad de uso en diversas aplicaciones y contextos.<br><br></p>
+                
+                <h2 data-section="abMulText" data-value="subTitel5">Ejemplo de Conversión de Unidades:<br><br></h2>
+                
+                <p data-section="abMulText" data-value="text5">Para comprender mejor la utilidad de MUL, consideremos un ejemplo de conversión de unidades utilizando el método tradicional y comparémoslo con el método simplificado proporcionado por MUL.<br><br></p>
+
+                <h2 data-section="abMulText" data-value="subTitel6">Método Tradicional:<br><br></h2>
+
+                <p data-section="abMulText" data-value="text6">Supongamos que queremos convertir 0.0025 kilómetros cuadrados a milímetros cuadrados utilizando el método tradicional.<br><br></p>
+                <div style="margin-left: 30px;">
+                    <strong style="font-weight: bold;">1. </strong><p style="display: inline;" data-section="abMulText" data-value="text61">Busca en libros de referencia o en internet la tabla 'factores de conversión de unidades de área'. Encuentra una tabla de conversión o información relevante. <br>< br></p>
+                    <strong style="font-weight: bold;">2. </strong><p style="display: inline;" data-section="abMulText" data-value="text62">Interpreta los datos de la tabla para determinar si debes realizar una división o una multiplicación. En este ejemplo, debes realizar una multiplicación.<br><br></p>
+                    <strong style="font-weight: bold;">3. </strong><p style="display: inline;" data-section="abMulText" data-value="text63">Calcula el factor de conversión, en este caso, de kilómetros cuadrados a milímetros cuadrados. Dado que la tabla generalmente tiene como punto de referencia los metros cuadrados, necesitas dos factores que debes multiplicar: el primero de km² a m² y el segundo de m² a mm². Esto implica multiplicar el número de kilómetros cuadrados que tienes por 1,000,000 (para convertir a metros cuadrados) y luego por 1,000,000 nuevamente (para convertir a milímetros cuadrados).<br><br></p>
+                    <strong style="font-weight: bold;">4. </strong><p style="display: inline;" data-section="abMulText" data-value="text64">Define la ecuación para la conversión. La ecuación para convertir kilómetros cuadrados a milímetros cuadrados es:<br></p>
+                    <p data-section="abMulText" data-value="text65" style="font-weight: bold; text-align: center;">f(0,0025)=0,0025×(1.000.000)² = 0,0025×1.000.000.000.000<br><br></p>
+                    <strong style="font-weight: bold;">5. </strong><p style="display: inline;" data-section="abMulText" data-value="text66">Realiza la operación para obtener el resultado, que en este ejemplo es 2,500,000,000 mm².<br><br></p>
                 </div>
 
-                <div class="contForm">
-                    <p class="textForm manTexPos" data-section="simultext" data-value="simul-num">Convertir el número: </p>
+                <p data-section="abMulText" data-value="text69">Es importante tener en cuenta que la cantidad de energía requerida para realizar una conversión de unidades de medida puede variar dependiendo de varios factores, como la complejidad de la conversión, la familiaridad con los conceptos involucrados y la precisión requerida en los cálculos. En general, realizar cálculos mentales, especialmente aquellos que implican operaciones como multiplicación o división, puede requerir un esfuerzo cognitivo significativo. <br>Cuando realizamos conversiones de unidades de medida, nuestro cerebro necesita concentrarse en varias tareas al mismo tiempo, como recordar las reglas de conversión, aplicar las operaciones matemáticas adecuadas y mantener la precisión en los cálculos. Esto puede requerir una cantidad considerable de energía mental, especialmente si la conversión es compleja o si no estamos familiarizados con los conceptos involucrados. <br>El grado de energía requerida puede variar de persona a persona y también puede depender del nivel de fatiga mental, el nivel de concentración y otros factores individuales. En general, mientras más complicada sea la conversión y más precisión se requiera, es probable que se necesite más energía mental para llevarla a cabo de manera efectiva y precisa.<br><br></p>
 
-                    <input class="textForm imputValue" type="text" id="input" data-section="input" data-value="placeholderText" autocomplete="off" onkeydown="return event.key !== 'Enter';" placeholder="Ingrese un numero" oninput="permitirPuntoComa(event)" />
+                <h2 data-section="abMulText" data-value="subTitel7">Método MUL:<br><br></h2>
 
-
-                    <p class="textForm manTexPos"> de </p>	
-
-                    <select class="textForm selectors textNotice" id="unidad" onchange="splitNumber()">
-                    <option value="Tm" data-exponent="0">Tm</option>
-                    <option value="Gm" data-exponent="3">Gm</option>
-                    <option value="Mm" data-exponent="6">Mm</option>
-                    <option value="Km" data-exponent="9">Km</option>
-                    <option value="Hm" data-exponent="10">Hm</option>
-                    <option value="Dm" data-exponent="11">Dm</option>
-                    <option value="m" data-exponent="12" selected>m</option>
-                    <option value="dm" data-exponent="13">dm</option>
-                    <option value="cm" data-exponent="14">cm</option>
-                    <option value="mm" data-exponent="15">mm</option>
-                    <option value="µm" data-exponent="18">µm</option>
-                    <option value="nm" data-exponent="21">nm</option>
-                    <option value="pm" data-exponent="24">pm</option>
-                    </select>
-
-                    <p class="textForm manTexPos" > a </p>
-
-                    <select class="textForm selectors textNotice" id="escala" onchange="splitNumber()">
-                    <option value="Tm" data-exponent="0">Tm</option>
-                    <option value="Gm" data-exponent="3">Gm</option>
-                    <option value="Mm" data-exponent="6">Mm</option>
-                    <option value="Km" data-exponent="9">Km</option>
-                    <option value="Hm" data-exponent="10">Hm</option>
-                    <option value="Dm" data-exponent="11">Dm</option>
-                    <option value="m" data-exponent="12" selected>m</option>
-                    <option value="dm" data-exponent="13">dm</option>
-                    <option value="cm" data-exponent="14">cm</option>
-                    <option value="mm" data-exponent="15">mm</option>
-                    <option value="µm" data-exponent="18">µm</option>
-                    <option value="nm" data-exponent="21">nm</option>
-                    <option value="pm" data-exponent="24">pm</option>
-                    </select>
+                <p data-section="abMulText" data-value="text7">Ahora, veamos cómo MUL simplifica este proceso en solo tres pasos:<br><br></p>
+                <div style="margin-left: 30px;">
+                    <strong style="font-weight: bold;">1. </strong><p style="display: inline;" data-section="abMulText" data-value="text71">Escribimos el número 0,0025 en MUL, asegurándonos de que la coma coincida con la unidad correspondiente.<br><br></p>
+                    <div style="width: 100%; justify-content: center; align-items: center; text-align: center;   "><img class="imgExamp" src="img/Example1.png"></div>
+                    <strong style="font-weight: bold;">2. </strong><p style="display: inline;" data-section="abMulText" data-value="text72">Buscamos la unidad final deseada, que en este caso es kilómetros cuadrados, en MUL.<br><br></p>
+                    <div style="width: 100%; justify-content: center; align-items: center; text-align: center;   "><img class="imgExamp" src="img/Example2.png"></div>
+                    <strong style="font-weight: bold;">3. </strong><p style="display: inline;" data-section="abMulText" data-value="text73">Desplazamos la coma a la posición final y, si es necesario, rellenamos las celdas vacías con ceros.<br><br></p>
+                    <div style="width: 100%; justify-content: center; align-items: center; text-align: center;   "><img class="imgExamp" src="img/Example3.png"></div>
                 </div>
-            </Form>
-        </div>
 
-        <div class="row">
-            <table class="table2" id="table2" >
-                <td class= "tdBut"><button class="buttonArt" data-section="simultext" data-value="simul-butL" style = "background-color: white;" id="cell1" onclick="presCell('1')"  selected>Longitud</button></td>
-                <td class= "tdBut"><button class="buttonArt" data-section="simultext" data-value="simul-butA" id="cell2" onclick="presCell('2')" >Area</button></td>
-                <td class= "tdBut"><button class="buttonArt" data-section="simultext" data-value="simul-butV" id="cell3" onclick="presCell('3')" >Volumen</button></td>
-                <td style= "display: none" id = "indice">1</td>
-            </table>
-        </div>
+                <h2 data-section="abMulText" data-value="subTitel8">Ventajas de MUL:<br><br></h2>
+                
+                <div style="display: inline;"><img src="icon/indicate-arrow.png" class="indicArrowS"></div>
+                <p style="display: inline;"><strong style="font-weight: bold;" data-section="abMulText" data-value="subTitel81">Simplicidad: </strong></p>
+                <p style="display: inline;" data-section="abMulText" data-value="text81">MUL simplifica el proceso de conversión de unidades en solo tres pasos, eliminando la necesidad de cálculos complejos o de buscar factores de conversión externos.<br><br></p>
 
-        <div style="height: 0px; " class="row">
-            <div id="popupWrapper4" class="popupWrapper">
-                <div style= "top: -3px; left: 5%; float: left; " id="popup" class="popup-up">
-                    <div class="popup-arrow-up1"></div>
-                    <button class="buttCloPopup"  onclick="popupsClose()">
-                        <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
-                    </button>
-                    <p data-section="pupuptext" data-value="pupup3">Puedes cambiar la unidad de conversion SI. entre Longitud, Area o Volumen. </p> 
-                </div>
-            </div>
-            <div id="popupWrapper3" class="popupWrapper">
-                <div style= "top: -110px; left: 40%; float: left; " id="popup" class="popup-up">
-                    <div class="popup-arrow-up2"></div>
-                    <button class="buttCloPopup"  onclick="popupsClose()">
-                        <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
-                    </button>
-                    <p data-section="pupuptext" data-value="pupup4">3. Selecciona la unidad final.</p> 
-                </div>
+                <div style="display: inline;"><img src="icon/indicate-arrow.png" class="indicArrowS"></div>
+                <p style="display: inline;"><strong style="font-weight: bold;" data-section="abMulText" data-value="subTitel82">Precisión: </strong></p>
+                <p style="display: inline;" data-section="abMulText" data-value="text82">La estructura intuitiva de MUL garantiza la precisión en las conversiones de unidades, minimizando los errores humanos.<br><br></p>
+
+                <div style="display: inline;"><img src="icon/indicate-arrow.png" class="indicArrowS"></div>
+                <p style="display: inline;"><strong style="font-weight: bold;" data-section="abMulText" data-value="subTitel83">Eficiencia: </strong></p>
+                <p style="display: inline;" data-section="abMulText" data-value="text83">Eficiencia: Con MUL, las conversiones de unidades se realizan de manera rápida y eficiente, ahorrando tiempo y esfuerzo.<br><br></p>
+
+                <div style="display: inline;"><img src="icon/indicate-arrow.png" class="indicArrowS"></div>
+                <p style="display: inline;"><strong style="font-weight: bold;" data-section="abMulText" data-value="subTitel84">Accesibilidad: </strong></p>
+                <p style="display: inline;" data-section="abMulText" data-value="text84">MUL es accesible y fácil de usar para estudiantes, profesionales y cualquier persona que necesite realizar conversiones de unidades en su vida diaria.<br><br></p>
+
+                <div style="display: inline;"><img src="icon/indicate-arrow.png" class="indicArrowS"></div>
+                <p style="display: inline;"><strong style="font-weight: bold;" data-section="abMulText" data-value="subTitel85">Visualización del Proceso: </strong></p>
+                <p style="display: inline;" data-section="abMulText" data-value="text85">A diferencia de los dispositivos digitales que solo muestran el resultado final, MUL permite que el usuario visualice todo el proceso de conversión, lo que facilita el aprendizaje y la comprensión de los conceptos asociados.<br><br></p>
+
+                <h2 data-section="abMulText" data-value="subTitel9">Resultados del Estudio:</h2>
+                
+                <p data-section="abMulText" data-value="text9">El estudio realizado por el Ing. Mauricio Mora, MSc., demostró que MUL es una herramienta altamente efectiva y útil para la conversión de unidades en el Sistema Internacional. Los usuarios que participaron en las pruebas encontraron que MUL simplificaba significativamente el proceso de conversión de unidades y mejoraba su comprensión de los conceptos asociados. Además, se observó una reducción significativa en los errores de cálculo y una mayor confianza en los resultados obtenidos mediante el uso de MUL. Estos resultados respaldan la importancia y la relevancia de MUL como una solución innovadora para abordar los desafíos en la conversión de unidades de medida en el contexto actual.<br><br></p>
             </div>
         </div>
     </div>
+</div>
+<div style="display: none;" id="bodySIUnit">
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                Description SI- Units                                                                                
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <div class= "example">
+        <div id="example" style=" margin: 0px auto 20px auto; border: 2px solid transparent;" class="board">
+            <div>
+                <h1 data-section="siunitText" data-value="titel">Sistema Internacional de Unidades (SI)<br><br></h1>
+                    
+        
+                <p data-section="siunitText" data-value="text1">Las Unidades del Sistema Internacional (SI) son la base fundamental de la metrología, proporcionando un estándar global para la medición de diversas magnitudes físicas. Estas unidades se utilizan en todo el mundo en campos que van desde la ciencia y la ingeniería hasta la industria y el comercio. El sistema se basa en siete unidades básicas, las cuales sirven como punto de partida para derivar otras unidades más específicas.<br><br>Las siete unidades básicas del SI son: <br></p>
+                <div style="display: inline;"><img src="icon/indicate-arrow.png" class="indicArrowS"></div>
+                <p style="display: inline;"><strong style="font-weight: bold;" data-section="siunitText" data-value="subTitel2"> Metro (m):</strong></p>
+                <p style="display: inline;" data-section="siunitText" data-value="text2">Es la unidad básica de longitud, definida como la distancia que recorre la luz en el vacío durante un intervalo de tiempo de 1/299,792,458 de segundo. <br><br></p>
+
+                <div style="display: inline;"><img src="icon/indicate-arrow.png" class="indicArrowS"></div>
+                <p style="display: inline;"><strong style="font-weight: bold;" data-section="siunitText" data-value="subTitel3"> Kilogramo (kg):</strong></p>
+                <p style="display: inline;" data-section="siunitText" data-value="text3"> Es la unidad básica de masa, definida originalmente como la masa de un cilindro de platino-iridio almacenado en la Oficina Internacional de Pesas y Medidas en Francia. Sin embargo, se está trabajando en una nueva definición basada en constantes fundamentales de la naturaleza. <br><br></p>
+
+                <div style="display: inline;"><img src="icon/indicate-arrow.png" class="indicArrowS"></div>
+                <p style="display: inline;"><strong style="font-weight: bold;" data-section="siunitText" data-value="subTitel4"> Segundo (s):</strong></p>
+                <p style="display: inline;" data-section="siunitText" data-value="text4"> Es la unidad básica de tiempo, definida como la duración de 9,192,631,770 periodos de la radiación correspondiente a la transición entre dos niveles hiperfinos del estado fundamental del átomo de cesio-133. <br><br></p>
+
+                <div style="display: inline;"><img src="icon/indicate-arrow.png" class="indicArrowS"></div>
+                <p style="display: inline;"><strong style="font-weight: bold;" data-section="siunitText" data-value="subTitel5"> Ampere (A):</strong></p>
+                <p style="display: inline;" data-section="siunitText" data-value="text5"> Es la unidad básica de corriente eléctrica, definida como la corriente constante que, si se mantiene en dos conductores paralelos rectilíneos de longitud infinita y sección transversal circular despreciable, produciría entre estos conductores una fuerza igual a 2 × 10^−7 newton por metro de longitud. <br><br></p>
+
+                <div style="display: inline;"><img src="icon/indicate-arrow.png" class="indicArrowS"></div>
+                <p style="display: inline;"><strong style="font-weight: bold;" data-section="siunitText" data-value="subTitel6"> Kelvin (K):</strong></p>
+                <p style="display: inline;" data-section="siunitText" data-value="text6"> Es la unidad básica de temperatura termodinámica, definida como 1/273.16 de la temperatura termodinámica del punto triple del agua. <br><br></p>
+
+                <div style="display: inline;"><img src="icon/indicate-arrow.png" class="indicArrowS"></div>
+                <p style="display: inline;"><strong style="font-weight: bold;" data-section="siunitText" data-value="subTitel7"> Mol (mol):</strong></p>
+                <p style="display: inline;" data-section="siunitText" data-value="text7"> Es la unidad básica de cantidad de sustancia, definida como la cantidad de sustancia de un sistema que contiene tantas entidades elementales como átomos hay en 0.012 kilogramos de carbono-12. <br><br></p>
+
+                <div style="display: inline;"><img src="icon/indicate-arrow.png" class="indicArrowS"></div>
+                <p style="display: inline;"><strong style="font-weight: bold;" data-section="siunitText" data-value="subTitel8"> Candela (cd):</strong></p>
+                <p style="display: inline;" data-section="siunitText" data-value="text8"> Es la unidad básica de intensidad luminosa en una dirección específica, definida como la intensidad luminosa en una dirección dada de una fuente que emite radiación monocromática de frecuencia 540 × 10^12 hertzios y cuya intensidad radiante en esa dirección es de 1/683 watts por estereorradián. <br><br></p>
+
+                <p data-section="siunitText" data-value="text9">Además de estas unidades básicas, el SI incluye unidades derivadas obtenidas mediante combinaciones de las unidades básicas, que abarcan una amplia gama de magnitudes físicas como velocidad, fuerza, energía, presión, entre otras. En total, el SI consta de 22 unidades derivadas que cubren aplicaciones científicas y prácticas. <br><br>En el método actual de conversión de unidades, se propone aprenderse los factores de conversión, como los que se exponen a continuación:</p>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+                <img style="display: none;" data-languages="de" src="img/IS_de.PNG" class="imgIS obsImgIS"/>
+                <img style="display: none;" data-languages="en" src="img/IS_en.PNG" class="imgIS obsImgIS"/>
+                <img style="display: none;" data-languages="es" src="img/IS_es.PNG" class="imgIS obsImgIS"/>
+            </div>    
+            <div>
+                <p style="display: inline; data-section="siunitText" data-value="text10">Además de la cantidad y variedad de unidades. Por ejemplo, algunas unidades derivadas incluyen: <br><br>Metro cuadrado (m²), Metro cúbico (m³), Metro por segundo (m/s), Litro (L), Hertz (Hz), Newton (N), Joule (J), Pascal (Pa), Vatio (W), Coulomb (C), Tesla (T), Weber (Wb), Lumen (lm), Lux (lx), Hertz (Hz), Siemens (S), Faradio (F), Gray (Gy), Sievert (Sv), Watt por metro cuadrado (W/m²).<br><br>Ante esta complejidad, MUL ofrece una solución innovadora para la conversión de unidades. Al utilizar factores de conversión basados en potencias de diez, MUL simplifica el proceso y lo hace más accesible para los usuarios. Con MUL, convertir entre diferentes unidades se vuelve más sencillo y eficiente, permitiendo un manejo más fluido de las magnitudes físicas en diversas aplicaciones. <br><br>Puedes encontrar más información respecto al sistema SI en el </p><a href="https://www.bipm.org/en/measurement-units/" target="_blank" style="text-decoration: none; color: blue; display: inline-block; cursor: pointer;" data-section="siunitText" data-value="text11">sitio web oficial del BIPM</a><p style="display: inline;">.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="display: block;" id="bodySim">
+    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                        Simulation Bock                                                                                
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+        <div class="containerMUL" id="mostrar_tabla">
+            <div style="margin-top: 10px;"></div>
+            <div style="text-align: center;">
+                <h1 data-section="navbartext" data-value="navbar-butt3">Simulador de MUL?</h1>
+                <button class="help-btn" id="help-btn"><img src="./icon/Question-256-black.png" id="imgHelp-btn"></button>
+                <p style=" padding: 20px 50px 20px 50px;" class="ptexDesc" data-section="simultext" data-value="descText">El simulador de MUL es una herramienta interactiva que ofrece a los usuarios la oportunidad de aprender a usar MUL mediante ejemplos prácticos. Con esta herramienta, los usuarios pueden experimentar y familiarizarse con todas las funcionalidades de MUL, garantizando así una experiencia de aprendizaje efectiva y práctica.<br><br></p>
+            </div>
+            <div style="position: relative;">
+                <div class="contSimImag">
+                    <img style="display: none;" data-languages="de" src="img/MUL_V3_de.png" class="imgMUL obsImgSimMUL" />
+                    <img style="display: none;" data-languages="en" src="img/MUL_V3_en.png" class="imgMUL obsImgSimMUL" />
+                    <img style="display: none;" data-languages="es" src="img/MUL_V3_es.png" class="imgMUL obsImgSimMUL" />
+                </div>
+                <div class="containerGrid">
+                    <div class="left-column">
+                        <!-- Contenido de la columna izquierda -->
+                    </div>
+                    <div class="center-column" id="center-column">
+                        <!-- Contenido de la columna central -->
+                        <div class= "tdCell_L" id="V1"></div>
+                        <div class= "tdCell_S" id="C1"></div>
+                        <div class= "tdCell_L" id="V2"></div>
+                        <div class= "tdCell_S" id="C2"></div>
+                        <div class= "tdCell_L" id="V3"></div>
+                        <div class= "tdCell_S" id="C3"></div>
+                        <div class= "tdCell_L" id="V4"></div>
+                        <div class= "tdCell_S" id="C4"></div>
+                        <div class= "tdCell_L" id="V5"></div>
+                        <div class= "tdCell_S" id="C5"></div>
+                        <div class= "tdCell_L" id="V6"></div>
+                        <div class= "tdCell_S" id="C6"></div>
+                        <div class= "tdCell_L" id="V7"></div>
+                        <div class= "tdCell_S" id="C7"></div>
+                        <div class= "tdCell_L" id="V8"></div>
+                        <div class= "tdCell_S" id="C8"></div>
+                        <div class= "tdCell_L" id="V9"></div>
+                        <div class= "tdCell_S" id="C9"></div>
+                        <div class= "tdCell_L" id="V10"></div>
+                        <div class= "tdCell_S" id="C10"></div>
+                        <div class= "tdCell_L" id="V11"></div>
+                        <div class= "tdCell_S" id="C11"></div>
+                        <div class= "tdCell_L" id="V12"></div>
+                        <div class= "tdCell_S" id="C12"></div>
+                        <div class= "tdCell_L" id="V13"></div>
+                        <div class= "tdCell_S" id="C13"></div>
+                        <div class= "tdCell_L" id="V14"></div>
+                        <div class= "tdCell_S" id="C14"></div>
+                        <div class= "tdCell_L" id="V15"></div>
+                        <div class= "tdCell_S" id="C15"></div>
+                        <div class= "tdCell_L" id="V16"></div>
+                        <div class= "tdCell_S" id="C16"></div>
+                        <div class= "tdCell_L" id="V17"></div>
+                        <div class= "tdCell_S" id="C17"></div>
+                        <div class= "tdCell_L" id="V18"></div>
+                        <div class= "tdCell_S" id="C18"></div>
+                        <div class= "tdCell_L" id="V19"></div>
+                        <div class= "tdCell_S" id="C19"></div>
+                        <div class= "tdCell_L" id="V20"></div>
+                        <div class= "tdCell_S" id="C20"></div>
+                        <div class= "tdCell_L" id="V21"></div>
+                        <div class= "tdCell_S" id="C21"></div>
+                        <div class= "tdCell_L" id="V22"></div>
+                        <div class= "tdCell_S" id="C22"></div>
+                        <div class= "tdCell_L" id="V23"></div>
+                        <div class= "tdCell_S" id="C23"></div>
+                        <div class= "tdCell_L" id="V24"></div>
+                        <div class= "tdCell_S" id="C24"></div>
+                        <div class= "tdCell_L" id="V25"></div>
+                        <div class= "tdCell_S" id="C25"></div>
+                        <div class= "tdCell_L" id="V26"></div>
+                        <div class= "tdCell_S" id="C26"></div>                       
+                    </div>
+                    <div class="right-column">
+                        <!-- Contenido de la columna derecha -->
+                    </div>
+                </div> 
+                <div class="bildProtec"></div>
+            </div>
+            <!-- Codigo para genera la felcha -->
+            <div class="flechaLine">
+                <div class="colaFL" id="colaFL"></div>
+            </div>
+            <div class="flechaUp" id="flechaUp"></div>
+            <div class="flechaStyle">
+                <div class="colaF" id="colaF"></div>
+                
+            </div>
+            <div class="row">
+                <div class="solNotice">
+                    <h1 class="textNotice" id= "textoRes1"></h1>
+                </div>
+                <div class="solNotice">
+                    <h1 class="textNotice" id= "textoRes2"></h1>
+                </div>
+            </div>
+    
+            <div class="row">
+                <Form style="width: 100%;">
+                    <div style="height: 0px; " class="row">
+                        <div  id="popupWrapper1" class="popupWrapper">
+                            <div style= "top: -25px; left: 12%; float: left; " id="popup" class="popup">
+                                <div class="popup-arrow"></div>
+                                <button class="buttCloPopup"  onclick="popupsClose()">
+                                    <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
+                                </button>
+                                <p data-section="pupuptext" data-value="pupup1">1. Ingresa el aqui el numero.</p> 
+                            </div>
+                        </div>
+                        <div id="popupWrapper2" class="popupWrapper">
+                            <div style= "top: -25px; left: 24%; float: left; " id="popup" class="popup">
+                                <div class="popup-arrow"></div>
+                                <button class="buttCloPopup"  onclick="popupsClose()">
+                                    <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
+                                </button>
+                                <p data-section="pupuptext" data-value="pupup2">2. Selecciona la unidad inicial.</p> 
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="contForm">
+                        <p class="textForm manTexPos" data-section="simultext" data-value="simul-num">Convertir el número: </p>
+    
+                        <input class="textForm imputValue" type="text" id="input" data-section="input" data-value="placeholderText" autocomplete="off" onkeydown="return event.key !== 'Enter';" placeholder="Ingrese un numero" oninput="permitirPuntoComa(event)" />
+    
+    
+                        <p class="textForm manTexPos"> de </p>	
+    
+                        <select class="textForm selectors textNotice" id="unidad" onchange="splitNumber()">
+                        <option value="Tm" data-exponent="0">Tm</option>
+                        <option value="Gm" data-exponent="3">Gm</option>
+                        <option value="Mm" data-exponent="6">Mm</option>
+                        <option value="Km" data-exponent="9">Km</option>
+                        <option value="Hm" data-exponent="10">Hm</option>
+                        <option value="Dm" data-exponent="11">Dm</option>
+                        <option value="m" data-exponent="12" selected>m</option>
+                        <option value="dm" data-exponent="13">dm</option>
+                        <option value="cm" data-exponent="14">cm</option>
+                        <option value="mm" data-exponent="15">mm</option>
+                        <option value="µm" data-exponent="18">µm</option>
+                        <option value="nm" data-exponent="21">nm</option>
+                        <option value="pm" data-exponent="24">pm</option>
+                        </select>
+    
+                        <p class="textForm manTexPos" > a </p>
+    
+                        <select class="textForm selectors textNotice" id="escala" onchange="splitNumber()">
+                        <option value="Tm" data-exponent="0">Tm</option>
+                        <option value="Gm" data-exponent="3">Gm</option>
+                        <option value="Mm" data-exponent="6">Mm</option>
+                        <option value="Km" data-exponent="9">Km</option>
+                        <option value="Hm" data-exponent="10">Hm</option>
+                        <option value="Dm" data-exponent="11">Dm</option>
+                        <option value="m" data-exponent="12" selected>m</option>
+                        <option value="dm" data-exponent="13">dm</option>
+                        <option value="cm" data-exponent="14">cm</option>
+                        <option value="mm" data-exponent="15">mm</option>
+                        <option value="µm" data-exponent="18">µm</option>
+                        <option value="nm" data-exponent="21">nm</option>
+                        <option value="pm" data-exponent="24">pm</option>
+                        </select>
+                    </div>
+                </Form>
+            </div>
+    
+            <div class="row">
+                <table class="table2" id="table2" >
+                    <td class= "tdBut"><button class="buttonArt" data-section="simultext" data-value="simul-butL" style = "background-color: white;" id="cell1" onclick="presCell('1')"  selected>Longitud</button></td>
+                    <td class= "tdBut"><button class="buttonArt" data-section="simultext" data-value="simul-butA" id="cell2" onclick="presCell('2')" >Area</button></td>
+                    <td class= "tdBut"><button class="buttonArt" data-section="simultext" data-value="simul-butV" id="cell3" onclick="presCell('3')" >Volumen</button></td>
+                    <td style= "display: none" id = "indice">1</td>
+                </table>
+            </div>
+    
+            <div style="height: 0px; " class="row">
+                <div id="popupWrapper4" class="popupWrapper">
+                    <div style= "top: -3px; left: 5%; float: left; " id="popup" class="popup-up">
+                        <div class="popup-arrow-up1"></div>
+                        <button class="buttCloPopup"  onclick="popupsClose()">
+                            <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
+                        </button>
+                        <p data-section="pupuptext" data-value="pupup3">Puedes cambiar la unidad de conversion SI. entre Longitud, Area o Volumen. </p> 
+                    </div>
+                </div>
+                <div id="popupWrapper3" class="popupWrapper">
+                    <div style= "top: -110px; left: 40%; float: left; " id="popup" class="popup-up">
+                        <div class="popup-arrow-up2"></div>
+                        <button class="buttCloPopup"  onclick="popupsClose()">
+                            <img src="icon/Cancel-black-256.png" class="imgButtCloEx">
+                        </button>
+                        <p data-section="pupuptext" data-value="pupup4">3. Selecciona la unidad final.</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
 </div>
 <div style="display: none;" id="bodyPolitcs">
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -445,58 +586,6 @@
         </div>
     </div>
 </div>
-<div style="display: none;" id="bodySIUnit">
-    <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                                                Description SI- Units                                                                                
-    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    <div class= "example">
-        <div id="example" style=" margin: 0px auto 20px auto; border: 2px solid transparent; " class="board">
-            <div>
-                <h1 data-section="siunitText" data-value="titel">Sistema Internacional de Unidades (SI)<br><br></h1>
-                    
-        
-                <p data-section="siunitText" data-value="text1">Las Unidades del Sistema Internacional (SI) son la base fundamental de la metrología, proporcionando un estándar global para la medición de diversas magnitudes físicas. Estas unidades se utilizan en todo el mundo en campos que van desde la ciencia y la ingeniería hasta la industria y el comercio. El sistema se basa en siete unidades básicas, las cuales sirven como punto de partida para derivar otras unidades más específicas.<br><br>Las siete unidades básicas del SI son: <br><br></p>
-                <span style="margin-left: 5px; display: inline-block;">&#10148;</span>
-                <p style="display: inline;"><strong style="font-weight: bold;" data-section="siunitText" data-value="subtitel2"> Metro (m):</strong></p>
-                <p style="display: inline;" data-section="siunitText" data-value="text2">Es la unidad básica de longitud, definida como la distancia que recorre la luz en el vacío durante un intervalo de tiempo de 1/299,792,458 de segundo. <br><br></p>
-
-                <span style="margin-left: 5px; display: inline-block;">&#10148;</span>
-                <p style="display: inline;"><strong style="font-weight: bold;" data-section="siunitText" data-value="subtitel3"> Kilogramo (kg):</strong></p>
-                <p style="display: inline;" data-section="siunitText" data-value="text3"> Es la unidad básica de masa, definida originalmente como la masa de un cilindro de platino-iridio almacenado en la Oficina Internacional de Pesas y Medidas en Francia. Sin embargo, se está trabajando en una nueva definición basada en constantes fundamentales de la naturaleza. <br><br></p>
-
-                <span style="margin-left: 5px; display: inline-block;">&#10148;</span>
-                <p style="display: inline;"><strong style="font-weight: bold;" data-section="siunitText" data-value="subtitel4"> Segundo (s):</strong></p>
-                <p style="display: inline;" data-section="siunitText" data-value="text4"> Es la unidad básica de tiempo, definida como la duración de 9,192,631,770 periodos de la radiación correspondiente a la transición entre dos niveles hiperfinos del estado fundamental del átomo de cesio-133. <br><br></p>
-
-                <span style="margin-left: 5px; display: inline-block;">&#10148;</span>
-                <p style="display: inline;"><strong style="font-weight: bold;" data-section="siunitText" data-value="subtitel5"> Ampere (A):</strong></p>
-                <p style="display: inline;" data-section="siunitText" data-value="text5"> Es la unidad básica de corriente eléctrica, definida como la corriente constante que, si se mantiene en dos conductores paralelos rectilíneos de longitud infinita y sección transversal circular despreciable, produciría entre estos conductores una fuerza igual a 2 × 10^−7 newton por metro de longitud. <br><br></p>
-
-                <span style="margin-left: 5px; display: inline-block;">&#10148;</span>
-                <p style="display: inline;"><strong style="font-weight: bold;" data-section="siunitText" data-value="subtitel6"> Kelvin (K):</strong></p>
-                <p style="display: inline;" data-section="siunitText" data-value="text6"> Es la unidad básica de temperatura termodinámica, definida como 1/273.16 de la temperatura termodinámica del punto triple del agua. <br><br></p>
-
-                <span style="margin-left: 5px; display: inline-block;">&#10148;</span>
-                <p style="display: inline;"><strong style="font-weight: bold;" data-section="siunitText" data-value="subtitel7"> Mol (mol):</strong></p>
-                <p style="display: inline;" data-section="siunitText" data-value="text7"> Es la unidad básica de cantidad de sustancia, definida como la cantidad de sustancia de un sistema que contiene tantas entidades elementales como átomos hay en 0.012 kilogramos de carbono-12. <br><br></p>
-
-                <span style="margin-left: 5px; display: inline-block;">&#10148;</span>
-                <p style="display: inline;"><strong style="font-weight: bold;" data-section="siunitText" data-value="subtitel8"> Candela (cd):</strong></p>
-                <p style="display: inline;" data-section="siunitText" data-value="text8"> Es la unidad básica de intensidad luminosa en una dirección específica, definida como la intensidad luminosa en una dirección dada de una fuente que emite radiación monocromática de frecuencia 540 × 10^12 hertzios y cuya intensidad radiante en esa dirección es de 1/683 watts por estereorradián. <br><br></p>
-
-                <p data-section="siunitText" data-value="text9">Además de estas unidades básicas, el SI incluye unidades derivadas obtenidas mediante combinaciones de las unidades básicas, que abarcan una amplia gama de magnitudes físicas como velocidad, fuerza, energía, presión, entre otras. En total, el SI consta de 22 unidades derivadas que cubren aplicaciones científicas y prácticas. <br><br>En el método actual de conversión de unidades, se propone aprenderse los factores de conversión, como los que se exponen a continuación:</p>
-            </div>
-            <div style="display: flex; justify-content: center; align-items: center; padding: 20px;">
-                <img style="display: none;" data-languages="de" src="img/IS_de.PNG" class="imgIS obsImgIS"/>
-                <img style="display: none;" data-languages="en" src="img/IS_en.PNG" class="imgIS obsImgIS"/>
-                <img style="display: none;" data-languages="es" src="img/IS_es.PNG" class="imgIS obsImgIS"/>
-            </div>    
-            <div>
-                <p style="display: inline; data-section="siunitText" data-value="text10">Además de la cantidad y variedad de unidades. Por ejemplo, algunas unidades derivadas incluyen: <br><br>Metro cuadrado (m²), Metro cúbico (m³), Metro por segundo (m/s), Litro (L), Hertz (Hz), Newton (N), Joule (J), Pascal (Pa), Vatio (W), Coulomb (C), Tesla (T), Weber (Wb), Lumen (lm), Lux (lx), Hertz (Hz), Siemens (S), Faradio (F), Gray (Gy), Sievert (Sv), Watt por metro cuadrado (W/m²).<br><br>Ante esta complejidad, MUL ofrece una solución innovadora para la conversión de unidades. Al utilizar factores de conversión basados en potencias de diez, MUL simplifica el proceso y lo hace más accesible para los usuarios. Con MUL, convertir entre diferentes unidades se vuelve más sencillo y eficiente, permitiendo un manejo más fluido de las magnitudes físicas en diversas aplicaciones. <br><br>Puedes encontrar más información respecto al sistema SI en el </p><a href="https://www.bipm.org/en/measurement-units/" target="_blank" style="text-decoration: none; color: blue; display: inline-block; cursor: pointer;" data-section="siunitText" data-value="text11">sitio web oficial del BIPM</a><p style="display: inline;">.</p>
-            </div>
-        </div>
-    </div>
-</div>
 
 <div id="blockFooter">
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -511,6 +600,11 @@
                     <h3 class="textButFoot"><strong>service@multool.com</strong></h3>
                 </Button>
 
+                <button class="contenBotton" id="sales">
+                    <img src="icon/Shopping-Cart-02-256.png" class="imgFooter">
+                    <h3 class="textButFoot" data-section="footText" data-value="textBut3"><strong>Has tu pedido!</strong></h3>
+                </button>
+
                 <button class="contenBotton" id="plolitics">
                     <img src="icon/Agreement-01-256.png" class="imgFooter">
                     <h3 class="textButFoot" data-section="footText" data-value="textBut4"><strong>Politicas de confidencialidad</strong></h3>
@@ -523,7 +617,11 @@
     </footer>
 </div>
 
+<!-- Botón de flecha hacia arriba -->
+<button id="botonArriba" onclick="scrollToTop()"><img  id="imgBUp" src="./icon/Swap-Up-256.png"></button>
+
 <script src="js/button.js"></script>
+<script src="js/lenguage.js"></script>
 <script src="js/split.js"></script>
 <script src="js/popup.js"></script>
 <script src="js/script.js"></script>

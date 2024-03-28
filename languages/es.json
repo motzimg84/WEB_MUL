@@ -1,7 +1,7 @@
 {
     "navbartext": {
-        "navbar-butt1": "¿Qué es MUL?",
-        "navbar-butt2": "¿Cómo se usa MUL?",
+        "navbar-butt1": "¡Usa MUL!",
+        "navbar-butt2": "¡Acerca de MUL!",
         "navbar-butt3": "Simulador de MUL",
         "navbar-butt4": "MUL",
         "navbar-butt5": "Unidades SI"
@@ -15,11 +15,12 @@
     },
     
     "descripText": {
-        "desTextIntro": "MUL es una herramienta que te permite convertir las unidades de medida del Sistema Internacional de Unidades (SI) con tan solo 3 pasos.",
-        "desCaja1": "1. Escribe el número haciendo que la coma coincida con la unidad correspondiente en MUL.",
-        "desCaja2": "2. Busca la unidad final deseada en MUL.",
-        "desCaja3": "3. Desplaza la coma a la posición final y, en caso de ser necesario, rellena las celdas vacías con 0.",
-        "desText1": "MUL está diseñada para facilitarte el aprendizaje en la conversión de unidades mediante métodos mnemotécnicos, optimizando tus recursos neuronales destinados a la resolución de problemas matemáticos y reduciendo el esfuerzo requerido para la conversión de unidades. MUL evita que realices cálculos matemáticos, pero no omite el proceso de conversión, sino que lo integra en cada ejercicio, lo que facilita tu memorización de los factores de conversión. Al contener estos factores y ser visualizada durante períodos prolongados, la retentiva de la herramienta reducirá tu posibilidad de cometer errores en la conversión de unidades del Sistema Internacional (SI)."
+        "desTitel" : "¡Convierte la complejidad en simplicidad con MUL!",
+        "desTextIntro" : "¿Te has sentido abrumado por la cantidad de unidades de medida en el Sistema Internacional (SI)? ¡No estás solo! La conversión de unidades puede ser un verdadero dolor de cabeza, especialmente cuando tus resultados dependen de ello. Pero no te preocupes, tenemos la solución perfecta para ti: ¡MUL, tu herramienta definitiva para convertir unidades de manera rápida, precisa y sin complicaciones!<br><br>MUL te permite convertir las unidades de medida del Sistema Internacional de Unidades (SI) en tan solo 3 simples pasos:",
+        "desCaja1" : "1. Escribe el número, asegurándote de que la coma coincida con la unidad correspondiente en MUL.",
+        "desCaja2" : "2. Busca la unidad final deseada en MUL.",
+        "desCaja3" : "3. Desplaza la coma a la posición final y, si es necesario, rellena las celdas vacías con ceros.",
+        "desText1" : "¡Con MUL, la conversión de unidades nunca ha sido tan rápida y sencilla! ¡No pierdas más tiempo y simplifica tus cálculos con MUL hoy mismo! Imagina esto: estás en medio de un examen o un proyecto importante, y de repente te encuentras atrapado tratando de convertir metros a kilómetros o litros a mililitros. ¿Suena familiar? Las unidades SI son indispensables pero pueden ser complicadas de manejar, ¡hasta ahora! <br><br>MUL llega al rescate como un rayo de luz en medio de la confusión. Desarrollado con tecnología de punta y basado en los principios del Design Thinking y Lean Thinking, MUL simplifica el proceso de conversión de unidades de una manera que nunca antes habías experimentado. <br><br>¿Cómo funciona? Es simple. MUL te guía paso a paso a través del proceso de conversión, mostrándote visualmente cómo tus unidades se transforman de una forma clara y comprensible. Olvídate de las tediosas tablas de conversión y los cálculos mentales. Con MUL, todo se vuelve claro como el agua. <br><br>Pero eso no es todo. MUL no solo resuelve tus problemas de conversión de unidades, sino que también te brinda una experiencia sin igual. Su diseño intuitivo y fácil de usar lo convierte en la herramienta perfecta para estudiantes, profesionales y cualquier persona que necesite convertir unidades de manera eficiente. <br><br>Entonces, ¿por qué deberías elegir MUL? La respuesta es simple: porque tu tiempo y tu tranquilidad son valiosos. Con MUL, puedes decir adiós a la confusión y dar la bienvenida a la claridad y la eficiencia. No dejes que las unidades SI te detengan, ¡toma el control con MUL hoy mismo y convierte la complejidad en simplicidad! <br><br>"
     },
     
     "exampText": {
@@ -40,7 +41,48 @@
         "exampExpV3": "3. Se desplaza la coma a [Km^3]. Antes de la coma se pone un 0 y los espacios hasta el número se rellenan con 0."
     },
     
+    "abMulText" : {
+        "titel" : "¡Solución Innovadora para la Conversión de Unidades de Medida!<br><br>",
+        "text1" : "La conversión de unidades en el Sistema Internacional (SI) ha sido un desafío persistente, afectando tanto a estudiantes como a profesionales en diversos campos. La complejidad de este proceso ha generado dificultades en su comprensión y ejecución, lo que se refleja en estudios académicos y experiencias prácticas. Ante esta problemática, se propuso la creación de una solución efectiva y eficiente: el <b>Maßeinheitenumwandlung und Lineal (MUL)</b>, diseñado para simplificar la conversión de unidades de manera rápida y precisa. <br><br>",
+        "subTitel2" : "Problema Identificado: <br><br>",
+        "text2" : "Estudios realizados por diversos autores, como Schröder (2014), Lassnitzer y Gaidoschik (2019), y Dinçer y Osmanoglu (2018), han destacado las dificultades experimentadas por estudiantes y profesionales al realizar conversiones de unidades dentro del Sistema Internacional (SI). Estas dificultades se han traducido en errores en cálculos y en la comprensión incompleta de los conceptos de conversión, lo que ha afectado negativamente a los resultados académicos y profesionales. La falta de herramientas efectivas y accesibles para abordar esta problemática ha agravado la situación, generando la necesidad de una solución innovadora. <br><br>",
+        "subTitel3" : "Creación de MUL: <br><br>",
+        "text3" : "En respuesta a esta problemática, el Ing. Mauricio Mora, MSc., desarrolló el <b>Maßeinheitenumwandlung und Lineal (MUL)</b> en el año 2023. Inspirado en principios de Design Thinking y Lean Thinking, el desarrollo de MUL se centró en comprender las necesidades de los usuarios y en diseñar una herramienta intuitiva y práctica para la conversión de unidades de medida. El proceso de desarrollo de MUL incluyó la identificación de los problemas clave asociados con la conversión de unidades, la generación de ideas para abordar estos problemas, la creación de prototipos y pruebas iterativas para refinar la funcionalidad y la usabilidad de la herramienta. <br><br>",
+        "subTitel4" : "Pruebas y Validación: <br><br>",
+        "text4" : "Para validar la efectividad de MUL, se llevaron a cabo extensas pruebas con diferentes versiones del prototipo. Estas pruebas implicaron la participación de usuarios reales, tanto estudiantes como profesionales, quienes realizaron conversiones de unidades utilizando MUL en situaciones de la vida real. El feedback recopilado durante estas pruebas fue fundamental para perfeccionar el diseño y la funcionalidad de MUL, garantizando su utilidad y facilidad de uso en diversas aplicaciones y contextos.",
+        "subTitel5" : "Ejemplo de Conversión de Unidades: <br><br>",
+        "text5" : "Para comprender mejor la utilidad de MUL, consideremos un ejemplo de conversión de unidades utilizando el método tradicional y comparémoslo con el método simplificado proporcionado por MUL. <br><br>",
+        "subTitel6" : "Método Tradicional: <br><br>",
+        "text6" : "Supongamos que queremos convertir 0,0025 kilómetros cuadrados a milímetros cuadrados utilizando el método tradicional. <br><br>",
+        "text61" : "Busca en libros de referencia o en internet la tabla 'factores de conversión de unidades de área'. Encuentra una tabla de conversión o información relevante. <br><br>",
+        "text62" : "Interpreta los datos de la tabla para determinar si debes realizar una división o una multiplicación. En este ejemplo, debes realizar una multiplicación. <br><br>",
+        "text63" : "Calcula el factor de conversión, en este caso, de kilómetros cuadrados a milímetros cuadrados. Dado que la tabla generalmente tiene como punto de referencia los metros cuadrados, necesitas dos factores que debes multiplicar: el primero de km² a m² y el segundo de m² a mm². Esto implica multiplicar el número de kilómetros cuadrados que tienes por 1,000,000 (para convertir a metros cuadrados) y luego por 1,000,000 nuevamente (para convertir a milímetros cuadrados). <br><br>",
+        "text64" : "Define la ecuación para la conversión. La ecuación para convertir kilómetros cuadrados a milímetros cuadrados es: <br>",
+        "text65" : "f(0,0025)=0,0025×(1.000.000)² = 0,0025×1.000.000.000.000<br>",
+        "text66" : "Realiza la operación para obtener el resultado, que en este ejemplo es 2,500,000,000 mm².<br><br>",
+        "text69" : "Es crucial tener presente que la cantidad de energía necesaria para llevar a cabo la conversión de unidades de medida puede variar según diversos factores, como la complejidad de la conversión, el grado de familiaridad con los conceptos implicados y el nivel de precisión requerido en los cálculos. En líneas generales, realizar cálculos mentales, especialmente aquellos que involucran operaciones como la multiplicación o la división, puede demandar un esfuerzo cognitivo considerable. Por lo tanto, al efectuar conversiones de unidades de medida, nuestro cerebro debe concentrarse en múltiples tareas simultáneamente, tales como recordar las reglas de conversión, aplicar las operaciones matemáticas pertinentes y mantener la precisión en los cálculos.<br><br>",
+        "subTitel7" : "Método MUL: <br><br>",
+        "text7" : "Ahora, veamos cómo MUL simplifica este proceso en solo tres pasos: <br><br>",
+        "text71" : "Escribimos el número 0,0025 en MUL, asegurándonos de que la coma coincida con la unidad correspondiente, en este ejemplo Kilometros cuadrados [Km²]. <br><br>",
+        "text72" : "Buscamos la unidad final deseada, que en este caso es milimmetros cuadados [mm²], en MUL. <br><br>",
+        "text73" : "Desplazamos la coma a la posición final y, si es necesario, rellenamos las celdas vacías con ceros. <br><br>",
+        "subTitel8" : "Ventajas de MUL: <br><br>",
+        "subTitel81" : "Simplicidad: ",
+        "text81" : "MUL simplifica el proceso de conversión de unidades en solo tres pasos, eliminando la necesidad de cálculos complejos o de buscar factores de conversión externos. <br><br>",
+        "subTitel82" : "Precisión: ",
+        "text82" : "La estructura intuitiva de MUL garantiza la precisión en las conversiones de unidades, minimizando los errores humanos. <br><br>",
+        "subTitel83" : "Eficiencia: ",
+        "text83" : "Con MUL, las conversiones de unidades se realizan de manera rápida y eficiente, ahorrando tiempo y esfuerzo. <br><br>",
+        "subTitel84" : "Accesibilidad: ",
+        "text84" : "MUL es accesible y fácil de usar para estudiantes, profesionales y cualquier persona que necesite realizar conversiones de unidades en su vida diaria. <br><br>",
+        "subTitel85" : "Visualización del Proceso: ",
+        "text85" : "A diferencia de los dispositivos digitales que solo muestran el resultado final, MUL permite que el usuario visualice todo el proceso de conversión, lo que facilita el aprendizaje y la comprensión de los conceptos asociados. <br><br>",
+        "subTitel9" : "Resultados del Estudio: <br><br>",
+        "text9" : "El estudio realizado por el Ing. Mauricio Mora, MSc., demostró que MUL es una herramienta altamente efectiva y útil para la conversión de unidades en el Sistema Internacional. Los usuarios que participaron en las pruebas encontraron que MUL simplificaba significativamente el proceso de conversión de unidades y mejoraba su comprensión de los conceptos asociados. Además, se observó una reducción significativa en los errores de cálculo y una mayor confianza en los resultados obtenidos mediante el uso de MUL. Estos resultados respaldan la importancia y la relevancia de MUL como una solución innovadora para abordar los desafíos en la conversión de unidades de medida en el contexto actual. <br><br>"
+    },
+
     "simultext":{
+        "descText" : "El simulador de MUL es una herramienta interactiva que ofrece a los usuarios la oportunidad de aprender a usar MUL mediante ejemplos prácticos. Con esta herramienta, los usuarios pueden experimentar y familiarizarse con todas las funcionalidades de MUL, garantizando así una experiencia de aprendizaje efectiva y práctica.",
         "simul-num" : "Convertir el número: ",
         "simul-butL" : "Longitudes",
         "simul-butA" : "Áreas",
@@ -52,6 +94,7 @@
     },
 
     "footText":{
+        "textBut3" : "¡Haz tu pedido!",
         "textBut4" : "Políticas de confidencialidad"
     },
 
@@ -63,19 +106,19 @@
     "siunitText":{
         "titel" : "Sistema Internacional de Unidades (SI)",
         "text1" : "El Sistema Internacional de Unidades (SI) es el estándar global para la medición de diversas magnitudes físicas, siendo fundamental en campos como la ciencia, la ingeniería, la industria y el comercio. Consta de siete unidades básicas que sirven como punto de partida para derivar otras unidades más específicas. Las siete unidades básicas del SI son:<br><br>",
-        "subtitel2" : "Metro (m): ",
+        "subTitel2" : "Metro (m): ",
         "text2" : "Unidad de longitud, definida como la distancia que recorre la luz en el vacío durante un intervalo de tiempo específico. <br><br>",
-        "subtitel3" : "Kilogramo (kg): ",
+        "subTitel3" : "Kilogramo (kg): ",
         "text3" : "Unidad de masa, originalmente definida por un cilindro de platino-iridio en Francia. <br><br>",
-        "subtitel4" : "Segundo (s): ",
+        "subTitel4" : "Segundo (s): ",
         "text4" : "Unidad de tiempo, basada en la radiación de átomos de cesio-133. <br><br>",
-        "subtitel5" : "Ampere (A): ",
+        "subTitel5" : "Ampere (A): ",
         "text5" : "Unidad de corriente eléctrica, definida por la fuerza entre conductores. <br><br>",
-        "subtitel6" : "Kelvin (K): ",
+        "subTitel6" : "Kelvin (K): ",
         "text6" : "Unidad de temperatura termodinámica, basada en el punto triple del agua. <br><br>",
-        "subtitel7" : "Mol (mol): ",
+        "subTitel7" : "Mol (mol): ",
         "text7" : "Unidad de cantidad de sustancia, definida por la cantidad de átomos en una masa específica de carbono-12. <br><br>",
-        "subtitel8" : "Candela (cd): ",
+        "subTitel8" : "Candela (cd): ",
         "text8" : "Unidad de intensidad luminosa en una dirección específica, basada en la radiación monocromática. <br><br>",
         "text9" : "Además de estas unidades básicas, el SI incluye unidades derivadas obtenidas mediante combinaciones de las unidades básicas, que abarcan una amplia gama de magnitudes físicas como velocidad, fuerza, energía, presión, entre otras. En total, el SI consta de 22 unidades derivadas que cubren aplicaciones científicas y prácticas. <br><br>En el método actual de conversión de unidades, se propone aprenderse los factores de conversión, como los que se exponen a continuación:",
         "text10" : "Además de la cantidad y variedad de unidades. Por ejemplo, algunas unidades derivadas incluyen: <br><br>Metro cuadrado (m²), Metro cúbico (m³), Metro por segundo (m/s), Litro (L), Hertz (Hz), Newton (N), Joule (J), Pascal (Pa), Vatio (W), Coulomb (C), Tesla (T), Weber (Wb), Lumen (lm), Lux (lx), Hertz (Hz), Siemens (S), Faradio (F), Gray (Gy), Sievert (Sv), Watt por metro cuadrado (W/m²).<br><br>Ante esta complejidad, MUL ofrece una solución innovadora para la conversión de unidades. Al utilizar factores de conversión basados en potencias de diez, MUL simplifica el proceso y lo hace más accesible para los usuarios. Con MUL, convertir entre diferentes unidades se vuelve más sencillo y eficiente, permitiendo un manejo más fluido de las magnitudes físicas en diversas aplicaciones. <br><br>Puedes encontrar más información respecto al sistema SI en el",

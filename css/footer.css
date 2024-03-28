@@ -16,7 +16,6 @@
     width: 100%;
     margin: 20px auto; /* Espacio entre los divs */
     text-align: center;
-    overflow: auto; /* Para contener los botones flotantes */
 }
 
 .contenBotton {

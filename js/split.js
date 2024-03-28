@@ -28,12 +28,12 @@ function validarNumero() {
 		numero = partes[0] + ',' + partes[1];
 	}
 
-
 	if (numero.charAt(0) === "0" && numero.charAt(1) === "0") {
 		numero="0";
 	} else if (numero.length >= 2 && numero.charAt(0) === "0" && numero.charAt(1) != ",") {
 		numero = numero.slice(1);
 	}
+
 	// Actualizar el valor del input con el número validado
 	inputNumero.value = numero;
 
@@ -80,7 +80,7 @@ function splitNumber() {
 
 	let result = input;
 	var absInputMult = Math.abs(inputMult);
-	
+
 	if (inputMult >= 1) {
 		for (var i = posInp; i <= posInp + absInputMult - 1; i++) {
 			if (i >= lenInp - 1) {
@@ -114,14 +114,23 @@ function splitNumber() {
 			else if (i >= posInp ) {
 				result = result.replace(',', '');
 				result = "0," + result;
-				}
 			}
+		}
 	}
-		
+
 	result = result.toString();
 	result = result.replace('.', ',');
-	
-	
+
+	const resultFloat = parseFloat (result.replace(',', '.'));
+	// Formatear el número con puntos para separar los miles y comas para los decimales
+	let opciones = { useGrouping: true, minimumFractionDigits: 0, maximumFractionDigits: 20 };
+	let numeroFormateado = resultFloat.toLocaleString('es-ES', opciones);
+	let textResult = numeroFormateado.toString();
+
+	if (result.substring(0, 2) === "0,"){
+		textResult = result;
+	}
+
 	var numRes = parseFloat(result.replace(',', '.'));
 
 	numRes = numRes.toExponential();
@@ -149,7 +158,7 @@ function splitNumber() {
 	clearSyst()
 	
 	var j = posIni
-	// Funto to load the number in de i postion
+	// Funktion to load the number in de i postion
 	for (var i = countI; i < length; i++) {
 	
 		if (result.charAt(i) === ",") {
@@ -157,14 +166,14 @@ function splitNumber() {
 			document.getElementById("C" + j).style.backgroundColor = "#DBDBDB";
 			document.getElementById("C" + j).innerHTML = result.charAt(i); 
 		} else if (j < posFin ) {
-			if (i === 0 && result.charAt(0) === "0" && result.charAt(1) !== ",") {
+			/*if (i === 0 && result.charAt(0) === "0" && result.charAt(1) !== ",") {
 
-			} else {
+			} else {*/
 				document.getElementById("V" + j).innerHTML = result.charAt(i);
 				if (position < 0 && j === posFin - 1 ){
 					document.getElementById("C" + j).style.backgroundColor = "#DBDBDB";
 					}
-			}
+			/*}*/
 		}
 		j++;
 	}
@@ -176,13 +185,13 @@ function splitNumber() {
 			//Texto de explicaion de la accion
 			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] se multiplico " + inputMult + " veces por 10, lo que desplaza la coma a " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], como muestra la flecha de arriba.";
 			document.getElementById("textoRes1").innerHTML = textoRes1;
-			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] * 10^" + inputMult + " = " + result + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
+			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] * 10^" + inputMult + " = " + textResult + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
 			document.getElementById("textoRes2").innerHTML = textoRes2;
 		}else if (exponente1 < exponente2){		
 			//Texto de explicaion de la accion
 			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] se divide " + absInputMult + " veces entre  10, lo que desplaza la coma a " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], como muestra la flecha de arriba.";
 			document.getElementById("textoRes1").innerHTML = textoRes1;
-			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] / 10^" + absInputMult + " = " + result + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
+			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] / 10^" + absInputMult + " = " + textResult + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
 			document.getElementById("textoRes2").innerHTML = textoRes2;
 		} else {
 			document.getElementById("textoRes1").innerHTML = "";
@@ -193,13 +202,13 @@ function splitNumber() {
 			//Texto de explicaion de la accion
 			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] is multiplied " + inputMult + " times by 10, which moves the decimal point to " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], as shown in the above arrow.";
 			document.getElementById("textoRes1").innerHTML = textoRes1;
-			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] * 10^" + inputMult + " = " + result + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
+			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] * 10^" + inputMult + " = " + textResult + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
 			document.getElementById("textoRes2").innerHTML = textoRes2;
 		}else if (exponente1 < exponente2){		
 			//Texto de explicaion de la accion
 			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] is divided " + absInputMult + " times by 10, which moves the decimal point to " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "], as shown in the above arrow.";
 			document.getElementById("textoRes1").innerHTML = textoRes1;
-			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] / 10^" + absInputMult + " = " + result + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
+			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] / 10^" + absInputMult + " = " + textResult + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
 			document.getElementById("textoRes2").innerHTML = textoRes2;
 		} else {
 			document.getElementById("textoRes1").innerHTML = "";
@@ -211,13 +220,13 @@ function splitNumber() {
 			//Texto de explicaion de la accion
 			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] wird " + inputMult + " mal mit 10 multipliziert, wodurch sich der Dezimalpunkt auf " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] verschiebt (siehe Pfeil oben).";
 			document.getElementById("textoRes1").innerHTML = textoRes1;
-			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] * 10^" + inputMult + " = " + result + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
+			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] * 10^" + inputMult + " = " + textResult + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
 			document.getElementById("textoRes2").innerHTML = textoRes2;
 		}else if (exponente1 < exponente2){		
 			//Texto de explicaion de la accion
 			let textoRes1 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] wird " + absInputMult + " mal durch 10, dividiert, wodurch sich der Dezimalpunkt auf " + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] verschiebt (siehe Pfeil oben).";
 			document.getElementById("textoRes1").innerHTML = textoRes1;
-			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] / 10^" + absInputMult + " = " + result + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
+			let textoRes2 = input + " [" + unidadSelect.selectedOptions[0].getAttribute("value") + "] / 10^" + absInputMult + " = " + textResult + " [" + escalaSelect.selectedOptions[0].getAttribute("value") + "] = " + numRes.replace('.', ',');
 			document.getElementById("textoRes2").innerHTML = textoRes2;
 		} else {
 			document.getElementById("textoRes1").innerHTML = "";

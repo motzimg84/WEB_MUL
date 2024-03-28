@@ -16,11 +16,12 @@
     
 
     "descripText": {
-        "desTextIntro": "MUL ist ein Werkzeug, mit dem du die Einheiten des Internationalen <br> Einheitensystems (SI) in nur 3 Schritten umwandeln kannst.",
-        "desCaja1": "1. Schreibe die Zahl, bei der das Komma mit der entsprechenden Einheit in MUL übereinstimmt",
-        "desCaja2": "2. Finde die gewünschte Endeinheit in MUL", 
-        "desCaja3": "3. Verschiebe das Komma an die Endposition und fülle die Zellen ggf. mit 0 auf",
-        "desText1": "MUL wurde entwickelt, um dir das Erlernen der Einheitenumrechnung durch mnemotechnische Methoden zu erleichtern, deine neuronalen Ressourcen für das Lösen mathematischer Probleme zu optimieren und den Aufwand für die Einheitenumrechnung zu reduzieren. <br>MUL erspart dir das mathematische Rechnen, lässt aber den Umrechnungsvorgang nicht aus, sondern integriert ihn in jede Übung, wodurch das Einprägen der Umrechnungsfaktoren erleichtert wird. Durch die Einbeziehung dieser Faktoren und ihre Anzeige über einen längeren Zeitraum verringert die Einprägsamkeit des Tools die Möglichkeit, Fehler bei der Umrechnung der Einheiten des Internationalen Einheitensystems (SI) zu machen."
+        "desTitel" : "Verwandele Komplexität in Einfachheit mit MUL!",
+        "desTextIntro" : "Hast du dich jemals von der schieren Anzahl von Maßeinheiten im Internationalen Einheitensystem (SI) überfordert gefühlt? Du bist nicht allein! Die Umrechnung von Einheiten kann eine echte Kopfschmerzen sein, besonders wenn deine Ergebnisse davon abhängen. Aber keine Sorge, wir haben die perfekte Lösung für dich: MUL, dein ultimatives Werkzeug zur schnellen, genauen und problemlosen Umrechnung von Einheiten! <br><br>MUL ermöglicht es dir, Einheiten des Internationalen Einheitensystems (SI) in nur 3 einfachen Schritten umzurechnen:",
+        "desCaja1" : "1. Gib die Zahl ein und stelle sicher, dass das Komma mit der entsprechenden Einheit in MUL übereinstimmt.",
+        "desCaja2" : "2. Suche die gewünschte Endeinheit in MUL.",
+        "desCaja3" : "3. Verschiebe das Komma an die letzte Position und fülle bei Bedarf leere Zellen mit Nullen auf.",
+        "desText1" : "Mit MUL war die Umrechnung von Einheiten noch nie schneller und einfacher! Verschwende keine Zeit mehr und vereinfache deine Berechnungen noch heute mit MUL! Stell dir folgendes vor: Du bist mitten in einer Prüfung oder einem wichtigen Projekt, und plötzlich hast du Schwierigkeiten, Meter in Kilometer oder Liter in Milliliter umzurechnen. Klingt vertraut? SI-Einheiten sind unverzichtbar, aber können knifflig sein, bis jetzt! <br><br>MUL kommt wie ein Lichtstrahl inmitten der Verwirrung zur Rettung. Entwickelt mit modernster Technologie und basierend auf den Prinzipien des Design Thinking und Lean Thinking, vereinfacht MUL den Umrechnungsprozess von Einheiten auf eine Weise, die du noch nie zuvor erlebt hast. <br><br>Wie funktioniert das? Ganz einfach. MUL führt dich Schritt für Schritt durch den Umrechnungsprozess und zeigt dir visuell, wie sich deine Einheiten auf eine klare und verständliche Weise verwandeln. Vergiss langweilige Umrechnungstabellen und mentale Berechnungen. Mit MUL wird alles so klar wie der Tag. <br><br>Aber das ist noch nicht alles. MUL löst nicht nur deine Probleme bei der Umrechnung von Einheiten, sondern bietet dir auch ein unvergleichliches Erlebnis. Sein intuitives und benutzerfreundliches Design macht es zum perfekten Werkzeug für Studenten, Fachleute und alle, die Einheiten effizient umrechnen müssen. <br><br>Also, warum solltest du MUL wählen? Die Antwort ist einfach: weil deine Zeit und deine Ruhe wertvoll sind. Mit MUL kannst du dich von Verwirrung verabschieden und Klarheit und Effizienz begrüßen. Lass dich nicht von SI-Einheiten aufhalten, übernimm noch heute die Kontrolle mit MUL und verwandle Komplexität in Einfachheit! <br><br>"
     },
 
    "exampText": {
@@ -41,7 +42,48 @@
         "exampExpV3": "3. Verschiebe das Komma nach [Km^3], setze eine 0 vor das Komma und fülle die Zwischenräume bis zur Zahl mit 0 auf.."
     },
 
+    "abMulText" : {
+        "titel" : "Innovative Lösung für die Einheitenumrechnung!<br><br>",
+        "text1" : "Die Umrechnung von Einheiten im Internationalen System (SI) war eine anhaltende Herausforderung, die sowohl Studenten als auch Fachleute in verschiedenen Bereichen betrifft. Die Komplexität dieses Prozesses hat zu Schwierigkeiten bei Verständnis und Ausführung geführt, wie sich in akademischen Studien und praktischen Erfahrungen zeigt. Angesichts dieses Problems wurde die Schaffung einer effektiven und effizienten Lösung vorgeschlagen: das Maßeinheitenumwandlung und Lineal (MUL) , das entwickelt wurde, um die Einheitenumrechnung schnell und präzise zu vereinfachen. <br><br>",
+        "subTitel2" : "Identifiziertes Problem: <br><br>",
+        "text2" : "Studien verschiedener Autoren wie Schröder (2014), Lassnitzer und Gaidoschik (2019) und Dinçer und Osmanoglu (2018) haben die Schwierigkeiten hervorgehoben, die Studenten und Fachleute bei der Durchführung von Einheitenumrechnungen im Internationalen System (SI) erlebt haben. Diese Schwierigkeiten haben sich in Berechnungsfehlern und einem unvollständigen Verständnis der Umwandlungskonzepte niedergeschlagen, was sich negativ auf akademische und berufliche Ergebnisse ausgewirkt hat. Der Mangel an wirksamen und zugänglichen Werkzeugen zur Bewältigung dieses Problems hat die Situation verschärft und die Notwendigkeit einer innovativen Lösung hervorgerufen. <br><br>",
+        "subTitel3" : "Erstellung von MUL: <br><br>",
+        "text3" : "Als Antwort auf dieses Problem entwickelte Ing. Mauricio Mora, MSc., das Maßeinheitenumwandlung und Lineal (MUL) im Jahr 2023. Inspiriert von den Prinzipien des Design Thinking und Lean Thinking konzentrierte sich die Entwicklung von MUL darauf, die Bedürfnisse der Benutzer zu verstehen und ein intuitives und praktisches Werkzeug für die Einheitenumrechnung zu entwerfen. Der Entwicklungsprozess von MUL umfasste die Identifizierung der Schlüsselprobleme im Zusammenhang mit der Einheitenumrechnung, die Generierung von Ideen zur Lösung dieser Probleme, die Erstellung von Prototypen und iterative Tests zur Verfeinerung der Funktionalität und Benutzerfreundlichkeit des Tools. <br><br>",
+        "subTitel4" : "Tests und Validierung: <br><br>",
+        "text4" : "Zur Validierung der Wirksamkeit von MUL wurden umfangreiche Tests mit verschiedenen Versionen des Prototyps durchgeführt. An diesen Tests beteiligten sich echte Benutzer, sowohl Studenten als auch Fachleute, die Einheitenumrechnungen unter Verwendung von MUL in realen Situationen durchführten. Das während dieser Tests gesammelte Feedback war entscheidend für die Verbesserung des Designs und der Funktionalität von MUL und gewährleistete dessen Nützlichkeit und Benutzerfreundlichkeit in verschiedenen Anwendungen und Kontexten.",
+        "subTitel5" : "Beispiel für die Einheitenumrechnung: <br><br>",
+        "text5" : "Um die Nützlichkeit von MUL besser zu verstehen, betrachten wir ein Beispiel für die Einheitenumrechnung mit der traditionellen Methode und vergleichen sie mit der vereinfachten Methode, die von MUL bereitgestellt wird. <br><br>",
+        "subTitel6" : "Traditionelle Methode: <br><br>",
+        "text6" : "Angenommen, wir möchten 0,0025 Quadratkilometer in Quadratmillimeter mit der traditionellen Methode umrechnen. <br><br>",
+        "text61" : "Suchen Sie in Referenzbüchern oder im Internet nach der Tabelle Umrechnungsfaktoren für Flächeneinheiten. Finden Sie eine Umrechnungstabelle oder relevante Informationen. <br><br>",
+        "text62" : "Interpretieren Sie die Daten aus der Tabelle, um festzustellen, ob Sie eine Division oder Multiplikation durchführen müssen. In diesem Beispiel müssen Sie eine Multiplikation durchführen. <br><br>",
+        "text63" : "Berechnen Sie den Umrechnungsfaktor, in diesem Fall von Quadratkilometern in Quadratmillimeter. Da die Tabelle normalerweise Quadratmeter als Referenzpunkt hat, benötigen Sie zwei Faktoren, die Sie multiplizieren müssen: den ersten von km² zu m² und den zweiten von m² zu mm². Dies beinhaltet das Multiplizieren der Anzahl der Quadratkilometer, die Sie haben, mit 1.000.000 (um in Quadratmeter umzurechnen) und dann erneut mit 1.000.000 (um in Quadratmillimeter umzurechnen). <br><br>",
+        "text64" : "Definieren Sie die Gleichung für die Umrechnung. Die Gleichung zur Umrechnung von Quadratkilometern in Quadratmillimeter lautet: <br>",
+        "text65" : "f(0,0025) = 0,0025 × (1.000.000)² = 0,0025 × 1.000.000.000.000<br>",
+        "text66" : "Führen Sie die Operation durch, um das Ergebnis zu erhalten, das in diesem Beispiel 2.500.000.000 mm² beträgt. <br><br>",
+        "text69" : "Es ist wichtig zu beachten, dass die zur Durchführung von Einheitenumrechnungen erforderliche Energiemenge je nach verschiedenen Faktoren wie der Komplexität der Umrechnung, dem Grad der Vertrautheit mit den beteiligten Konzepten und dem erforderlichen Genauigkeitsgrad in den Berechnungen variieren kann. Im Allgemeinen erfordern mentale Berechnungen, insbesondere solche, die Operationen wie Multiplikation oder Division beinhalten, erhebliche kognitive Anstrengungen. Daher muss unser Gehirn beim Durchführen von Einheitenumrechnungen gleichzeitig auf mehrere Aufgaben konzentrieren, wie das Erinnern von Umrechnungsregeln, das Anwenden relevanter mathematischer Operationen und das Aufrechterhalten der Genauigkeit bei den Berechnungen. <br><br>",
+        "subTitel7" : "MUL-Methode: <br><br>",
+        "text7" : "Lassen Sie uns nun betrachten, wie MUL diesen Prozess in nur drei Schritten vereinfacht: <br><br>",
+        "text71" : "Wir geben die Zahl 0,0025 in MUL ein und stellen sicher, dass das Komma mit der entsprechenden Einheit übereinstimmt, in diesem Beispiel Quadratkilometer [Km²]. <br><br>",
+        "text72" : "Wir suchen die gewünschte Endeinheit, die in diesem Fall Quadratmillimeter [mm²] ist, in MUL. <br><br>",
+        "text73" : "Wir verschieben das Komma an die endgültige Position und füllen bei Bedarf leere Zellen mit Nullen auf. <br><br>",
+        "subTitel8" : "Vorteile von MUL: <br><br>",
+        "subTitel81" : "Einfachheit:",
+        "text81" : "MUL vereinfacht den Einheitenumrechnungsprozess in nur drei Schritten und beseitigt die Notwendigkeit für komplexe Berechnungen oder die Suche nach externen Umrechnungsfaktoren. <br><br>",
+        "subTitel82" : "Präzision:",
+        "text82" : "Die intuitive Struktur von MUL gewährleistet die Genauigkeit der Einheitenumrechnungen und minimiert menschliche Fehler. <br><br>",
+        "subTitel83" : "Effizienz:",
+        "text83" : "Mit MUL werden Einheitenumrechnungen schnell und effizient durchgeführt, was Zeit und Mühe spart. <br><br>",
+        "subTitel84" : "Zugänglichkeit:",
+        "text84" : "MUL ist für Studenten, Fachleute und jeden leicht zugänglich und einfach zu bedienen, der täglich Einheitenumrechnungen durchführen muss. <br><br>",
+        "subTitel85" : "Prozessvisualisierung:",
+        "text85" : "Im Gegensatz zu digitalen Geräten, die nur das Endergebnis anzeigen, ermöglicht es MUL dem Benutzer, den gesamten Umrechnungsprozess zu visualisieren, was das Lernen und das Verständnis der damit verbundenen Konzepte erleichtert. <br><br>",
+        "subTitel9" : "Studienergebnisse: <br><br>",
+        "text9" : "Die Studie von Ing. Mauricio Mora, MSc., hat gezeigt, dass MUL ein äußerst effektives und nützliches Werkzeug für die Einheitenumrechnung im Internationalen System ist. Die Benutzer, die an den Tests teilgenommen haben, fanden heraus, dass MUL den Einheitenumrechnungsprozess signifikant vereinfacht und ihr Verständnis der damit verbundenen Konzepte verbessert hat. Darüber hinaus wurde eine signifikante Reduzierung der Rechenfehler und ein gesteigertes Vertrauen in die mit MUL erzielten Ergebnisse festgestellt. Diese Ergebnisse unterstreichen die Bedeutung und Relevanz von MUL als innovative Lösung zur Bewältigung der Herausforderungen bei der Umrechnung von Maßeinheiten im aktuellen Kontext. <br><br>"
+    },
+
     "simultext":{
+        "descText" : "Der MUL-Simulator ist ein interaktives Werkzeug, das den Benutzern die Möglichkeit bietet, MUL durch praktische Beispiele zu erlernen. Mit diesem Tool können Benutzer alle Funktionen von MUL erleben und sich damit vertraut machen, was ein effektives und praktisches Lernerlebnis gewährleistet",
         "simul-num" : "Umzuwandelnde Nummer",
         "simul-butL" : "Längen",
         "simul-butA" : "Flächen",
@@ -53,6 +95,7 @@
     },
 
     "footText":{
+        "textBut3" : "Platziere deine Bestellung!",
         "textBut4" : "Datenschutzrichtlinien"
     },
     
@@ -64,19 +107,19 @@
     "siunitText":{
         "titel" : "Internationales Einheitensystem (SI)",
         "text1" : "Das Internationale Einheitensystem (SI) ist der globale Standard zur Messung verschiedener physikalischer Größen und ist in Bereichen wie Wissenschaft, Technik, Industrie und Handel grundlegend. Es besteht aus sieben Basiseinheiten, die als Ausgangspunkt für die Ableitung anderer spezifischerer Einheiten dienen. Die sieben Basiseinheiten des SI sind: :<br><br>",
-        "subtitel2" : "Meter (m):",
+        "subTitel2" : "Meter (m):",
         "text2" : "Maßeinheit für die Länge, definiert als die von Licht während eines bestimmten Zeitintervalls im Vakuum zurückgelegte Strecke. :<br><br>",
-        "subtitel3" : "Kilogramm (kg):",
+        "subTitel3" : "Kilogramm (kg):",
         "text3" : "Maßeinheit für die Masse, ursprünglich definiert durch einen Platin-Iridium-Zylinder in Frankreich. :<br><br>",
-        "subtitel4" : "Sekunde (s):",
+        "subTitel4" : "Sekunde (s):",
         "text4" : "Maßeinheit für die Zeit, basierend auf der Strahlung von Cäsium-133-Atomen. :<br><br>",
-        "subtitel5" : "Ampere (A):",
+        "subTitel5" : "Ampere (A):",
         "text5" : "Maßeinheit für den elektrischen Strom, definiert durch die Kraft zwischen Leitern. :<br><br>",
-        "subtitel6" : "Kelvin (K):",
+        "subTitel6" : "Kelvin (K):",
         "text6" : "Maßeinheit für die thermodynamische Temperatur, basierend auf dem Tripelpunkt des Wassers. :<br><br>",
-        "subtitel7" : "Mol (mol):",
+        "subTitel7" : "Mol (mol):",
         "text7" : "Maßeinheit für die Stoffmenge, definiert durch die Anzahl von Atomen in einer spezifischen Masse von Kohlenstoff-12. :<br><br>",
-        "subtitel8" : "Candela (cd):",
+        "subTitel8" : "Candela (cd):",
         "text8" : "Maßeinheit für die Lichtstärke in einer bestimmten Richtung, basierend auf monochromatischer Strahlung. :<br><br>",
         "text9" : "Zusätzlich zu diesen Basiseinheiten umfasst das SI abgeleitete Einheiten, die durch Kombinationen der Basiseinheiten erhalten werden und eine breite Palette physikalischer Größen wie Geschwindigkeit, Kraft, Energie, Druck und andere abdecken. Insgesamt besteht das SI aus 22 abgeleiteten Einheiten, die wissenschaftliche und praktische Anwendungen abdecken. :<br><br>Im aktuellen Verfahren zur Einheitenumrechnung wird vorgeschlagen, Umrechnungsfaktoren zu lernen, wie sie unten aufgeführt sind:",
         "text10" : "Neben der Menge und Vielfalt der Einheiten. Einige abgeleitete Einheiten sind zum Beispiel: :<br><br>Quadratmeter (m²), Kubikmeter (m³), Meter pro Sekunde (m/s), Liter (L), Hertz (Hz), Newton (N), Joule (J), Pascal (Pa), Watt (W), Coulomb (C), Tesla (T), Weber (Wb), Lumen (lm), Lux (lx), Hertz (Hz), Siemens (S), Farad (F), Gray (Gy), Sievert (Sv), Watt pro Quadratmeter (W/m²).:<br><br>Angesichts dieser Komplexität bietet MUL eine innovative Lösung für die Einheitenumrechnung. Durch die Verwendung von Umrechnungsfaktoren, die auf Potenzen von zehn basieren, vereinfacht MUL den Prozess und macht ihn für dich zugänglicher. Mit MUL wird die Umrechnung zwischen verschiedenen Einheiten einfacher und effizienter, was ein reibungsloseres Handling physikalischer Größen in verschiedenen Anwendungen ermöglicht. Weitere Informationen zum SI-System findest du auf",

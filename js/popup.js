@@ -15,7 +15,7 @@ function popupsDis() {
 		popupWrapper3.style.display = "block";
 		popupWrapper4.style.display = "block";
 		helpBtn.style.background = "#60B5EA";
-		divBlock.style.height = "880px";
+		divBlock.style.height = "1100px";
 }
 
 function popupsClose() {

@@ -33,6 +33,7 @@
 
 .navbar-button {
     width: 50px;
+    height: 50px;
     background-color: #f77d32;
     color: #fff;
     border: none;
@@ -41,9 +42,37 @@
     cursor: pointer;
     position: fixed;
     float: right;
+    z-index: 1000;
+}
+
+#navbarButton {
+    display: flex;
+    top: 20px;
+    right: 135px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+#navBut {
+    display: absolute;
+    width: 25px;
+    height: 25px;
+}
+
+#salesButton {
+    display: flex;
     top: 20px;
     right: 75px;
-    z-index: 1000;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+#shoppCart {
+    display: absolute;
+    width: 25px;
+    height: 25px;
 }
 
 .navbarBut {
@@ -75,7 +104,6 @@
 
 .navbar-item:hover {
     background-color: rgb(248, 219, 161);
-    font-size: 20px; 
     text-decoration: underline;
     transform: scale(1.1);
 }
@@ -90,7 +118,7 @@
     z-index: 900; /* Asigna un z-index alto para que la imagen esté siempre al frente */
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1425px) {
     .navbar-items {
         width: 900px;
     }
@@ -100,7 +128,7 @@
     }
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1015px) {
     .navbar {
         border: 2px solid Black;
         flex-direction: column;
@@ -141,7 +169,7 @@
     }
     .navbar-item {
         width: 250px;
-        margin: 5px;
+        margin: 5px 15px;
     }
 
     .navbar-img {
@@ -150,10 +178,11 @@
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 475px) {
 
     .navbar-items {
        margin-top: 50px;
+       margin: 5px;
     }
     
 

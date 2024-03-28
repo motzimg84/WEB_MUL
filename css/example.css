@@ -65,6 +65,17 @@
     float: left;
 }
 
+.indicArrowS {
+    width: 50px;
+    padding-top: 10px;
+    padding-right: 15px;
+    float: left;
+}
+
+.imgExamp {
+    width: 400px;
+}
+
 /* Estilos para el contenedor del video */
 .video-container {
     display: inline-block; 

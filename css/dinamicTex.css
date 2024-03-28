@@ -6,26 +6,41 @@
     margin: 20px auto;
     padding: 10 px;
     background-color: #fff;
-    border: 2px solid transparent; 
+
 }
 
 .board {
     width: 100%;
     max-width: 1200px;
+    text-align: justify;
+    line-height: 2; 
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .columna {
+    position: relative; /* Establecer la posición en relativa */
     display: flex;
+    height: 600px;
     background-color: rgb(53, 51, 51);
     border-radius: 10px;
+    margin: 10px;
     padding: 10px;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
 }
+
+.bildProtec {
+    position: absolute; /* Establecer la posición en absoluta */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajustar al ancho completo del contenedor */
+    height: 100%; /* Ajustar a la altura completa del contenedor */
+    background-color: transparent; /* Fondo semi-transparente */
+    z-index: 810; /* Asegurar que esté encima de otras capas */
+}
+
 
 .columna img {
     height: 554px;
