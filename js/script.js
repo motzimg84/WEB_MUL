@@ -283,3 +283,8 @@ function changeLangImage(language) {
 		}
     });
 }
+
+//Futontion to redirecto to the Sales Web form MUL
+function openSalesInNewTab() {
+	window.open("http://sales.multool.com/", "_blank");
+}
