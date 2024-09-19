@@ -284,7 +284,16 @@ function changeLangImage(language) {
     });
 }
 
-//Futontion to redirecto to the Sales Web form MUL
+// Function to redirect to the Sales Web form MUL based on selected language
 function openSalesInNewTab() {
-	window.open("http://sales.multool.com/", "_blank");
+    // Get the language from the element with id 'selectLang'
+    const selectedLanguage = document.getElementById("selectLang").innerText;
+
+    if (selectedLanguage === "es") {
+        window.open("http://sales1.multool.com/", "_blank");
+    } else if (selectedLanguage === "de") {
+        window.open("http://sales1.multool.com/de", "_blank");
+    } else {
+        window.open("http://sales1.multool.com/en", "_blank");
+    }
 }
