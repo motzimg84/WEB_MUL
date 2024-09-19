@@ -84,6 +84,8 @@
     "simultext":{
         "descText" : "The MUL simulator is an interactive tool that offers users the opportunity to learn how to use MUL through practical examples. With this tool, users can experience and become familiar with all the functionalities of MUL, thus ensuring an effective and practical learning experience.",
         "simul-num" : "Convert the number: ",
+        "simul-num-from" : " from ",
+        "simul-num-to" : " to ",
         "simul-butL" : "Lengths",
         "simul-butA" : "Areas",
         "simul-butV" : "Volumes"

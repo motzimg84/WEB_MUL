@@ -461,7 +461,7 @@
                         <input class="textForm imputValue" type="text" id="input" data-section="input" data-value="placeholderText" autocomplete="off" onkeydown="return event.key !== 'Enter';" placeholder="Ingrese un numero" oninput="permitirPuntoComa(event)" />
     
     
-                        <p class="textForm manTexPos"> de </p>	
+                        <p class="textForm manTexPos" data-section="simultext" data-value="simul-num-from"> de </p>	
     
                         <select class="textForm selectors textNotice" id="unidad" onchange="splitNumber()">
                         <option value="Tm" data-exponent="0">Tm</option>
@@ -479,7 +479,7 @@
                         <option value="pm" data-exponent="24">pm</option>
                         </select>
     
-                        <p class="textForm manTexPos" > a </p>
+                        <p class="textForm manTexPos" data-section="simultext" data-value="simul-num-to"> a </p>
     
                         <select class="textForm selectors textNotice" id="escala" onchange="splitNumber()">
                         <option value="Tm" data-exponent="0">Tm</option>
