@@ -45,6 +45,9 @@ function selectLanguage(language) {
 	var languageSelector = document.getElementById('languageSelector');
 	var languageOptions = document.getElementById('languageOptions').getElementsByTagName('img');
 
+    // Save the selected language in localStorage
+    localStorage.setItem('selectedLanguage', language);
+
 	for (var i = 0; i < languageOptions.length; i++) {
 		if (languageOptions[i].alt === language.toUpperCase()) {
 			languageSelector.getElementsByTagName('img')[0].src = languageOptions[i].src;
