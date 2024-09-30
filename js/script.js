@@ -291,10 +291,10 @@ function openSalesInNewTab() {
     const selectedLanguage = localStorage.getItem('selectedLanguage') || 'en'; // Default to English if not set
 
     if (selectedLanguage === "es") {
-        window.open("http://sales1.multool.com/", "_blank");
+        window.open("http://saleses.multool.com", "_blank");
     } else if (selectedLanguage === "de") {
-        window.open("http://sales1.multool.com/de", "_blank");
+        window.open("http://salesde.multool.com", "_blank");
     } else {
-        window.open("http://sales1.multool.com/en", "_blank");
+        window.open("http://salesen.multool.com", "_blank");
     }
 }
