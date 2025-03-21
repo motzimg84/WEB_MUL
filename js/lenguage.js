@@ -34,6 +34,7 @@ flagElementOption.addEventListener("click", (e) => {
 			changeLangImage(language);
 			splitNumber();
 			popupsDis();
+			scrollToTop();
 		}
     });
 

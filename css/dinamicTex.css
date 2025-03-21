@@ -37,10 +37,11 @@
     left: 0;
     width: 100%; /* Ajustar al ancho completo del contenedor */
     height: 100%; /* Ajustar a la altura completa del contenedor */
-    background-color: transparent; /* Fondo semi-transparente */
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII='); /* Imagen transparente en base64 */
+    /*background-color: transparent; /* Fondo semi-transparente */
     z-index: 810; /* Asegurar que esté encima de otras capas */
+    pointer-events: all; /* Captura todos los eventos del ratón */
 }
-
 
 .columna img {
     height: 554px;
@@ -49,6 +50,7 @@
     transform: scale(0.5);
     transition: 2.0s ease-in-out all;
     z-index: 800;
+    pointer-events: none; /* Evita que las imágenes reciban eventos del ratón */
 }
 
 .columna img.rightFlip {
